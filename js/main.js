@@ -404,3 +404,50 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+
+/* =========================================================
+   FILTRO DE EVIDENCIAS
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const buttons =
+        document.querySelectorAll("[data-evidence-filter]");
+
+    const cards =
+        document.querySelectorAll("[data-evidence-category]");
+
+    if (!buttons.length || !cards.length) return;
+
+    buttons.forEach(button => {
+
+        button.addEventListener("click", () => {
+
+            const filter =
+                button.dataset.evidenceFilter;
+
+            buttons.forEach(item =>
+                item.classList.remove("is-active")
+            );
+
+            button.classList.add("is-active");
+
+            cards.forEach(card => {
+
+                const categories =
+                    card.dataset.evidenceCategory
+                        .split(/\s+/);
+
+                card.hidden =
+                    filter !== "all" &&
+                    !categories.includes(filter);
+
+            });
+
+        });
+
+    });
+
+});
+

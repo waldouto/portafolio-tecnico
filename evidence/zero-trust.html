@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Implementación Zero Trust | Waldo José J.</title>
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/layout-final.css">
+</head>
+
+<body class="evidence-detail-page">
+
+<header class="evidence-detail-header">
+<div class="container">
+<a href="../index.html#evidencias">← Volver al portafolio</a>
+</div>
+</header>
+
+<main>
+
+<section class="evidence-detail-hero">
+<div class="container">
+
+<p class="eyebrow">
+Ciberseguridad · Implementación
+</p>
+
+<h1>
+Prototipo Zero Trust
+</h1>
+
+<p class="evidence-detail-lead">
+Implementación académica orientada a comprobar una cadena
+de acceso basada en identidad, autorización y visibilidad,
+reduciendo la confianza implícita en la ubicación de red.
+</p>
+
+<div class="evidence-detail-tags">
+<span>Keycloak</span>
+<span>OAuth2 Proxy</span>
+<span>OIDC</span>
+<span>MFA</span>
+<span>RBAC</span>
+<span>Docker</span>
+<span>Wazuh</span>
+<span>Sysmon</span>
+</div>
+
+</div>
+</section>
+
+
+<section class="evidence-detail-content">
+<div class="container evidence-detail-grid">
+
+<article>
+<h2>Objetivo técnico</h2>
+<p>
+Validar un modelo en el que la identidad se comprueba antes
+de entregar acceso al recurso y los permisos se determinan
+según funciones definidas, aplicando principios de mínimo
+privilegio.
+</p>
+</article>
+
+<article>
+<h2>Identidad y autenticación</h2>
+<p>
+Se utilizó un proveedor central de identidad con OpenID
+Connect. La implementación incorporó autenticación
+multifactor, protección frente a intentos repetidos y
+capacidad administrativa de revocación de sesiones.
+</p>
+</article>
+
+<article>
+<h2>Gateway de acceso</h2>
+<p>
+El recurso protegido permanece detrás de un proxy de
+autenticación. El usuario debe completar correctamente
+el proceso de identidad antes de alcanzar la aplicación.
+</p>
+</article>
+
+<article>
+<h2>Autorización</h2>
+<p>
+Los módulos disponibles se presentan según roles y grupos,
+permitiendo demostrar RBAC y separación funcional entre
+perfiles con distintos niveles de privilegio.
+</p>
+</article>
+
+<article>
+<h2>Segmentación</h2>
+<p>
+Los componentes fueron distribuidos en redes lógicas
+separadas para reducir exposición directa entre servicios
+de identidad, aplicación, persistencia y monitoreo.
+</p>
+</article>
+
+<article>
+<h2>Monitoreo</h2>
+<p>
+La solución incorpora telemetría del endpoint y
+centralización de eventos de seguridad para detección,
+consulta y correlación desde una plataforma de monitoreo.
+</p>
+</article>
+
+<article>
+<h2>Validaciones realizadas</h2>
+<p>
+Se verificaron autenticación, segundo factor, propagación
+de identidad, autorización por rol, aislamiento de
+servicios, generación de telemetría y visualización de
+eventos de seguridad.
+</p>
+</article>
+
+<article>
+<h2>Alcance</h2>
+<p>
+El resultado corresponde a un prototipo académico
+controlado. Demuestra principios y componentes de Zero
+Trust sin presentarse como una implementación empresarial
+completa o infraestructura de producción.
+</p>
+</article>
+
+</div>
+</section>
+
+</main>
+
+<footer class="evidence-detail-footer">
+<div class="container">
+<p>Waldo José J. · Portafolio técnico</p>
+</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Arquitectura Perimetral | Waldo José J.</title>
+<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/layout-final.css">
+</head>
+
+<body class="evidence-detail-page">
+
+<header class="evidence-detail-header">
+<div class="container">
+<a href="../index.html#evidencias">← Volver al portafolio</a>
+</div>
+</header>
+
+<main>
+
+<section class="evidence-detail-hero">
+<div class="container">
+
+<p class="eyebrow">
+Infraestructura · Seguridad perimetral
+</p>
+
+<h1>
+Arquitectura perimetral tradicional
+</h1>
+
+<p class="evidence-detail-lead">
+Escenario académico desplegado para validar segmentación,
+protección de borde, publicación controlada de servicios,
+acceso remoto y detección de amenazas.
+</p>
+
+<div class="evidence-detail-tags">
+<span>AWS</span>
+<span>OPNsense</span>
+<span>WAN</span>
+<span>LAN</span>
+<span>DMZ</span>
+<span>VPN</span>
+<span>Suricata</span>
+</div>
+
+</div>
+</section>
+
+
+<section class="evidence-detail-content">
+<div class="container evidence-detail-grid">
+
+<article>
+<h2>Objetivo</h2>
+<p>
+Construir un escenario AS-IS reproducible que representara
+el funcionamiento de una arquitectura de seguridad
+centrada principalmente en el perímetro.
+</p>
+</article>
+
+<article>
+<h2>Arquitectura</h2>
+<p>
+El diseño separa servicios mediante zonas diferenciadas
+para Internet, red corporativa y DMZ, concentrando el
+control de tráfico en el firewall perimetral.
+</p>
+</article>
+
+<article>
+<h2>Servicios públicos</h2>
+<p>
+Los servicios destinados a exposición externa se
+mantienen separados de los recursos corporativos,
+evitando publicar directamente sistemas internos.
+</p>
+</article>
+
+<article>
+<h2>Acceso remoto</h2>
+<p>
+El escenario incorpora acceso remoto mediante VPN,
+permitiendo validar conectividad hacia segmentos
+autorizados sin exponer directamente los recursos
+internos.
+</p>
+</article>
+
+<article>
+<h2>Detección y prevención</h2>
+<p>
+Se integró un mecanismo IDS/IPS al firewall para
+inspeccionar tráfico y comprobar capacidades de
+detección dentro del modelo perimetral.
+</p>
+</article>
+
+<article>
+<h2>Validación</h2>
+<p>
+Las pruebas comprobaron segmentación, publicación
+controlada, conectividad, acceso remoto, políticas
+de filtrado y operación de los controles de seguridad.
+</p>
+</article>
+
+<article>
+<h2>Evolución del laboratorio</h2>
+<p>
+El escenario inició en un entorno virtualizado local
+y posteriormente se trasladó a infraestructura cloud
+para completar pruebas de conectividad externa de
+forma controlada.
+</p>
+</article>
+
+<article>
+<h2>Alcance</h2>
+<p>
+La arquitectura fue desarrollada con finalidad
+académica y comparativa. Los detalles operativos
+sensibles han sido excluidos de esta publicación.
+</p>
+</article>
+
+</div>
+</section>
+
+</main>
+
+<footer class="evidence-detail-footer">
+<div class="container">
+<p>Waldo José J. · Portafolio técnico</p>
+</div>
+</footer>
+
+</body>
+</html>

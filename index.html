@@ -149,6 +149,13 @@
                     </li>
 
                     <li>
+                        <a href="#evidencias">
+                            Evidencias
+                        </a>
+                    </li>
+
+
+                    <li>
                         <a href="#acerca">
                             Acerca de
                         </a>
@@ -1277,7 +1284,318 @@
 
 
         <!-- ACERCA DE -->
+        
+        <!-- DOCUMENTACION Y EVIDENCIAS TECNICAS -->
         <section
+            id="evidencias"
+            class="section evidence-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading evidence-heading">
+
+                    <p class="eyebrow">
+                        Documentación técnica
+                    </p>
+
+                    <h2>
+                        Implementación, validación y evidencia técnica.
+                    </h2>
+
+                    <p>
+                        Selección de documentación académica y técnica
+                        utilizada para demostrar procesos de diseño,
+                        implementación, validación y análisis de
+                        arquitecturas de seguridad.
+                    </p>
+
+                </div>
+
+                <div class="evidence-security-note">
+                    <strong>Documentación sanitizada</strong>
+
+                    <p>
+                        Los resúmenes publicados excluyen credenciales,
+                        secretos, direcciones operativas, archivos de
+                        configuración sensibles y otros datos que puedan
+                        comprometer los entornos utilizados durante las
+                        implementaciones.
+                    </p>
+                </div>
+
+
+                <div class="evidence-filter"
+                     aria-label="Categorías de documentación">
+
+                    <button
+                        class="evidence-filter-button is-active"
+                        type="button"
+                        data-evidence-filter="all"
+                    >
+                        Todo
+                    </button>
+
+                    <button
+                        class="evidence-filter-button"
+                        type="button"
+                        data-evidence-filter="architecture"
+                    >
+                        Arquitecturas
+                    </button>
+
+                    <button
+                        class="evidence-filter-button"
+                        type="button"
+                        data-evidence-filter="cybersecurity"
+                    >
+                        Ciberseguridad
+                    </button>
+
+                    <button
+                        class="evidence-filter-button"
+                        type="button"
+                        data-evidence-filter="research"
+                    >
+                        Investigación
+                    </button>
+
+                </div>
+
+
+                <div class="evidence-grid">
+
+                    <article
+                        class="evidence-card"
+                        data-evidence-category="architecture cybersecurity"
+                    >
+
+                        <div class="evidence-card-top">
+
+                            <span class="evidence-type">
+                                Implementación
+                            </span>
+
+                            <span class="evidence-status">
+                                Validado
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Prototipo Zero Trust
+                        </h3>
+
+                        <p>
+                            Implementación académica de una cadena de
+                            acceso basada en identidad, autenticación,
+                            autorización por roles, mínimo privilegio,
+                            aislamiento lógico y visibilidad centralizada.
+                        </p>
+
+                        <div class="evidence-tags">
+                            <span>Keycloak</span>
+                            <span>OIDC</span>
+                            <span>MFA</span>
+                            <span>RBAC</span>
+                            <span>Wazuh</span>
+                            <span>Sysmon</span>
+                        </div>
+
+                        <div class="evidence-points">
+
+                            <div>
+                                <strong>Identidad</strong>
+                                <span>
+                                    Autenticación centralizada y control
+                                    de acceso.
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Acceso</strong>
+                                <span>
+                                    Gateway protegido y autorización
+                                    previa al recurso.
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Visibilidad</strong>
+                                <span>
+                                    Telemetría y eventos centralizados
+                                    para análisis.
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="evidence-link"
+                            href="./evidence/zero-trust.html"
+                        >
+                            Ver resumen técnico →
+                        </a>
+
+                    </article>
+
+
+                    <article
+                        class="evidence-card"
+                        data-evidence-category="architecture cybersecurity"
+                    >
+
+                        <div class="evidence-card-top">
+
+                            <span class="evidence-type">
+                                Implementación
+                            </span>
+
+                            <span class="evidence-status">
+                                Validado
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Arquitectura perimetral
+                        </h3>
+
+                        <p>
+                            Implementación de un escenario perimetral
+                            tradicional con separación de zonas,
+                            publicación controlada de servicios,
+                            acceso remoto y mecanismos IDS/IPS.
+                        </p>
+
+                        <div class="evidence-tags">
+                            <span>AWS</span>
+                            <span>OPNsense</span>
+                            <span>DMZ</span>
+                            <span>VPN</span>
+                            <span>Suricata</span>
+                            <span>Linux</span>
+                        </div>
+
+                        <div class="evidence-points">
+
+                            <div>
+                                <strong>Segmentación</strong>
+                                <span>
+                                    Separación lógica entre perímetro,
+                                    servicios públicos y red interna.
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Acceso remoto</strong>
+                                <span>
+                                    Conectividad controlada mediante
+                                    túnel VPN.
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Detección</strong>
+                                <span>
+                                    IDS/IPS integrado al control
+                                    perimetral.
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="evidence-link"
+                            href="./evidence/perimetral.html"
+                        >
+                            Ver resumen técnico →
+                        </a>
+
+                    </article>
+
+
+                    <article
+                        class="evidence-card"
+                        data-evidence-category="research cybersecurity"
+                    >
+
+                        <div class="evidence-card-top">
+
+                            <span class="evidence-type">
+                                Investigación aplicada
+                            </span>
+
+                            <span class="evidence-status">
+                                Proyecto académico
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Perimetral vs. Zero Trust
+                        </h3>
+
+                        <p>
+                            Evaluación comparativa de una arquitectura
+                            perimetral tradicional frente a un modelo
+                            Zero Trust aplicado a una organización
+                            mediana.
+                        </p>
+
+                        <div class="evidence-tags">
+                            <span>AS-IS</span>
+                            <span>TO-BE</span>
+                            <span>NIST</span>
+                            <span>Zero Trust</span>
+                            <span>SIEM</span>
+                        </div>
+
+                        <div class="evidence-points">
+
+                            <div>
+                                <strong>Comparación</strong>
+                                <span>
+                                    Dos modelos evaluados bajo criterios
+                                    técnicos comunes.
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Escenarios</strong>
+                                <span>
+                                    Identidad comprometida, movimiento
+                                    lateral y acceso remoto.
+                                </span>
+                            </div>
+
+                            <div>
+                                <strong>Resultado</strong>
+                                <span>
+                                    Propuesta de transición gradual
+                                    basada en riesgo y control.
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <a
+                            class="evidence-link"
+                            href="./evidence/defensa.html"
+                        >
+                            Ver síntesis del proyecto →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+<section
             id="acerca"
             class="about section"
         >
