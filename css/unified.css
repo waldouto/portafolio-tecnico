@@ -3436,3 +3436,215 @@ cat >> css/unified.css <<'CSS'
 
 }
 
+
+/* =========================================================
+   FINAL WIDE DESKTOP SYSTEM V2
+========================================================= */
+
+:root {
+    --u-shell: 1720px;
+}
+
+
+/* ESCRITORIO GENERAL */
+
+.shell,
+.container {
+    width: min(
+        calc(100% - 56px),
+        var(--u-shell)
+    ) !important;
+
+    max-width: none !important;
+}
+
+
+/* =========================================================
+   PC GRANDE
+========================================================= */
+
+@media (min-width: 1450px) {
+
+    .shell,
+    .container {
+        width: min(
+            calc(100% - 80px),
+            1740px
+        ) !important;
+    }
+
+
+    .hero-layout {
+        grid-template-columns:
+            minmax(0, 1.08fr)
+            minmax(500px, .82fr) !important;
+
+        gap: 72px !important;
+    }
+
+
+    .hero-copy {
+        max-width: 860px !important;
+    }
+
+
+    .hero-profession,
+    .hero-description {
+        max-width: 800px !important;
+    }
+
+
+    .profile-showcase {
+        grid-template-columns:
+            250px
+            minmax(0, 1.25fr)
+            minmax(430px, .8fr) !important;
+
+        gap: 44px !important;
+
+        padding: 40px !important;
+    }
+
+
+    .services-grid {
+        grid-template-columns:
+            repeat(4, minmax(0, 1fr)) !important;
+
+        gap: 22px !important;
+    }
+
+
+    .tech-grid {
+        grid-template-columns:
+            repeat(7, minmax(0, 1fr)) !important;
+
+        gap: 16px !important;
+    }
+
+
+    .projects-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 22px !important;
+    }
+
+
+    .project-card {
+        min-height: 380px !important;
+    }
+
+
+    .university-panel {
+        grid-template-columns:
+            220px
+            minmax(0, 1.25fr)
+            minmax(340px, .75fr) !important;
+
+        gap: 36px !important;
+    }
+
+
+    .module-grid {
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr)) !important;
+    }
+
+
+    .timeline {
+        grid-template-columns:
+            repeat(6, minmax(0, 1fr)) !important;
+    }
+
+
+    .evidence-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr)) !important;
+
+        gap: 22px !important;
+    }
+
+
+    .contact-grid {
+        grid-template-columns:
+            minmax(420px, .75fr)
+            minmax(0, 1.25fr) !important;
+
+        gap: 90px !important;
+    }
+
+
+    .case-study .case-intro-grid {
+        grid-template-columns:
+            minmax(260px, .42fr)
+            minmax(0, 1.58fr) !important;
+
+        gap: 70px !important;
+    }
+
+}
+
+
+/* =========================================================
+   4K / MUY GRANDE
+========================================================= */
+
+@media (min-width: 1900px) {
+
+    .shell,
+    .container {
+        width: min(
+            calc(100% - 110px),
+            1840px
+        ) !important;
+    }
+
+}
+
+
+/* =========================================================
+   ULTRAWIDE
+========================================================= */
+
+@media (min-width: 2300px) {
+
+    .shell,
+    .container {
+        width: min(
+            calc(100% - 150px),
+            1920px
+        ) !important;
+    }
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .shell,
+    .container {
+        width: min(
+            calc(100% - 32px),
+            var(--u-shell)
+        ) !important;
+    }
+
+}
+
+
+/* MOVIL */
+
+@media (max-width: 650px) {
+
+    .shell,
+    .container {
+        width: min(
+            calc(100% - 24px),
+            var(--u-shell)
+        ) !important;
+    }
+
+}
+
