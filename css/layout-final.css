@@ -2579,3 +2579,211 @@ body:has(.case-study) .site-header .text-link{
 
 }
 
+
+/* =========================================================
+   PROFESSIONAL PORTFOLIO UPGRADE
+   ========================================================= */
+
+.compact-heading {
+    max-width: 850px;
+    margin-bottom: 34px;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.achievement-card {
+    padding: 24px;
+    border: 1px solid rgba(25, 45, 70, .10);
+    border-radius: 22px;
+    background: #fff;
+}
+
+.achievement-card strong,
+.achievement-card span {
+    display: block;
+}
+
+.achievement-card strong {
+    margin-bottom: 6px;
+    color: #2f73e8;
+    font-size: 2rem;
+}
+
+.achievement-card span {
+    margin-bottom: 12px;
+    color: #17253a;
+    font-weight: 700;
+}
+
+.achievement-card p {
+    margin: 0;
+    color: #6b788a;
+    line-height: 1.55;
+}
+
+.achievement-accent {
+    background:
+        linear-gradient(
+            145deg,
+            #f2f6ff,
+            #fff
+        );
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    display: grid;
+    gap: 0;
+    max-width: 1150px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns:
+        110px
+        minmax(0, 1fr);
+    gap: 28px;
+    padding: 26px 0;
+    border-bottom:
+        1px solid rgba(30, 50, 75, .10);
+}
+
+.timeline-item > span {
+    color: #2f73e8;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.timeline-item h3 {
+    margin: 0 0 7px;
+    color: #17253a;
+}
+
+.timeline-item p {
+    margin: 0;
+    color: #68768a;
+    line-height: 1.65;
+}
+
+.timeline-current {
+    border-left:
+        3px solid #2f73e8;
+    padding-left: 20px;
+}
+
+
+/* LAB */
+
+.lab-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.lab-card {
+    min-height: 190px;
+    padding: 24px;
+    border: 1px solid rgba(25,45,70,.10);
+    border-radius: 21px;
+    background: #fff;
+}
+
+.lab-category {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #2f73e8;
+    font-size: .72rem;
+    font-weight: 750;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.lab-card h3 {
+    margin: 0 0 10px;
+    color: #17253a;
+}
+
+.lab-card p {
+    margin: 0;
+    color: #68768a;
+    line-height: 1.6;
+}
+
+
+/* METRICAS */
+
+.project-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 13px;
+}
+
+.project-metrics span {
+    padding: 6px 9px;
+    border-radius: 999px;
+    background: rgba(47,115,232,.08);
+    color: #3569c9;
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+
+/* CTA / LINKS */
+
+.professional-link,
+.footer-social-link {
+    display: inline-flex;
+    margin-top: 16px;
+    color: #2f73e8;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-social-link {
+    margin-top: 8px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+
+    .achievement-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .lab-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .achievement-grid,
+    .lab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .timeline-current {
+        padding-left: 15px;
+    }
+
+}
