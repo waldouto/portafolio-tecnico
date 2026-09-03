@@ -4,20 +4,14 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
 
-    
     <meta
         name="description"
-        content="Portafolio profesional de Waldo José J., enfocado en Ingeniería en Sistemas, arquitectura de redes, ciberseguridad, Zero Trust, infraestructura y seguridad tecnológica."
+        content="Portafolio profesional de Waldo José J., Ingeniero en Sistemas y Computación especializado en redes, ciberseguridad, infraestructura, diseño gráfico y desarrollo web."
     >
 
     <meta
@@ -32,12 +26,12 @@
 
     <meta
         property="og:title"
-        content="Waldo José J. | Portafolio Profesional"
+        content="Waldo José J. | Ingeniero en Sistemas"
     >
 
     <meta
         property="og:description"
-        content="Ingeniería en Sistemas · Redes · Ciberseguridad · Zero Trust · Infraestructura"
+        content="Redes · Ciberseguridad · Diseño Gráfico · Desarrollo Web"
     >
 
     <meta
@@ -56,24 +50,13 @@
     >
 
     <meta
-        name="twitter:card"
-        content="summary_large_image"
+        name="theme-color"
+        content="#071329"
     >
 
-    <meta
-        name="twitter:title"
-        content="Waldo José J. | Portafolio Profesional"
-    >
-
-    <meta
-        name="twitter:description"
-        content="Ingeniería en Sistemas · Redes · Ciberseguridad · Zero Trust · Infraestructura"
-    >
-
-    <meta
-        name="twitter:image"
-        content="./assets/images/profile/waldo-profesional.png"
-    >
+    <title>
+        Waldo José J. | Ingeniero en Sistemas
+    </title>
 
     <link
         rel="icon"
@@ -81,954 +64,595 @@
         href="./assets/icons/favicon.png"
     >
 
+    <link
+        rel="stylesheet"
+        href="./css/reset.css"
+    >
 
-    <title>Waldo José J. | Portafolio Profesional</title>
+    <link
+        rel="stylesheet"
+        href="./css/redesign.css"
+    >
 
     <script
-        type="module"
-        src="./js/main.js?v=1788411046"
+        src="./js/redesign.js"
         defer
     ></script>
 
-    <link
-        rel="stylesheet"
-        href="./css/site.css?v=1788411046"
-    >
-
-
-    <link
-        rel="stylesheet"
-        href="./css/layout-final.css?v=1788411046"
-    >
-
 </head>
+
 
 <body>
 
-    <header class="site-header">
+<header class="topbar">
 
-        <div class="container">
+    <div class="shell nav-shell">
 
-            <nav
-                class="navbar"
-                aria-label="Navegación principal"
-            >
-
-                <a
-                    href="#inicio"
-                    class="brand"
-                >
-                    Waldo José J.
-                </a>
-
-                <button
-                    id="menuButton"
-                    class="menu-button"
-                    type="button"
-                    aria-controls="mainNavigation"
-                    aria-expanded="false"
-                >
-                    Menú
-                </button>
-
-                <ul
-                    id="mainNavigation"
-                    class="nav-list"
-                >
-
-                    <li>
-                        <a href="#perfil">
-                            Perfil
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#proyectos">
-                            Arquitecturas
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#evidencias">
-                            Evidencias
-                        </a>
-                    </li>
+        <a
+            class="brand"
+            href="#inicio"
+            aria-label="Ir al inicio"
+        >
+            <span class="brand-symbol">WJ</span>
+            <span>Waldo José J.</span>
+        </a>
 
 
-                    <li>
-                        <a href="#acerca">
-                            Acerca de
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#habilidades">
-                            Tecnologías
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            href="#contacto"
-                            class="nav-contact"
-                        >
-                            Contacto
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </div>
-
-    </header>
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-controls="mainNav"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="sr-only">Menú</span>
+        </button>
 
 
-    <main>
-
-        <!-- HERO -->
-        <section
-            id="inicio"
-            class="hero section"
+        <nav
+            class="main-nav"
+            id="mainNav"
+            aria-label="Navegación principal"
         >
 
-            <div class="container hero-grid">
-
-                <div class="hero-content">
-
-                    <p class="eyebrow">
-                        Networking · Cybersecurity · Infrastructure
-                    </p>
-
-                    <h1 class="hero-title">
-                        Diseño arquitecturas de red pensadas para
-                        seguridad, disponibilidad y control.
-                    </h1>
-
-                    <p class="hero-description">
-                        Portafolio técnico de proyectos relacionados
-                        con arquitectura de redes, Zero Trust,
-                        seguridad perimetral, centros de datos,
-                        VPN y segmentación.
-                    </p>
-
-                    <div class="hero-actions">
-
-                        <a
-                            href="#perfil"
-                            class="button button-primary"
-                        >
-                            Ver perfil técnico
-                        </a>
-
-                        <a
-                            href="#contacto"
-                            class="button button-secondary"
-                        >
-                            Contacto
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <aside class="hero-panel">
-
-                    <p class="eyebrow">
-                        Perfil técnico
-                    </p>
-
-                    <h2>
-                        Infraestructura diseñada desde la arquitectura,
-                        no solo desde la configuración.
-                    </h2>
-
-                    <div class="hero-stats">
-
-                        <div>
-                            <strong>06</strong>
-                            <span>Arquitecturas</span>
-                        </div>
-
-                        <div>
-                            <strong>04+</strong>
-                            <span>Áreas técnicas</span>
-                        </div>
-
-                        <div>
-                            <strong>ZT</strong>
-                            <span>Zero Trust</span>
-                        </div>
-
-                    </div>
-
-                </aside>
-
-            </div>
-
-        </section>
-
-
-        
-
-
-
-
-<section
-    id="perfil"
-    class="professional-profile section"
->
-
-    <div class="container">
-
-        <div class="profile-heading">
-
-            <div>
-
-                <p class="eyebrow">
-                    Perfil profesional
-                </p>
-
-                <h2>
-                    Waldo José J.
-                </h2>
-
-                <p class="profile-role">
-                    Ingeniería en Sistemas · Redes · Ciberseguridad
-                </p>
-
-            </div>
-
-            <span class="profile-status">
-                UTEC · El Salvador
-            </span>
-
-        </div>
-
-
-        <div class="profile-layout">
-
-            
-<article class="profile-main profile-main-v2">
-
-    <!-- CABECERA: FOTO + PRESENTACION -->
-    <div class="profile-v2-intro">
-
-        <figure class="profile-v2-photo">
-            <img
-                src="./assets/images/profile/waldo-profesional.png"
-                alt="Fotografía profesional de Waldo José J."
-                loading="eager"
-            >
-        </figure>
-
-        <div class="profile-v2-copy">
-
-            <span class="profile-label">
-                Sobre mí
-            </span>
-
-            <h3>
-                Formación tecnológica respaldada por un
-                expediente académico sobresaliente.
-            </h3>
-
-            <p>
-                Ingeniería en Sistemas y Computación, en proceso de
-                egreso de la prestigiosa Universidad Tecnológica de
-                El Salvador, con formación enfocada en redes de datos,
-                infraestructura, programación, bases de datos,
-                sistemas operativos y ciberseguridad.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- EXPEDIENTE -->
-    <section class="profile-v2-section">
-
-        <h4>Expediente académico</h4>
-
-        <div class="profile-v2-stats">
-
-            <article class="profile-v2-stat">
-
-                <div class="profile-v2-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M2 9 12 4l10 5-10 5L2 9Zm4 3v5c3 3 9 3 12 0v-5"/>
-                    </svg>
-                </div>
-
-                <div>
-                    <strong>9.7</strong>
-                    <b>CUM general</b>
-                    <span>
-                        Rendimiento académico sobresaliente.
-                    </span>
-                </div>
-
-            </article>
-
-
-
-
-
-
-            <article class="profile-v2-stat">
-
-                <div class="profile-v2-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M4 5c3-1 5 0 8 2v13c-3-2-5-3-8-2V5Zm16 0c-3-1-5 0-8 2v13c3-2 5-3 8-2V5Z"/>
-                    </svg>
-                </div>
-
-                <div>
-                    <strong>50</strong>
-                    <b>Materias cursadas y aprobadas</b>
-                    <span>
-                        Formación integral en distintas áreas.
-                    </span>
-                </div>
-
-            </article>
-
-
-            <article class="profile-v2-stat">
-
-                <div class="profile-v2-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M4 19h16M6 16l4-5 3 2 5-7M15 6h3v3"/>
-                    </svg>
-                </div>
-
-                <div>
-                    <strong>2021–2025</strong>
-                    <b>Trayectoria universitaria</b>
-                    <span>
-                        Crecimiento académico sólido y constante.
-                    </span>
-                </div>
-
-            </article>
-
-
-            <article class="profile-v2-stat">
-
-                <div class="profile-v2-icon">
-                    <svg viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Zm0 5v7m-3-3h6"/>
-                    </svg>
-                </div>
-
-                <div>
-                    <strong>2026</strong>
-                    <b>Preespecialidad en ciberseguridad aplicada</b>
-                    <span>
-                        Protección de infraestructura y amenazas.
-                    </span>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- FORMACION PRINCIPAL -->
-    <section class="profile-v2-section">
-
-        <h4>Formación académica principal</h4>
-
-        <div class="profile-v2-subjects">
-
-            <article>
-                <div class="profile-v2-small-icon">&lt;/&gt;</div>
-                <div>
-                    <strong>Redes de Datos</strong>
-                    <span>I–IV</span>
-                    <p>
-                        Diseño, configuración y administración de redes.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="profile-v2-small-icon">&lt;/&gt;</div>
-                <div>
-                    <strong>Programación</strong>
-                    <span>I–IV</span>
-                    <p>
-                        Lógica, estructuras de datos y desarrollo.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="profile-v2-small-icon">DB</div>
-                <div>
-                    <strong>Bases de Datos</strong>
-                    <span>I–II</span>
-                    <p>
-                        Modelado, consultas y administración.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="profile-v2-small-icon">OS</div>
-                <div>
-                    <strong>Sistemas Operativos</strong>
-                    <span>Formación técnica</span>
-                    <p>
-                        Gestión de sistemas, servicios y seguridad.
-                    </p>
-                </div>
-            </article>
-
-            <article>
-                <div class="profile-v2-small-icon">DC</div>
-                <div>
-                    <strong>Administración de Centros de Cómputo</strong>
-                    <span>Infraestructura</span>
-                    <p>
-                        Gestión de recursos y servicios tecnológicos.
-                    </p>
-                </div>
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- AREAS DESTACADAS -->
-    <section class="profile-v2-section profile-v2-highlight-section">
-
-        <h4>Áreas académicas destacadas</h4>
-
-        <div class="profile-v2-highlights">
-
-            <article>
-                <div class="profile-v2-highlight-icon">◎</div>
-
-                <div>
-                    <strong>Networking</strong>
-
-                    <p>
-                        Redes de Datos I y II, Desarrollo de Redes de
-                        Datos I, II, III y IV. Diseño, enrutamiento,
-                        segmentación, VLAN, OSPF, PPP, ACL y seguridad
-                        de red.
-                    </p>
-                </div>
-            </article>
-
-
-            <article>
-                <div class="profile-v2-highlight-icon">&lt;/&gt;</div>
-
-                <div>
-                    <strong>Desarrollo</strong>
-
-                    <p>
-                        Algoritmos, POO, Programación I–IV,
-                        Desarrollo Web y Estándares de Programación.
-                    </p>
-                </div>
-            </article>
-
-
-            <article>
-                <div class="profile-v2-highlight-icon">▦</div>
-
-                <div>
-                    <strong>Infraestructura</strong>
-
-                    <p>
-                        Sistemas Operativos, Organización de
-                        Computadoras, Lenguaje de Máquina y
-                        Administración de Centros de Cómputo.
-                    </p>
-                </div>
-            </article>
-
-
-            <article>
-                <div class="profile-v2-highlight-icon">◇</div>
-
-                <div>
-                    <strong>Gestión y proyectos</strong>
-
-                    <p>
-                        Ingeniería y Productividad, Administración,
-                        Ética y Formulación y Evaluación de Proyectos.
-                    </p>
-                </div>
-            </article>
-
-        </div>
-
-
-        <div class="profile-v2-actions">
-
-            <a
-                href="#proyectos"
-                class="button button-primary"
-            >
-                Ver proyectos
-            </a>
+            <a href="#inicio">Inicio</a>
+            <a href="#perfil">Perfil</a>
+            <a href="#servicios">Especialidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#evidencias">Evidencias</a>
+            <a href="#trayectoria">Trayectoria</a>
 
             <a
                 href="#contacto"
-                class="button button-secondary"
+                class="nav-cta"
             >
                 Contacto
             </a>
 
-        </div>
+        </nav>
 
-    </section>
+    </div>
 
-</article>
+</header>
 
-<div
-    id="logros"
-    class="achievements-section profile-achievements"
+
+<main>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section
+    class="hero"
+    id="inicio"
 >
 
-    <div class="container">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow hero-glow-one"></div>
+    <div class="hero-glow hero-glow-two"></div>
 
-        <div class="section-heading compact-heading">
+    <div class="shell hero-layout">
 
-            <p class="eyebrow">
-                Logros destacados
+        <div class="hero-copy">
+
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Ingeniero en Sistemas y Computación
+            </div>
+
+            <p class="hero-kicker">
+                REDES · CIBERSEGURIDAD · DISEÑO · DESARROLLO
             </p>
 
-            <h2>
-                Resultados que respaldan mi formación.
-            </h2>
+            <h1>
+                Hola, soy
+                <span>Waldo José J.</span>
+            </h1>
+
+            <p class="hero-profession">
+                Ingeniero en Sistemas y Computación especializado en
+                <strong>redes</strong>,
+                <strong>ciberseguridad</strong>,
+                <strong>diseño gráfico</strong> y
+                <strong>desarrollo web</strong>.
+            </p>
+
+            <p class="hero-description">
+                Diseño soluciones tecnológicas seguras, funcionales
+                y visualmente atractivas. Desarrollo sitios web
+                personalizados según las necesidades, identidad
+                y objetivos de cada cliente.
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    class="btn btn-primary"
+                    href="#proyectos"
+                >
+                    Ver mis proyectos
+                    <span aria-hidden="true">→</span>
+                </a>
+
+                <a
+                    class="btn btn-ghost"
+                    href="#contacto"
+                >
+                    Trabajemos juntos
+                </a>
+
+            </div>
+
+            <div class="hero-mini-links">
+
+                <a
+                    href="https://github.com/waldouto"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    GitHub ↗
+                </a>
+
+                <a href="#evidencias">
+                    Evidencias técnicas
+                </a>
+
+                <a href="#trayectoria">
+                    Trayectoria
+                </a>
+
+            </div>
 
         </div>
 
-        <div class="achievement-grid">
 
-            <article class="achievement-card">
-                <strong>9.7</strong>
-                <span>CUM general</span>
-                <p>
-                    Rendimiento académico sostenido durante la carrera.
+        <div class="hero-visual">
+
+            <div class="portrait-orbit orbit-one"></div>
+            <div class="portrait-orbit orbit-two"></div>
+
+            <span class="floating-code">
+                &lt;/&gt;
+            </span>
+
+            <span class="floating-shield">
+                ◇
+            </span>
+
+            <div class="portrait-frame">
+
+                <div class="portrait-glow"></div>
+
+                <img
+                    src="./assets/images/profile/waldo-profesional.png"
+                    alt="Fotografía profesional de Waldo José J."
+                    class="hero-photo"
+                >
+
+            </div>
+
+            <div class="hero-floating-card">
+
+                <span>Perfil profesional</span>
+
+                <strong>
+                    Tecnología + Diseño
+                </strong>
+
+                <small>
+                    Infraestructura · Web · Creatividad
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-wave"></div>
+
+</section>
+
+
+
+<!-- ======================================================
+     PERFIL
+====================================================== -->
+
+<section
+    class="section profile-section"
+    id="perfil"
+>
+
+    <div class="shell">
+
+        <article class="profile-showcase">
+
+            <div class="profile-photo-column">
+
+                <div class="section-photo-wrap">
+
+                    <img
+                        src="./assets/images/profile/waldo-profesional.png"
+                        alt="Waldo José J."
+                        class="section-photo"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="profile-location">
+                    <span>●</span>
+                    San Salvador, El Salvador
+                </div>
+
+            </div>
+
+
+            <div class="profile-copy">
+
+                <p class="eyebrow">
+                    SOBRE MÍ
                 </p>
+
+                <h2>
+                    Diseño, desarrollo y seguridad
+                    para un <span>mundo digital.</span>
+                </h2>
+
+                <p>
+                    Soy Ingeniero en Sistemas y Computación con
+                    formación especializada en redes, infraestructura
+                    y ciberseguridad.
+                </p>
+
+                <p>
+                    También trabajo en diseño gráfico y desarrollo web.
+                    Diseño y programo sitios personalizados de acuerdo
+                    con la identidad, objetivos y requerimientos del
+                    cliente, combinando estructura técnica, experiencia
+                    visual y funcionalidad.
+                </p>
+
+                <div class="profile-tags">
+                    <span>Ingeniería</span>
+                    <span>Networking</span>
+                    <span>Cybersecurity</span>
+                    <span>Web Development</span>
+                    <span>Graphic Design</span>
+                </div>
+
+            </div>
+
+
+            <div class="academic-stats">
+
+                <article class="stat-card">
+                    <div class="stat-icon">⌂</div>
+                    <strong>9.7</strong>
+                    <span>CUM general</span>
+                    <small>
+                        Rendimiento académico sobresaliente.
+                    </small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">▤</div>
+                    <strong>50</strong>
+                    <span>Materias aprobadas</span>
+                    <small>
+                        Formación integral en distintas áreas.
+                    </small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">◇</div>
+                    <strong>2026</strong>
+                    <span>Preespecialidad</span>
+                    <small>
+                        Ciberseguridad aplicada.
+                    </small>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-icon">↗</div>
+                    <strong>92/100</strong>
+                    <span>Proyecto Zero Trust</span>
+                    <small>
+                        Evaluación comparativa de arquitecturas.
+                    </small>
+                </article>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     ESPECIALIDADES
+====================================================== -->
+
+<section
+    class="section section-soft"
+    id="servicios"
+>
+
+    <div class="shell">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">
+                    ÁREAS PROFESIONALES
+                </p>
+
+                <h2>
+                    Lo que hago.
+                </h2>
+            </div>
+
+            <p>
+                Un perfil que combina ingeniería,
+                seguridad, programación y comunicación visual.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <article class="service-card service-blue">
+
+                <div class="service-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    Redes e infraestructura
+                </h3>
+
+                <p>
+                    Diseño de arquitecturas, segmentación,
+                    routing, VPN, centros de datos,
+                    disponibilidad y seguridad de red.
+                </p>
+
+                <div class="service-tags">
+                    <span>VLAN</span>
+                    <span>OSPF</span>
+                    <span>VPN</span>
+                    <span>NGFW</span>
+                </div>
+
+                <a href="#proyectos">
+                    Ver proyectos →
+                </a>
+
             </article>
 
-            <article class="achievement-card">
-                <strong>50</strong>
-                <span>Materias aprobadas</span>
+
+            <article class="service-card service-green">
+
+                <div class="service-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Ciberseguridad
+                </h3>
+
                 <p>
-                    Formación integral en ingeniería, software,
-                    infraestructura y redes.
+                    Zero Trust, protección de infraestructura,
+                    monitoreo, análisis de amenazas y controles
+                    de acceso.
                 </p>
+
+                <div class="service-tags">
+                    <span>Zero Trust</span>
+                    <span>SIEM</span>
+                    <span>ZTNA</span>
+                    <span>NIST</span>
+                </div>
+
+                <a href="#evidencias">
+                    Ver evidencias →
+                </a>
+
             </article>
 
-            <article class="achievement-card">
-                <strong>2026</strong>
-                <span>Preespecialidad</span>
+
+            <article class="service-card service-purple">
+
+                <div class="service-icon">
+                    &lt;/&gt;
+                </div>
+
+                <h3>
+                    Desarrollo web
+                </h3>
+
                 <p>
-                    Ciberseguridad aplicada con enfoque técnico
-                    y de infraestructura.
+                    Diseño y programación de páginas web
+                    personalizadas, responsivas y adaptadas
+                    a los requerimientos de cada proyecto.
                 </p>
+
+                <div class="service-tags">
+                    <span>Frontend</span>
+                    <span>Responsive</span>
+                    <span>UI</span>
+                    <span>Web</span>
+                </div>
+
+                <a href="#contacto">
+                    Crear un proyecto →
+                </a>
+
             </article>
 
-            <article class="achievement-card achievement-accent">
-                <strong>92/100</strong>
-                <span>Proyecto Zero Trust</span>
+
+            <article class="service-card service-orange">
+
+                <div class="service-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Diseño gráfico
+                </h3>
+
                 <p>
-                    Evaluación comparativa entre arquitectura
-                    perimetral y modelo Zero Trust.
+                    Conceptualización visual, piezas digitales,
+                    composición, identidad gráfica y diseño
+                    orientado a comunicación digital.
                 </p>
+
+                <div class="service-tags">
+                    <span>Visual</span>
+                    <span>Branding</span>
+                    <span>Social</span>
+                    <span>Creative</span>
+                </div>
+
+                <a href="#contacto">
+                    Hablemos →
+                </a>
+
             </article>
 
         </div>
 
     </div>
 
-</div>
+</section>
 
 
 
+<!-- ======================================================
+     TECNOLOGIAS
+====================================================== -->
 
+<section
+    class="section technologies-section"
+    id="tecnologias"
+>
 
-            <div class="profile-details">
+    <div class="shell">
 
-                
-<article class="profile-detail-card university-card">
-
-    <div class="university-logo-wrap">
-        <img
-            src="./assets/images/university/utec-logo.webp"
-            alt="Logo oficial de la Universidad Tecnológica de El Salvador"
-            class="university-logo"
-            loading="lazy"
-        >
-    </div>
-
-    <div class="profile-card-body">
-
-        <span class="profile-number">01</span>
-
-        <p class="profile-card-label">
-            UNIVERSIDAD
-        </p>
-
-        <h3>
-            Universidad Tecnológica de El Salvador
-        </h3>
-
-        <p class="card-lead">
-            Ingeniería en Sistemas y Computación ·
-            Facultad de Informática y Ciencias Aplicadas.
-        </p>
-
-        <p>
-            Formación orientada a la aplicación de conocimientos
-            científicos y tecnológicos para resolver problemas mediante
-            ingeniería, desarrollar sistemas de información y administrar
-            recursos tecnológicos.
-        </p>
-
-        <div class="information-grid">
+        <div class="section-heading">
 
             <div>
-                <strong>Redes</strong>
-                <span>
-                    Diseño, configuración, instalación y gestión de
-                    infraestructura de redes de datos.
-                </span>
-            </div>
+                <p class="eyebrow">
+                    TECNOLOGÍAS Y HERRAMIENTAS
+                </p>
 
-            <div>
-                <strong>Software</strong>
-                <span>
-                    Programación, desarrollo web, bases de datos y
-                    sistemas de información.
-                </span>
-            </div>
-
-            <div>
-                <strong>Infraestructura</strong>
-                <span>
-                    Conectividad, sistemas operativos, centros de
-                    cómputo y administración tecnológica.
-                </span>
-            </div>
-
-            <div>
-                <strong>Facultad tecnológica</strong>
-                <span>
-                    Formación apoyada por laboratorios especializados,
-                    incluyendo infraestructura Cisco y data center.
-                </span>
+                <h2>
+                    Herramientas que utilizo.
+                </h2>
             </div>
 
         </div>
 
-        <div class="profile-tags">
-            <span>UTEC</span>
-            <span>Ingeniería en Sistemas</span>
-            <span>San Salvador</span>
-        </div>
 
-    </div>
+        <div class="tech-grid">
 
-</article>
-
-
-
-                
-
-<article class="profile-detail-card profile-detail-accent">
-
-    <div class="profile-card-side">
-
-        <span class="profile-number">
-            02
-        </span>
-
-        <div class="specialization-mark">
-            <strong>PRE</strong>
-            <span>Especialidad</span>
-        </div>
-
-    </div>
-
-    <div class="profile-card-body">
-
-        <p class="profile-card-label">
-            PREESPECIALIDAD
-        </p>
-
-        <h3>
-            Ciberseguridad e infraestructura
-        </h3>
-
-        <p class="card-lead">
-            Formación especializada en protección de infraestructura,
-            seguridad de redes, monitoreo de amenazas y competencias
-            de liderazgo aplicadas al trabajo técnico.
-        </p>
-
-        <div class="module-list">
-
-            <div class="module-row">
-                <div>
-                    <small>MÓDULO 1</small>
-                    <strong>
-                        Fundamentos de seguridad en infraestructura
-                    </strong>
-                </div>
-                <span class="module-grade">9.5</span>
+            <div class="tech-chip">
+                <strong>Cisco</strong>
+                <span>Networking</span>
             </div>
 
-            <div class="module-row">
-                <div>
-                    <small>FORMACIÓN COMPLEMENTARIA</small>
-                    <strong>
-                        Liderazgo basado en principios
-                    </strong>
-                </div>
-                <span class="module-grade">8.6</span>
+            <div class="tech-chip">
+                <strong>Linux</strong>
+                <span>Systems</span>
             </div>
 
-            <div class="module-row">
-                <div>
-                    <small>MÓDULO 2</small>
-                    <strong>
-                        Protección de redes y comunicaciones
-                    </strong>
-                </div>
-                <span class="module-grade">9.4</span>
+            <div class="tech-chip">
+                <strong>Kali</strong>
+                <span>Security</span>
             </div>
 
-            <div class="module-row">
-                <div>
-                    <small>FORMACIÓN COMPLEMENTARIA</small>
-                    <strong>
-                        Teambuilding: Creación de equipos de alto desempeño
-                    </strong>
-                </div>
-                <span class="module-grade">8.1</span>
+            <div class="tech-chip">
+                <strong>Docker</strong>
+                <span>Containers</span>
             </div>
 
-            <div class="module-row">
-                <div>
-                    <small>MÓDULO 3</small>
-                    <strong>
-                        Monitoreo y gestión de amenazas
-                    </strong>
-                </div>
-                <span class="module-grade">9.6</span>
+            <div class="tech-chip">
+                <strong>VS Code</strong>
+                <span>Development</span>
             </div>
 
-        </div>
-
-        <div class="profile-tags">
-            <span>Cybersecurity</span>
-            <span>Network Security</span>
-            <span>Threat Monitoring</span>
-            <span>SIEM</span>
-            <span>Zero Trust</span>
-            <span>Leadership</span>
-        </div>
-
-    </div>
-
-</article>
-
-
-
-
-                
-<article class="profile-detail-card">
-
-    <div class="profile-card-side">
-        <span class="profile-number">03</span>
-
-        <div class="project-score-large">
-            <strong>92</strong>
-            <span>/100</span>
-        </div>
-    </div>
-
-    <div class="profile-card-body">
-
-        <p class="profile-card-label">
-            PROYECTO DESTACADO
-        </p>
-
-        <h3>
-            Evaluación comparativa:
-            Arquitectura Perimetral vs. Zero Trust
-        </h3>
-
-        <p class="card-lead">
-            Proyecto académico de ciberseguridad orientado al análisis
-            comparativo de dos modelos de protección de infraestructura.
-        </p>
-
-        <p>
-            Se analizaron escenarios de credenciales comprometidas,
-            movimiento lateral, acceso remoto y visibilidad de seguridad,
-            evaluando cómo cada arquitectura responde ante amenazas
-            dentro y fuera del perímetro tradicional.
-        </p>
-
-        <div class="information-grid">
-
-            <div>
-                <strong>Zero Trust</strong>
-                <span>
-                    Identidad, mínimo privilegio, verificación continua
-                    y microsegmentación.
-                </span>
+            <div class="tech-chip">
+                <strong>HTML5</strong>
+                <span>Frontend</span>
             </div>
 
-            <div>
-                <strong>Arquitectura perimetral</strong>
-                <span>
-                    Controles tradicionales, segmentación y seguridad
-                    basada en perímetro.
-                </span>
+            <div class="tech-chip">
+                <strong>CSS3</strong>
+                <span>Interface</span>
             </div>
 
-            <div>
-                <strong>Evaluación</strong>
-                <span>
-                    Proyecto evaluado con 92/100.
-                </span>
+            <div class="tech-chip">
+                <strong>JavaScript</strong>
+                <span>Web</span>
             </div>
 
-            <div>
-                <strong>Objetivo</strong>
-                <span>
-                    Justificar decisiones de arquitectura mediante
-                    escenarios técnicos reales.
-                </span>
+            <div class="tech-chip">
+                <strong>SQL</strong>
+                <span>Databases</span>
             </div>
 
-        </div>
-
-        <div class="profile-tags">
-            <span>Zero Trust</span>
-            <span>NIST CSF</span>
-            <span>ZTNA</span>
-            <span>Microsegmentación</span>
-        </div>
-
-    </div>
-
-</article>
-
-
-
-                
-<article class="profile-detail-card">
-
-    <div class="profile-card-side">
-        <span class="profile-number">04</span>
-
-        <div class="technical-symbol">
-            &lt;/&gt;
-        </div>
-    </div>
-
-    <div class="profile-card-body">
-
-        <p class="profile-card-label">
-            ENFOQUE TÉCNICO
-        </p>
-
-        <h3>
-            Formación respaldada por el expediente académico
-        </h3>
-
-        <p class="card-lead">
-            Las áreas del portafolio se relacionan directamente con
-            asignaturas desarrolladas durante la carrera.
-        </p>
-
-        <div class="course-groups">
-
-            <div class="course-group">
-                <strong>Networking</strong>
-                <span>
-                    Redes de Datos I y II · Desarrollo de Redes de
-                    Datos I, II, III y IV
-                </span>
+            <div class="tech-chip">
+                <strong>Wireshark</strong>
+                <span>Analysis</span>
             </div>
 
-            <div class="course-group">
-                <strong>Software</strong>
-                <span>
-                    Algoritmos · POO · Programación I–IV ·
-                    Estándares de Programación · Desarrollo Web
-                </span>
+            <div class="tech-chip">
+                <strong>Nmap</strong>
+                <span>Discovery</span>
             </div>
 
-            <div class="course-group">
-                <strong>Datos</strong>
-                <span>
-                    Base de Datos I y II · Sistemas de Información
-                    Gerencial
-                </span>
+            <div class="tech-chip">
+                <strong>Wazuh</strong>
+                <span>SIEM</span>
             </div>
 
-            <div class="course-group">
-                <strong>Infraestructura</strong>
-                <span>
-                    Sistemas Operativos · Organización de Computadoras ·
-                    Lenguaje de Máquina · Administración de Centros
-                    de Cómputo
-                </span>
+            <div class="tech-chip">
+                <strong>Visual Studio</strong>
+                <span>.NET</span>
             </div>
 
-            <div class="course-group">
-                <strong>Electrónica</strong>
-                <span>
-                    Sistemas Digitales · Electrónica · Física ·
-                    Análisis de Circuitos
-                </span>
-            </div>
-
-            <div class="course-group">
-                <strong>Gestión</strong>
-                <span>
-                    Formulación y Evaluación de Proyectos ·
-                    Administración · Ética · Ingeniería y Productividad
-                </span>
-            </div>
-
-        </div>
-
-        <div class="profile-tags">
-            <span>OSPF</span>
-            <span>VLAN</span>
-            <span>VPN</span>
-            <span>NGFW</span>
-            <span>SIEM</span>
-            <span>Data Center</span>
-            <span>Zero Trust</span>
-            <span>Software</span>
-        </div>
-
-    </div>
-
-</article>
-
-
+            <div class="tech-chip">
+                <strong>SQL Server</strong>
+                <span>Data</span>
             </div>
 
         </div>
@@ -1038,93 +662,529 @@
 </section>
 
 
-        
+
+<!-- ======================================================
+     PROYECTOS
+====================================================== -->
+
 <section
-    id="trayectoria"
-    class="section timeline-section"
+    class="section projects-section"
+    id="proyectos"
 >
 
-    <div class="container">
+    <div class="shell">
 
-        <div class="section-heading compact-heading">
+        <div class="section-heading">
 
-            <p class="eyebrow">
-                Trayectoria
+            <div>
+                <p class="eyebrow">
+                    PROYECTOS DESTACADOS
+                </p>
+
+                <h2>
+                    Arquitecturas que convierten
+                    problemas en soluciones.
+                </h2>
+            </div>
+
+            <p>
+                Casos de estudio con decisiones técnicas,
+                riesgos, implementación y resultados.
             </p>
 
-            <h2>
-                Evolución académica y técnica.
-            </h2>
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <a
+                class="project-card project-featured"
+                href="./projects/zero-trust.html"
+            >
+
+                <div
+                    class="project-image"
+                    style="background-image:url('./assets/images/zero-trust/architecture.svg')"
+                ></div>
+
+                <div class="project-overlay"></div>
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        SECURITY ARCHITECTURE
+                    </p>
+
+                    <h3>
+                        Zero Trust Architecture
+                    </h3>
+
+                    <p>
+                        Identidad, mínimo privilegio,
+                        microsegmentación y monitoreo continuo.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>ZTNA</span>
+                        <span>NIST</span>
+                        <span>SIEM</span>
+                    </div>
+
+                    <strong>
+                        Ver caso →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+            <a
+                class="project-card"
+                href="./projects/ngfw.html"
+            >
+
+                <div
+                    class="project-image"
+                    style="background-image:url('./assets/images/ngfw/architecture.svg')"
+                ></div>
+
+                <div class="project-overlay"></div>
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        SECURITY INFRASTRUCTURE
+                    </p>
+
+                    <h3>
+                        NGFW Enterprise
+                    </h3>
+
+                    <p>
+                        Alta disponibilidad y protección
+                        avanzada del perímetro.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HA</span>
+                        <span>App-ID</span>
+                        <span>NGFW</span>
+                    </div>
+
+                    <strong>
+                        Ver caso →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+            <a
+                class="project-card"
+                href="./projects/cpd.html"
+            >
+
+                <div
+                    class="project-image"
+                    style="background-image:url('./assets/images/cpd/architecture.svg')"
+                ></div>
+
+                <div class="project-overlay"></div>
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        DATA CENTER
+                    </p>
+
+                    <h3>
+                        CPD Three-Layer
+                    </h3>
+
+                    <p>
+                        Arquitectura por capas para servicios,
+                        aplicaciones y datos.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>DMZ</span>
+                        <span>APP</span>
+                        <span>DATA</span>
+                    </div>
+
+                    <strong>
+                        Ver caso →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+            <a
+                class="project-card"
+                href="./projects/vpn.html"
+            >
+
+                <div
+                    class="project-image"
+                    style="background-image:url('./assets/images/vpn/architecture.svg')"
+                ></div>
+
+                <div class="project-overlay"></div>
+
+                <div class="project-number">
+                    04
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        SECURE NETWORKING
+                    </p>
+
+                    <h3>
+                        Site-to-Site VPN
+                    </h3>
+
+                    <p>
+                        Comunicación segura entre
+                        ubicaciones distribuidas.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>VPN</span>
+                        <span>IPSec</span>
+                        <span>Multi-Site</span>
+                    </div>
+
+                    <strong>
+                        Ver caso →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+            <a
+                class="project-card"
+                href="./projects/dmz.html"
+            >
+
+                <div
+                    class="project-image"
+                    style="background-image:url('./assets/images/dmz/architecture.svg')"
+                ></div>
+
+                <div class="project-overlay"></div>
+
+                <div class="project-number">
+                    05
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        SEGMENTED SECURITY
+                    </p>
+
+                    <h3>
+                        DMZ / SRV / LAN
+                    </h3>
+
+                    <p>
+                        Separación de servicios
+                        y reducción de exposición.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>DMZ</span>
+                        <span>SRV</span>
+                        <span>LAN</span>
+                    </div>
+
+                    <strong>
+                        Ver caso →
+                    </strong>
+
+                </div>
+
+            </a>
+
+
+            <a
+                class="project-card"
+                href="./projects/ospf.html"
+            >
+
+                <div
+                    class="project-image"
+                    style="background-image:url('./assets/images/ospf/architecture.svg')"
+                ></div>
+
+                <div class="project-overlay"></div>
+
+                <div class="project-number">
+                    06
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-type">
+                        ENTERPRISE ROUTING
+                    </p>
+
+                    <h3>
+                        VLAN + OSPF + PPP
+                    </h3>
+
+                    <p>
+                        Segmentación y routing
+                        dinámico empresarial.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>VLAN</span>
+                        <span>OSPF</span>
+                        <span>PPP</span>
+                    </div>
+
+                    <strong>
+                        Ver caso →
+                    </strong>
+
+                </div>
+
+            </a>
 
         </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FORMACION
+====================================================== -->
+
+<section
+    class="section education-section"
+    id="trayectoria"
+>
+
+    <div class="shell">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">
+                    FORMACIÓN Y TRAYECTORIA
+                </p>
+
+                <h2>
+                    Ingeniería respaldada por
+                    formación académica sólida.
+                </h2>
+            </div>
+
+        </div>
+
+
+        <div class="education-grid">
+
+            <article class="university-panel">
+
+                <div class="university-logo-box">
+
+                    <img
+                        src="./assets/images/university/utec-logo.webp"
+                        alt="Logo oficial de la Universidad Tecnológica de El Salvador"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div>
+
+                    <p class="eyebrow">
+                        UNIVERSIDAD
+                    </p>
+
+                    <h3>
+                        Universidad Tecnológica
+                        de El Salvador
+                    </h3>
+
+                    <p>
+                        Ingeniería en Sistemas y Computación.
+                        Formación en desarrollo, infraestructura,
+                        redes, sistemas operativos, bases de datos
+                        y gestión tecnológica.
+                    </p>
+
+                    <div class="panel-chips">
+                        <span>UTEC</span>
+                        <span>Ingeniería</span>
+                        <span>San Salvador</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="specialty-panel">
+
+                <p class="eyebrow">
+                    PREESPECIALIDAD 2026
+                </p>
+
+                <h3>
+                    Ciberseguridad aplicada
+                </h3>
+
+                <div class="module-grid">
+
+                    <div>
+                        <span>Módulo 1</span>
+                        <strong>
+                            Fundamentos de seguridad
+                            en infraestructura
+                        </strong>
+                        <b>9.5</b>
+                    </div>
+
+                    <div>
+                        <span>Módulo 2</span>
+                        <strong>
+                            Protección de redes
+                            y comunicaciones
+                        </strong>
+                        <b>9.4</b>
+                    </div>
+
+                    <div>
+                        <span>Módulo 3</span>
+                        <strong>
+                            Monitoreo y gestión
+                            de amenazas
+                        </strong>
+                        <b>9.6</b>
+                    </div>
+
+                    <div>
+                        <span>Complementaria</span>
+                        <strong>
+                            Liderazgo basado
+                            en principios
+                        </strong>
+                        <b>8.6</b>
+                    </div>
+
+                    <div>
+                        <span>Complementaria</span>
+                        <strong>
+                            Creación de equipos
+                            de alto desempeño
+                        </strong>
+                        <b>8.1</b>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
 
         <div class="timeline">
 
-            <article class="timeline-item">
+            <article>
                 <span>2021</span>
                 <div>
-                    <h3>Inicio de Ingeniería en Sistemas</h3>
+                    <h3>
+                        Inicio de Ingeniería en Sistemas
+                    </h3>
                     <p>
-                        Fundamentos de algoritmos, matemática,
-                        productividad y competencias tecnológicas.
+                        Algoritmos, matemáticas y fundamentos tecnológicos.
                     </p>
                 </div>
             </article>
 
-            <article class="timeline-item">
+            <article>
                 <span>2022</span>
                 <div>
-                    <h3>Software y bases de datos</h3>
+                    <h3>
+                        Software y bases de datos
+                    </h3>
                     <p>
-                        Programación, bases de datos,
-                        desarrollo web, UML y fundamentos de sistemas.
+                        Programación, desarrollo web, UML y bases de datos.
                     </p>
                 </div>
             </article>
 
-            <article class="timeline-item">
+            <article>
                 <span>2023</span>
                 <div>
-                    <h3>Networking e infraestructura</h3>
+                    <h3>
+                        Networking e infraestructura
+                    </h3>
                     <p>
-                        Redes de Datos I y II, programación avanzada,
-                        arquitectura y organización de computadoras.
+                        Redes, programación avanzada y arquitectura de computadoras.
                     </p>
                 </div>
             </article>
 
-            <article class="timeline-item">
+            <article>
                 <span>2024</span>
                 <div>
-                    <h3>Sistemas e infraestructura tecnológica</h3>
+                    <h3>
+                        Sistemas e infraestructura
+                    </h3>
                     <p>
-                        Sistemas operativos, administración de centros
-                        de cómputo, sistemas digitales y estándares
-                        de programación.
+                        Sistemas operativos, centros de cómputo y sistemas digitales.
                     </p>
                 </div>
             </article>
 
-            <article class="timeline-item">
+            <article>
                 <span>2025</span>
                 <div>
-                    <h3>Arquitecturas y proyectos avanzados</h3>
+                    <h3>
+                        Arquitecturas avanzadas
+                    </h3>
                     <p>
-                        Desarrollo de Redes de Datos I–IV,
-                        formulación de proyectos y diseño de
-                        arquitecturas empresariales.
+                        Redes de Datos I–IV y formulación de proyectos.
                     </p>
                 </div>
             </article>
 
-            <article class="timeline-item timeline-current">
+            <article class="timeline-current">
                 <span>2026</span>
                 <div>
-                    <h3>Preespecialidad en Ciberseguridad Aplicada</h3>
+                    <h3>
+                        Ciberseguridad aplicada
+                    </h3>
                     <p>
-                        Seguridad de infraestructura, protección de
-                        redes, monitoreo de amenazas, Zero Trust
-                        y validación técnica de arquitecturas.
+                        Protección de infraestructura, monitoreo y Zero Trust.
                     </p>
                 </div>
             </article>
@@ -1136,677 +1196,156 @@
 </section>
 
 
-<!-- PROYECTOS -->
-        <section
-            id="proyectos"
-            class="projects section"
-        >
 
-            <div class="container">
+<!-- ======================================================
+     EVIDENCIAS
+====================================================== -->
 
-                <header class="section-header">
-
-                    <div>
-
-                        <p class="eyebrow">
-                            Selected Architecture
-                        </p>
-
-                        <h2>
-                            Casos de estudio
-                        </h2>
-
-                    </div>
-
-
-                    <div
-                        class="filters"
-                        role="group"
-                        aria-label="Filtrar proyectos"
-                    >
-
-                        <button
-                            type="button"
-                            class="filter-button active"
-                            data-filter="all"
-                            aria-pressed="true"
-                        >
-                            Todos
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-button"
-                            data-filter="zero-trust"
-                            aria-pressed="false"
-                        >
-                            Zero Trust
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-button"
-                            data-filter="networking"
-                            aria-pressed="false"
-                        >
-                            Networking
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-button"
-                            data-filter="infrastructure"
-                            aria-pressed="false"
-                        >
-                            Infraestructura
-                        </button>
-
-                        <button
-                            type="button"
-                            class="filter-button"
-                            data-filter="security"
-                            aria-pressed="false"
-                        >
-                            Seguridad
-                        </button>
-
-                    </div>
-
-                </header>
-
-
-                <div class="project-grid">
-
-                    <article class="project-card project-card-clickable" data-category="zero-trust security" data-url="./projects/zero-trust.html" tabindex="0" role="link"
-                    >
-
-                        <div class="project-number">
-                            01
-                        </div>
-
-                        <div class="project-visual project-zero">
-
-                            <span>
-                                Zero Trust Architecture
-                            </span>
-
-                            <p>
-                                Comparación entre arquitectura perimetral
-                                tradicional y modelo Zero Trust.
-                            </p>
-
-                        </div>
-
-                        <div class="project-content">
-
-                            <div>
-
-                                <span class="project-type">
-                                    Security Architecture
-                                </span>
-
-                                <h3>
-                                    Zero Trust Architecture
-                                </h3>
-
-        <div class="project-metrics">
-            <span>ZTNA</span>
-            <span>Microsegmentación</span>
-            <span>NIST</span>
-        </div>
-    
-
-                                <p>
-                                    ZTNA · NIST CSF · Microsegmentación
-                                </p>
-
-                            </div>
-
-                            <a
-                                href="./projects/zero-trust.html"
-                                class="project-link"
-                            >
-                                Ver caso →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-card-clickable" data-category="security infrastructure" data-url="./projects/ngfw.html" tabindex="0" role="link"
-                    >
-
-                        <div class="project-number">
-                            02
-                        </div>
-
-                        
-                        <a
-                            href="./projects/ngfw.html"
-                            class="project-visual project-ngfw project-visual-link"
-                            aria-label="Abrir caso ngfw"
-                        >
-
-
-                            <span>
-                                Next Generation Firewall
-                            </span>
-
-                            <p>
-                                Arquitectura perimetral con NGFW
-                                de alta disponibilidad.
-                            </p>
-
-                        
-                        </a>
-
-
-                        <div class="project-content">
-
-                            <div>
-
-                                <span class="project-type">
-                                    Security Infrastructure
-                                </span>
-
-                                <h3>
-                                    NGFW Enterprise Architecture
-                                </h3>
-
-        <div class="project-metrics">
-            <span>HA</span>
-            <span>App-ID</span>
-            <span>Threat Prevention</span>
-        </div>
-    
-
-                                <p>
-                                    Palo Alto · HA · App-ID · Threat Prevention
-                                </p>
-
-                            </div>
-
-                            <a
-                                href="./projects/ngfw.html"
-                                class="project-link"
-                            >
-                                Ver caso →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-card-clickable" data-category="infrastructure security" data-url="./projects/cpd.html" tabindex="0" role="link"
-                    >
-
-                        <div class="project-number">
-                            03
-                        </div>
-
-                        
-                        <a
-                            href="./projects/cpd.html"
-                            class="project-visual project-cpd project-visual-link"
-                            aria-label="Abrir caso cpd"
-                        >
-
-
-                            <span>
-                                Data Center Architecture
-                            </span>
-
-                            <p>
-                                Centro de datos segmentado
-                                mediante arquitectura de tres capas.
-                            </p>
-
-                        
-                        </a>
-
-
-                        <div class="project-content">
-
-                            <div>
-
-                                <span class="project-type">
-                                    Data Center
-                                </span>
-
-                                <h3>
-                                    CPD Three-Layer Architecture
-                                </h3>
-
-        <div class="project-metrics">
-            <span>DMZ</span>
-            <span>Application Layer</span>
-            <span>Database Layer</span>
-        </div>
-    
-
-                                <p>
-                                    DMZ · Application · Database
-                                </p>
-
-                            </div>
-
-                            <a
-                                href="./projects/cpd.html"
-                                class="project-link"
-                            >
-                                Ver caso →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-card-clickable" data-category="networking security" data-url="./projects/vpn.html" tabindex="0" role="link"
-                    >
-
-                        <div class="project-number">
-                            04
-                        </div>
-
-                        
-                        <a
-                            href="./projects/vpn.html"
-                            class="project-visual project-vpn project-visual-link"
-                            aria-label="Abrir caso vpn"
-                        >
-
-
-                            <span>
-                                Site-to-Site VPN
-                            </span>
-
-                            <p>
-                                Interconexión segura entre
-                                sede central y sucursal.
-                            </p>
-
-                        
-                        </a>
-
-
-                        <div class="project-content">
-
-                            <div>
-
-                                <span class="project-type">
-                                    Secure Networking
-                                </span>
-
-                                <h3>
-                                    Site-to-Site VPN Architecture
-                                </h3>
-
-        <div class="project-metrics">
-            <span>Site-to-Site</span>
-            <span>Segmentación</span>
-            <span>Multi-Site</span>
-        </div>
-    
-
-                                <p>
-                                    VPN · Segmentation · Multi-ISP
-                                </p>
-
-                            </div>
-
-                            <a
-                                href="./projects/vpn.html"
-                                class="project-link"
-                            >
-                                Ver caso →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-card-clickable" data-category="security infrastructure" data-url="./projects/dmz.html" tabindex="0" role="link"
-                    >
-
-                        <div class="project-number">
-                            05
-                        </div>
-
-                        
-                        <a
-                            href="./projects/dmz.html"
-                            class="project-visual project-dmz project-visual-link"
-                            aria-label="Abrir caso dmz"
-                        >
-
-
-                            <span>
-                                Segmented Security Zones
-                            </span>
-
-                            <p>
-                                Arquitectura segmentada para
-                                DMZ, servidores y usuarios internos.
-                            </p>
-
-                        
-                        </a>
-
-
-                        <div class="project-content">
-
-                            <div>
-
-                                <span class="project-type">
-                                    Network Security
-                                </span>
-
-                                <h3>
-                                    DMZ / SRV / LAN Architecture
-                                </h3>
-
-        <div class="project-metrics">
-            <span>DMZ</span>
-            <span>SRV</span>
-            <span>LAN</span>
-        </div>
-    
-
-                                <p>
-                                    Sophos UTM · DMZ · Segmentation
-                                </p>
-
-                            </div>
-
-                            <a
-                                href="./projects/dmz.html"
-                                class="project-link"
-                            >
-                                Ver caso →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card project-card-clickable" data-category="networking" data-url="./projects/ospf.html" tabindex="0" role="link"
-                    >
-
-                        <div class="project-number">
-                            06
-                        </div>
-
-                        
-                        <a
-                            href="./projects/ospf.html"
-                            class="project-visual project-ospf project-visual-link"
-                            aria-label="Abrir caso ospf"
-                        >
-
-
-                            <span>
-                                Enterprise Routing
-                            </span>
-
-                            <p>
-                                Arquitectura de routing y switching
-                                con VLAN, OSPF y enlaces PPP.
-                            </p>
-
-                        
-                        </a>
-
-
-                        <div class="project-content">
-
-                            <div>
-
-                                <span class="project-type">
-                                    Networking
-                                </span>
-
-                                <h3>
-                                    VLAN + OSPF + PPP
-                                </h3>
-
-        <div class="project-metrics">
-            <span>VLAN</span>
-            <span>OSPF</span>
-            <span>PPP</span>
-        </div>
-    
-
-                                <p>
-                                    Cisco · OSPF · VLAN · PAP · CHAP
-                                </p>
-
-                            </div>
-
-                            <a
-                                href="./projects/ospf.html"
-                                class="project-link"
-                            >
-                                Ver caso →
-                            </a>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-
-                <p
-                    id="filterStatus"
-                    class="sr-only"
-                    aria-live="polite"
-                ></p>
-
-            </div>
-
-        </section>
-
-
-        <!-- ACERCA DE -->
-        
-        <!-- DOCUMENTACION Y EVIDENCIAS TECNICAS -->
-        
 <section
-    id="evidencias"
     class="section evidence-section"
+    id="evidencias"
 >
 
-    <div class="container">
+    <div class="shell">
 
-        <div class="section-heading evidence-heading">
+        <div class="section-heading">
 
-            <p class="eyebrow">
-                Experiencia técnica
-            </p>
+            <div>
+                <p class="eyebrow">
+                    EXPERIENCIA TÉCNICA
+                </p>
 
-            <h2>
-                Implementación, validación y análisis
-                de arquitecturas de seguridad.
-            </h2>
+                <h2>
+                    Implementación, validación
+                    y evidencia.
+                </h2>
+            </div>
 
             <p>
-                Proyectos y evidencias seleccionadas que muestran
-                cómo se diseñaron, implementaron y evaluaron
-                soluciones de infraestructura y ciberseguridad.
+                Resúmenes técnicos de implementaciones
+                y proyectos académicos seleccionados.
             </p>
 
         </div>
 
-        <div
-            class="evidence-filter"
-            aria-label="Categorías de experiencia técnica"
-        >
-
-            <button
-                class="evidence-filter-button is-active"
-                type="button"
-                data-evidence-filter="all"
-            >
-                Todo
-            </button>
-
-            <button
-                class="evidence-filter-button"
-                type="button"
-                data-evidence-filter="architecture"
-            >
-                Arquitecturas
-            </button>
-
-            <button
-                class="evidence-filter-button"
-                type="button"
-                data-evidence-filter="cybersecurity"
-            >
-                Ciberseguridad
-            </button>
-
-            <button
-                class="evidence-filter-button"
-                type="button"
-                data-evidence-filter="research"
-            >
-                Investigación
-            </button>
-
-        </div>
 
         <div class="evidence-grid">
 
-            <article
+            <a
+                href="./evidence/zero-trust.html"
                 class="evidence-card"
-                data-evidence-category="architecture cybersecurity"
             >
 
-                <div class="evidence-card-top">
-                    <span class="evidence-type">
-                        Implementación
-                    </span>
+                <span class="evidence-number">
+                    01
+                </span>
 
-                    <span class="evidence-status">
-                        Validado
-                    </span>
+                <div class="evidence-icon">
+                    ◇
                 </div>
+
+                <p class="eyebrow">
+                    IMPLEMENTACIÓN
+                </p>
 
                 <h3>
                     Prototipo Zero Trust
                 </h3>
 
                 <p>
-                    Cadena de acceso basada en identidad,
-                    MFA, autorización por roles, aislamiento
-                    lógico y monitoreo centralizado.
+                    Identidad, MFA, RBAC,
+                    aislamiento lógico y monitoreo.
                 </p>
 
                 <div class="evidence-tags">
-                    <span>Keycloak</span>
                     <span>OIDC</span>
                     <span>MFA</span>
-                    <span>RBAC</span>
                     <span>Wazuh</span>
                 </div>
 
-                <a
-                    class="evidence-link"
-                    href="./evidence/zero-trust.html"
-                >
-                    Ver resumen técnico →
-                </a>
+                <strong>
+                    Ver evidencia →
+                </strong>
 
-            </article>
+            </a>
 
-            <article
+
+            <a
+                href="./evidence/perimetral.html"
                 class="evidence-card"
-                data-evidence-category="architecture cybersecurity"
             >
 
-                <div class="evidence-card-top">
-                    <span class="evidence-type">
-                        Implementación
-                    </span>
+                <span class="evidence-number">
+                    02
+                </span>
 
-                    <span class="evidence-status">
-                        Validado
-                    </span>
+                <div class="evidence-icon">
+                    ◎
                 </div>
+
+                <p class="eyebrow">
+                    IMPLEMENTACIÓN
+                </p>
 
                 <h3>
                     Arquitectura perimetral
                 </h3>
 
                 <p>
-                    Arquitectura segmentada con firewall,
-                    DMZ, acceso remoto, IDS/IPS
-                    e infraestructura cloud.
+                    Firewall, DMZ, VPN,
+                    IDS/IPS e infraestructura cloud.
                 </p>
 
                 <div class="evidence-tags">
-                    <span>AWS</span>
                     <span>OPNsense</span>
                     <span>DMZ</span>
-                    <span>VPN</span>
                     <span>Suricata</span>
                 </div>
 
-                <a
-                    class="evidence-link"
-                    href="./evidence/perimetral.html"
-                >
-                    Ver resumen técnico →
-                </a>
+                <strong>
+                    Ver evidencia →
+                </strong>
 
-            </article>
+            </a>
 
-            <article
+
+            <a
+                href="./evidence/defensa.html"
                 class="evidence-card"
-                data-evidence-category="research cybersecurity"
             >
 
-                <div class="evidence-card-top">
-                    <span class="evidence-type">
-                        Investigación aplicada
-                    </span>
+                <span class="evidence-number">
+                    03
+                </span>
 
-                    <span class="evidence-status">
-                        Proyecto académico
-                    </span>
+                <div class="evidence-icon">
+                    ↗
                 </div>
+
+                <p class="eyebrow">
+                    INVESTIGACIÓN
+                </p>
 
                 <h3>
                     Perimetral vs. Zero Trust
                 </h3>
 
                 <p>
-                    Comparación AS-IS y TO-BE mediante
-                    escenarios técnicos, criterios de riesgo
-                    y controles de seguridad.
+                    Evaluación comparativa mediante
+                    escenarios y criterios técnicos.
                 </p>
 
                 <div class="evidence-tags">
                     <span>NIST</span>
                     <span>AS-IS</span>
                     <span>TO-BE</span>
-                    <span>SIEM</span>
                 </div>
 
-                <a
-                    class="evidence-link"
-                    href="./evidence/defensa.html"
-                >
-                    Ver síntesis del proyecto →
-                </a>
+                <strong>
+                    Ver síntesis →
+                </strong>
 
-            </article>
+            </a>
 
         </div>
 
@@ -1815,467 +1354,221 @@
 </section>
 
 
+
+<!-- ======================================================
+     CONTACTO
+====================================================== -->
+
 <section
-            id="acerca"
-            class="about section"
-        >
-
-            <div class="container two-column">
-
-                <div>
-
-                    <p class="eyebrow">
-                        About
-                    </p>
-
-                    <h2>
-                        Arquitecturas que parten del problema,
-                        no del producto.
-                    </h2>
-
-                </div>
-
-
-                <div class="about-copy">
-
-                    <p>
-                        Los proyectos presentados en este portafolio
-                        parten de escenarios técnicos reales de diseño
-                        de redes e infraestructura.
-                    </p>
-
-                    <p>
-                        Cada arquitectura analiza segmentación,
-                        disponibilidad, superficie de ataque,
-                        control de acceso, monitoreo y escalabilidad.
-                    </p>
-
-                    <p>
-                        El objetivo es justificar técnicamente
-                        cada decisión de diseño y no limitar el trabajo
-                        únicamente a configuraciones de dispositivos.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        
-<section
-    id="laboratorio"
-    class="section lab-section"
+    class="section contact-section"
+    id="contacto"
 >
 
-    <div class="container">
+    <div class="shell contact-grid">
 
-        <div class="section-heading compact-heading">
+        <div class="contact-copy">
 
             <p class="eyebrow">
-                Laboratorio técnico
+                CONTACTO
             </p>
 
             <h2>
-                Herramientas utilizadas en prácticas,
-                proyectos y validaciones.
+                ¿Tienes un proyecto
+                en mente?
             </h2>
 
-        </div>
+            <p>
+                Podemos trabajar en desarrollo web,
+                diseño gráfico, infraestructura,
+                redes o ciberseguridad.
+            </p>
 
-        <div class="lab-grid">
+            <div class="contact-points">
 
-            <article class="lab-card">
-                <span class="lab-category">Networking</span>
-                <h3>Cisco Packet Tracer</h3>
-                <p>
-                    VLAN, VLSM, OSPF, PPP, PAP, CHAP,
-                    ACL y conectividad multi-router.
-                </p>
-            </article>
+                <div>
+                    <span>01</span>
+                    <p>
+                        Describe tu idea o necesidad.
+                    </p>
+                </div>
 
-            <article class="lab-card">
-                <span class="lab-category">Security Lab</span>
-                <h3>Kali Linux</h3>
-                <p>
-                    Entornos de laboratorio para análisis,
-                    diagnóstico y pruebas controladas.
-                </p>
-            </article>
+                <div>
+                    <span>02</span>
+                    <p>
+                        Definimos alcance y objetivos.
+                    </p>
+                </div>
 
-            <article class="lab-card">
-                <span class="lab-category">Traffic Analysis</span>
-                <h3>Wireshark</h3>
-                <p>
-                    Captura, filtrado y análisis de tráfico
-                    DNS, TCP, HTTP y eventos de red.
-                </p>
-            </article>
+                <div>
+                    <span>03</span>
+                    <p>
+                        Diseñamos una solución a medida.
+                    </p>
+                </div>
 
-            <article class="lab-card">
-                <span class="lab-category">Discovery</span>
-                <h3>Nmap</h3>
-                <p>
-                    Descubrimiento de hosts, servicios,
-                    puertos y análisis básico de exposición.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Security Testing</span>
-                <h3>Metasploit</h3>
-                <p>
-                    Uso en laboratorios autorizados para
-                    validación de vulnerabilidades.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Virtualization</span>
-                <h3>VirtualBox / VMware</h3>
-                <p>
-                    Creación de laboratorios aislados,
-                    snapshots y redes virtuales.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">NGFW</span>
-                <h3>Palo Alto / Sophos</h3>
-                <p>
-                    Arquitectura de firewall de nueva generación,
-                    políticas, segmentación y controles avanzados.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Monitoring</span>
-                <h3>PRTG / OpManager</h3>
-                <p>
-                    Monitoreo de disponibilidad,
-                    rendimiento, servicios y dispositivos.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Detection</span>
-                <h3>SIEM / Wazuh</h3>
-                <p>
-                    Centralización de eventos,
-                    alertas, telemetría y correlación.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Development</span>
-                <h3>Visual Studio / .NET</h3>
-                <p>
-                    Desarrollo de aplicaciones,
-                    arquitectura MVC y proyectos técnicos.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Data</span>
-                <h3>SQL Server</h3>
-                <p>
-                    Modelado, consultas, persistencia
-                    y administración de datos.
-                </p>
-            </article>
-
-            <article class="lab-card">
-                <span class="lab-category">Cloud</span>
-                <h3>AWS</h3>
-                <p>
-                    Uso académico para despliegue de
-                    infraestructura y validación de arquitectura.
-                </p>
-            </article>
+            </div>
 
         </div>
+
+
+        <form
+            class="contact-form"
+            id="contactForm"
+            novalidate
+        >
+
+            <div class="form-row">
+
+                <label>
+                    Nombre
+
+                    <input
+                        type="text"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+
+                    <span
+                        class="form-error"
+                        data-error="name"
+                    ></span>
+
+                </label>
+
+
+                <label>
+                    Correo electrónico
+
+                    <input
+                        type="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <span
+                        class="form-error"
+                        data-error="email"
+                    ></span>
+
+                </label>
+
+            </div>
+
+
+            <label>
+                Tipo de proyecto
+
+                <select name="project_type">
+                    <option value="Desarrollo web">
+                        Desarrollo web
+                    </option>
+                    <option value="Diseño gráfico">
+                        Diseño gráfico
+                    </option>
+                    <option value="Redes e infraestructura">
+                        Redes e infraestructura
+                    </option>
+                    <option value="Ciberseguridad">
+                        Ciberseguridad
+                    </option>
+                    <option value="Otro">
+                        Otro
+                    </option>
+                </select>
+
+            </label>
+
+
+            <label>
+                Mensaje
+
+                <textarea
+                    name="message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <span
+                    class="form-error"
+                    data-error="message"
+                ></span>
+
+            </label>
+
+
+            <button
+                class="btn btn-primary form-submit"
+                type="submit"
+            >
+                Enviar mensaje
+                <span>→</span>
+            </button>
+
+            <p
+                class="form-status"
+                id="formStatus"
+                role="status"
+                aria-live="polite"
+            ></p>
+
+        </form>
 
     </div>
 
 </section>
 
 
-<!-- HABILIDADES -->
-        <section
-            id="habilidades"
-            class="skills section"
-        >
-
-            <div class="container">
-
-                <p class="eyebrow">
-                    Technical Stack
-                </p>
-
-                <h2>
-                    Tecnologías y conceptos
-                </h2>
+</main>
 
 
-                <div class="skills-grid">
 
-                    <article class="skill-card">
-                        <span>01</span>
+<footer class="footer">
 
-                        <h3>
-                            Network Architecture
-                        </h3>
+    <div class="shell footer-layout">
 
-                        <p>
-                            VLAN · VLSM · OSPF · PPP · VPN
-                        </p>
-                    </article>
+        <div>
 
-
-                    <article class="skill-card">
-                        <span>02</span>
-
-                        <h3>
-                            Cybersecurity
-                        </h3>
-
-                        <p>
-                            Zero Trust · ZTNA · Defense in Depth
-                        </p>
-                    </article>
-
-
-                    <article class="skill-card">
-                        <span>03</span>
-
-                        <h3>
-                            Firewalls
-                        </h3>
-
-                        <p>
-                            Palo Alto · Sophos · NGFW
-                        </p>
-                    </article>
-
-
-                    <article class="skill-card">
-                        <span>04</span>
-
-                        <h3>
-                            Monitoring
-                        </h3>
-
-                        <p>
-                            SIEM · PRTG · OpManager · XDR
-                        </p>
-                    </article>
-
-
-                    <article class="skill-card">
-                        <span>05</span>
-
-                        <h3>
-                            Frameworks
-                        </h3>
-
-                        <p>
-                            NIST CSF 2.0 · ISO 27001
-                        </p>
-                    </article>
-
-
-                    <article class="skill-card">
-                        <span>06</span>
-
-                        <h3>
-                            Data Center
-                        </h3>
-
-                        <p>
-                            DMZ · Application Layer · Database Layer
-                        </p>
-                    </article>
-
-                </div>
-
+            <div class="footer-brand">
+                <span>WJ</span>
+                Waldo José J.
             </div>
 
-        </section>
-
-
-        <!-- CONTACTO -->
-        <section
-            id="contacto"
-            class="contact section"
-        >
-
-            <div class="container two-column">
-
-                <div>
-
-                    <p class="eyebrow">
-                        Contact
-                    </p>
-
-                    <h2>
-                        Hablemos de infraestructura.
-                    </h2>
-
-                    <p class="contact-description">
-                        Disponible para oportunidades profesionales,
-                        proyectos de infraestructura, redes y
-                        ciberseguridad.
-                    </p>
-
-                    <a
-                        href="https://github.com/waldouto"
-                        target="_blank"
-                        rel="noopener"
-                        class="professional-link"
-                    >
-                        GitHub · waldouto ↗
-                    </a>
-
-                </div>
-
-
-                <form
-                    id="contactForm"
-                    class="contact-form"
-                    novalidate
-                >
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Nombre
-                        </label>
-
-                        <input
-                            id="name"
-                            name="name"
-                            type="text"
-                            autocomplete="name"
-                            minlength="2"
-                            maxlength="80"
-                            required
-                        >
-
-                        <small
-                            class="error-message"
-                            data-error="name"
-                        ></small>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Correo electrónico
-                        </label>
-
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            autocomplete="email"
-                            maxlength="120"
-                            required
-                        >
-
-                        <small
-                            class="error-message"
-                            data-error="email"
-                        ></small>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Mensaje
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            minlength="10"
-                            maxlength="1000"
-                            required
-                        ></textarea>
-
-                        <small
-                            class="error-message"
-                            data-error="message"
-                        ></small>
-
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        class="button button-primary"
-                    >
-                        Enviar mensaje
-                    </button>
-
-
-                    <p
-                        id="formStatus"
-                        aria-live="polite"
-                    ></p>
-
-                </form>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer class="site-footer">
-
-        <div class="container footer-grid">
-
-            <div>
-
-                <strong>
-                    Waldo José J.
-                </strong>
-
-                <p>
-                    Networks · Security · Infrastructure
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <span>
-                    El Salvador · 2026
-                </span>
-
-                <a
-                    href="https://github.com/waldouto"
-                    target="_blank"
-                    rel="noopener"
-                    class="footer-social-link"
-                >
-                    GitHub ↗
-                </a>
-
-            </div>
+            <p>
+                Ingeniería · Redes · Seguridad · Diseño · Web
+            </p>
 
         </div>
 
-    </footer>
+
+        <div class="footer-nav">
+            <a href="#perfil">Perfil</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#evidencias">Evidencias</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+
+        <div class="footer-end">
+
+            <a
+                href="https://github.com/waldouto"
+                target="_blank"
+                rel="noopener"
+            >
+                GitHub ↗
+            </a>
+
+            <span>
+                El Salvador · 2026
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
 
 </body>
-
 </html>
