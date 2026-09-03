@@ -811,3 +811,515 @@ figcaption {
 
 }
 
+
+
+/* =========================================================
+   PROJECT INTERACTION + COLOR V3
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   TARJETAS CLICABLES
+--------------------------------------------------------- */
+
+.project-card-clickable {
+  cursor:
+    pointer;
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+
+.project-card-clickable:hover {
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 22px 55px
+    rgb(20 35 60 / .12);
+}
+
+
+.project-card-clickable:focus-visible {
+  outline:
+    3px solid #315ee8;
+
+  outline-offset:
+    5px;
+}
+
+
+.project-visual-link {
+  display:
+    block;
+
+  position:
+    relative;
+
+  width:
+    100%;
+
+  min-height:
+    inherit;
+
+  text-decoration:
+    none;
+}
+
+
+.project-visual-link::before {
+  content:
+    "Abrir caso";
+
+  position:
+    absolute;
+
+  right:
+    20px;
+
+  bottom:
+    18px;
+
+  z-index:
+    4;
+
+  padding:
+    8px 12px;
+
+  border-radius:
+    999px;
+
+  background:
+    rgb(255 255 255 / .90);
+
+  color:
+    #18243a;
+
+  font-size:
+    12px;
+
+  font-weight:
+    700;
+
+  opacity:
+    0;
+
+  transform:
+    translateY(5px);
+
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+
+.project-card:hover
+.project-visual-link::before {
+  opacity:
+    1;
+
+  transform:
+    translateY(0);
+}
+
+
+.project-link {
+  position:
+    relative;
+
+  z-index:
+    5;
+
+  font-weight:
+    700;
+}
+
+
+/* =========================================================
+   COLOR BASE PARA CASOS
+========================================================= */
+
+.case-study {
+  --case-accent:
+    #315ee8;
+
+  --case-accent-soft:
+    #edf2ff;
+
+  --case-accent-mid:
+    #dce5ff;
+
+  --case-ink:
+    #18243a;
+}
+
+
+body:has(.case-study) {
+  background:
+    #f6f8fb;
+}
+
+
+/* HERO DE CASO */
+
+.case-hero {
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      var(--case-accent-soft) 100%
+    );
+}
+
+
+.case-hero::after {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    420px;
+
+  height:
+    420px;
+
+  right:
+    -120px;
+
+  top:
+    -160px;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--case-accent);
+
+  opacity:
+    .08;
+
+  filter:
+    blur(2px);
+}
+
+
+.case-title {
+  color:
+    var(--case-ink);
+}
+
+
+.case-lead {
+  color:
+    #43516a !important;
+}
+
+
+.case-meta span {
+  border-color:
+    color-mix(
+      in srgb,
+      var(--case-accent) 25%,
+      #d8dee8
+    );
+
+  background:
+    var(--case-accent-soft);
+
+  color:
+    var(--case-ink);
+}
+
+
+/* TITULOS */
+
+.case-section-title .eyebrow,
+.case-wide-header .eyebrow,
+.case-next .eyebrow {
+  color:
+    var(--case-accent) !important;
+}
+
+
+.case-section-title h2,
+.case-wide-header h2 {
+  color:
+    var(--case-ink);
+}
+
+
+/* BLOQUES DE TEXTO */
+
+.case-prose {
+  color:
+    #3e4b60 !important;
+}
+
+
+/* TARJETAS DE DECISION */
+
+.case-mini-card {
+  position:
+    relative;
+
+  overflow:
+    hidden;
+
+  background:
+    #ffffff;
+
+  border-color:
+    #dce3ec;
+
+  box-shadow:
+    0 12px 34px
+    rgb(30 45 70 / .06);
+}
+
+
+.case-mini-card::before {
+  content:
+    "";
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  top:
+    0;
+
+  width:
+    5px;
+
+  height:
+    100%;
+
+  background:
+    var(--case-accent);
+}
+
+
+.case-mini-card h3 {
+  color:
+    var(--case-ink);
+}
+
+
+.case-mini-card p {
+  color:
+    #4b586c !important;
+}
+
+
+/* TECNOLOGIAS */
+
+.case-tech-stack span {
+  border:
+    1px solid
+    var(--case-accent-mid);
+
+  background:
+    var(--case-accent-soft);
+
+  color:
+    var(--case-ink);
+
+  font-weight:
+    600;
+}
+
+
+/* DIAGRAMA */
+
+.case-diagram-section {
+  background:
+    linear-gradient(
+      180deg,
+      #f8fafc,
+      var(--case-accent-soft)
+    );
+}
+
+
+.case-architecture {
+  border:
+    1px solid
+    var(--case-accent-mid);
+
+  box-shadow:
+    0 18px 55px
+    rgb(30 45 70 / .09);
+}
+
+
+/* APRENDIZAJES */
+
+.case-lessons {
+  background:
+    linear-gradient(
+      135deg,
+      var(--case-accent-soft),
+      #ffffff
+    );
+}
+
+
+/* CTA FINAL */
+
+.case-next {
+  background:
+    var(--case-ink);
+
+  color:
+    #ffffff;
+}
+
+
+.case-next h2 {
+  color:
+    #ffffff;
+}
+
+
+.case-next .eyebrow {
+  color:
+    #aebfff !important;
+}
+
+
+.case-next .button-secondary {
+  border-color:
+    rgb(255 255 255 / .40);
+
+  color:
+    #ffffff;
+}
+
+
+/* =========================================================
+   COLOR PARTICULAR POR PROYECTO
+========================================================= */
+
+body:has(
+  img[src*="zero-trust/"]
+)
+.case-study {
+  --case-accent:
+    #6356d8;
+
+  --case-accent-soft:
+    #f0efff;
+
+  --case-accent-mid:
+    #d9d5ff;
+}
+
+
+body:has(
+  img[src*="ngfw/"]
+)
+.case-study {
+  --case-accent:
+    #d4573d;
+
+  --case-accent-soft:
+    #fff0ec;
+
+  --case-accent-mid:
+    #ffd5ca;
+}
+
+
+body:has(
+  img[src*="cpd/"]
+)
+.case-study {
+  --case-accent:
+    #2c7f9d;
+
+  --case-accent-soft:
+    #eaf7fb;
+
+  --case-accent-mid:
+    #cceaf4;
+}
+
+
+body:has(
+  img[src*="vpn/"]
+)
+.case-study {
+  --case-accent:
+    #248765;
+
+  --case-accent-soft:
+    #eaf8f3;
+
+  --case-accent-mid:
+    #c7ebdf;
+}
+
+
+body:has(
+  img[src*="dmz/"]
+)
+.case-study {
+  --case-accent:
+    #a57935;
+
+  --case-accent-soft:
+    #fff7e7;
+
+  --case-accent-mid:
+    #f2dfb8;
+}
+
+
+body:has(
+  img[src*="ospf/"]
+)
+.case-study {
+  --case-accent:
+    #526b93;
+
+  --case-accent-soft:
+    #edf3fb;
+
+  --case-accent-mid:
+    #d6e0ef;
+}
+
+
+/* MOVIL */
+
+@media (max-width: 700px) {
+
+  .project-visual-link::before {
+    opacity:
+      1;
+
+    transform:
+      none;
+  }
+
+
+  .project-card-clickable:hover {
+    transform:
+      none;
+  }
+
+}
+
