@@ -1460,3 +1460,140 @@ body:has(
   }
 
 }
+
+
+/* =========================================================
+   HERO PANEL READABILITY FIX
+========================================================= */
+
+.hero-panel {
+  padding:
+    clamp(
+      30px,
+      3vw,
+      48px
+    ) !important;
+}
+
+.hero-panel .eyebrow {
+  margin-bottom:
+    16px !important;
+
+  font-size:
+    clamp(
+      12px,
+      .7vw,
+      14px
+    ) !important;
+
+  letter-spacing:
+    .16em !important;
+}
+
+.hero-panel h2 {
+  width:
+    100% !important;
+
+  max-width:
+    1350px !important;
+
+  margin:
+    0 !important;
+
+  font-size:
+    clamp(
+      2.35rem,
+      3.5vw,
+      4.5rem
+    ) !important;
+
+  line-height:
+    1.08 !important;
+
+  letter-spacing:
+    -.035em !important;
+
+  text-wrap:
+    pretty !important;
+}
+
+.hero-stats {
+  margin-top:
+    34px !important;
+
+  gap:
+    28px !important;
+}
+
+.hero-stats strong {
+  font-size:
+    clamp(
+      28px,
+      2.1vw,
+      42px
+    ) !important;
+
+  line-height:
+    1 !important;
+}
+
+.hero-stats span {
+  margin-top:
+    6px !important;
+
+  font-size:
+    clamp(
+      13px,
+      .8vw,
+      16px
+    ) !important;
+
+  line-height:
+    1.35 !important;
+}
+
+@media (min-width: 2100px) {
+
+  .hero-panel h2 {
+    font-size:
+      4.8rem !important;
+
+    line-height:
+      1.1 !important;
+  }
+
+  .hero-stats span {
+    font-size:
+      17px !important;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .hero-panel {
+    padding:
+      24px !important;
+  }
+
+  .hero-panel h2 {
+    font-size:
+      clamp(
+        2rem,
+        8.5vw,
+        2.8rem
+      ) !important;
+
+    line-height:
+      1.08 !important;
+  }
+
+  .hero-stats {
+    gap:
+      14px !important;
+
+    margin-top:
+      26px !important;
+  }
+
+}
