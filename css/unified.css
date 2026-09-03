@@ -2011,3 +2011,100 @@
 
 }
 
+
+/* =========================================================
+   CONTACT + FOOTER CONTRAST FIX
+========================================================= */
+
+.contact-section {
+    color: #ffffff !important;
+}
+
+.contact-copy h2,
+.contact-copy .eyebrow {
+    color: #ffffff !important;
+}
+
+.contact-copy > p:not(.eyebrow) {
+    color: #d5deee !important;
+}
+
+.contact-points p {
+    color: #d9e2f1 !important;
+}
+
+.contact-points span {
+    color: #a8c1ff !important;
+
+    background:
+        rgba(80,120,230,.20) !important;
+}
+
+.contact-form label {
+    color: #eef3fb !important;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    color: #ffffff !important;
+
+    background:
+        rgba(5,17,37,.72) !important;
+
+    border-color:
+        rgba(255,255,255,.18) !important;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #9eacc2 !important;
+}
+
+.form-status {
+    color: #d2dced !important;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    color: #ffffff !important;
+}
+
+.footer-brand {
+    color: #ffffff !important;
+}
+
+.footer-layout p {
+    color: #b8c4d7 !important;
+}
+
+.footer a {
+    color: #c8d4e7 !important;
+}
+
+.footer a:hover {
+    color: #ffffff !important;
+}
+
+.footer-end {
+    color: #aebbd0 !important;
+}
+
+.visit-counter {
+    color: #b8c5d9 !important;
+
+    border-color:
+        rgba(255,255,255,.13) !important;
+
+    background:
+        rgba(255,255,255,.055) !important;
+}
+
+.visit-counter strong {
+    color: #ffffff !important;
+}
+
