@@ -304,3 +304,60 @@
 
 })();
 
+
+/* =========================================================
+   VISIT COUNTER
+========================================================= */
+
+(async () => {
+
+    const counter =
+        document.getElementById("visitCount");
+
+    if (!counter) {
+        return;
+    }
+
+    try {
+
+        const response =
+            await fetch(
+                "https://api.counterapi.dev/v1/waldouto/portafolio-tecnico/up"
+            );
+
+        if (!response.ok) {
+            throw new Error("Counter request failed");
+        }
+
+        const data =
+            await response.json();
+
+        const value =
+            data.count ??
+            data.value ??
+            data.total ??
+            null;
+
+        if (value === null) {
+            throw new Error("Invalid counter response");
+        }
+
+        counter.textContent =
+            new Intl.NumberFormat("es-SV")
+                .format(value);
+
+    }
+    catch (error) {
+
+        console.error(
+            "Visit counter:",
+            error
+        );
+
+        counter.textContent =
+            "—";
+
+    }
+
+})();
+

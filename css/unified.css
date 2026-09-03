@@ -1963,3 +1963,51 @@
 
 }
 
+
+/* =========================================================
+   VISIT COUNTER
+========================================================= */
+
+.visit-counter {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    padding:
+        7px
+        10px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    color:
+        #8190a7;
+}
+
+
+.visit-counter strong {
+    color:
+        #b8c8e2;
+
+    font-weight:
+        750;
+}
+
+
+@media (max-width: 650px) {
+
+    .visit-counter {
+        justify-content: center;
+    }
+
+}
+
