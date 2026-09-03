@@ -952,3 +952,783 @@
 
 }
 
+
+/* =========================================================
+   EDUCATION COMPLETE REBUILD V4
+========================================================= */
+
+.education-section {
+    background:
+        linear-gradient(
+            180deg,
+            #eef3f9 0%,
+            #f7f9fc 100%
+        ) !important;
+}
+
+
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.education-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        1fr !important;
+
+    gap:
+        20px !important;
+
+    margin-bottom:
+        42px !important;
+}
+
+
+/* =========================================================
+   UNIVERSIDAD - HORIZONTAL
+========================================================= */
+
+.university-panel {
+    display: grid !important;
+
+    grid-template-columns:
+        180px
+        minmax(0, 1.15fr)
+        minmax(280px, .85fr) !important;
+
+    align-items:
+        center !important;
+
+    gap:
+        28px !important;
+
+    min-height:
+        0 !important;
+
+    padding:
+        30px !important;
+
+    border:
+        1px solid rgba(26,50,82,.09) !important;
+
+    border-radius:
+        27px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f8fbff
+        ) !important;
+
+    box-shadow:
+        0 18px 48px
+        rgba(18,42,74,.075) !important;
+}
+
+
+.university-logo-box {
+    min-height:
+        180px !important;
+
+    height:
+        180px !important;
+
+    padding:
+        18px !important;
+
+    border-radius:
+        21px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #edf3ff,
+            #f8fbff
+        ) !important;
+}
+
+
+.university-logo-box img {
+    width:
+        135px !important;
+
+    max-height:
+        145px !important;
+}
+
+
+.university-logo-box::after {
+    display:
+        none !important;
+}
+
+
+/* contenido central */
+
+.university-panel > div:nth-child(2) {
+    min-width:
+        0;
+}
+
+
+.university-panel h3 {
+    margin-bottom:
+        12px !important;
+
+    font-size:
+        clamp(
+            1.8rem,
+            3vw,
+            2.65rem
+        ) !important;
+
+    line-height:
+        1.02 !important;
+}
+
+
+.university-panel > div:nth-child(2) > p:not(.eyebrow) {
+    max-width:
+        620px;
+
+    color:
+        #617087 !important;
+
+    line-height:
+        1.72 !important;
+}
+
+
+/* los chips ya no abajo sueltos */
+
+.university-panel .panel-chips {
+    display:
+        grid !important;
+
+    grid-template-columns:
+        1fr !important;
+
+    gap:
+        10px !important;
+
+    margin:
+        0 !important;
+}
+
+
+.university-panel .panel-chips span {
+    display:
+        flex !important;
+
+    align-items:
+        center;
+
+    min-height:
+        52px;
+
+    padding:
+        0
+        16px !important;
+
+    border:
+        1px solid
+        rgba(71,119,232,.09);
+
+    border-radius:
+        15px !important;
+
+    background:
+        #f2f6fd !important;
+
+    color:
+        #4266a7 !important;
+
+    font-size:
+        .78rem !important;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   PREESPECIALIDAD - BLOQUE COMPLETO
+========================================================= */
+
+.specialty-panel {
+    display:
+        block !important;
+
+    padding:
+        30px !important;
+
+    border:
+        1px solid
+        rgba(26,50,82,.09) !important;
+
+    border-radius:
+        27px !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f6f8ff
+        ) !important;
+
+    box-shadow:
+        0 18px 48px
+        rgba(18,42,74,.075) !important;
+}
+
+
+.specialty-panel > .eyebrow {
+    margin-bottom:
+        11px !important;
+}
+
+
+.specialty-panel h3 {
+    margin-bottom:
+        24px !important;
+
+    font-size:
+        clamp(
+            1.8rem,
+            3vw,
+            2.65rem
+        ) !important;
+}
+
+
+.module-grid {
+    display:
+        grid !important;
+
+    grid-template-columns:
+        repeat(
+            5,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        12px !important;
+
+    margin-top:
+        0 !important;
+}
+
+
+.module-grid > div {
+    min-height:
+        145px !important;
+
+    padding:
+        18px
+        16px !important;
+
+    border:
+        1px solid
+        rgba(28,51,82,.08) !important;
+
+    border-radius:
+        18px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef3fb
+        ) !important;
+
+    box-shadow:
+        none !important;
+}
+
+
+.module-grid > div:nth-child(1) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eaf3ff
+        ) !important;
+}
+
+.module-grid > div:nth-child(2) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef0fb
+        ) !important;
+}
+
+.module-grid > div:nth-child(3) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eaf6f1
+        ) !important;
+}
+
+.module-grid > div:nth-child(4) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f6eef3
+        ) !important;
+}
+
+.module-grid > div:nth-child(5) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8f2e5
+        ) !important;
+}
+
+
+.module-grid b {
+    position:
+        static !important;
+
+    display:
+        inline-flex !important;
+
+    width:
+        auto !important;
+
+    height:
+        auto !important;
+
+    margin-top:
+        14px !important;
+
+    padding:
+        6px
+        9px !important;
+
+    border-radius:
+        999px !important;
+
+    background:
+        #edf3ff !important;
+
+    color:
+        #4777e8 !important;
+}
+
+
+/* =========================================================
+   TRAYECTORIA - LINEA REAL
+========================================================= */
+
+.timeline {
+    position:
+        relative;
+
+    display:
+        grid !important;
+
+    grid-template-columns:
+        repeat(
+            6,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        0 !important;
+
+    padding:
+        30px
+        22px
+        22px !important;
+
+    overflow:
+        visible !important;
+
+    border:
+        1px solid
+        rgba(26,50,82,.09) !important;
+
+    border-radius:
+        25px !important;
+
+    background:
+        #ffffff !important;
+
+    box-shadow:
+        0 14px 38px
+        rgba(18,42,74,.06) !important;
+}
+
+
+.timeline::before {
+    content: "" !important;
+
+    display:
+        block !important;
+
+    position:
+        absolute;
+
+    left:
+        8%;
+
+    right:
+        8%;
+
+    top:
+        47px;
+
+    height:
+        3px;
+
+    border-radius:
+        999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #69bfd0,
+            #4777e8,
+            #8582d7,
+            #72ba94,
+            #ca789d,
+            #ddbd6c
+        ) !important;
+
+    opacity:
+        .75;
+}
+
+
+.timeline article {
+    position:
+        relative;
+
+    min-height:
+        155px !important;
+
+    padding:
+        0
+        15px
+        12px !important;
+
+    border:
+        0 !important;
+
+    border-radius:
+        0 !important;
+
+    background:
+        transparent !important;
+
+    box-shadow:
+        none !important;
+
+    text-align:
+        center;
+}
+
+
+.timeline article::before {
+    content: "" !important;
+
+    position:
+        relative !important;
+
+    display:
+        block !important;
+
+    width:
+        15px !important;
+
+    height:
+        15px !important;
+
+    margin:
+        10px
+        auto
+        18px !important;
+
+    border:
+        4px solid
+        #ffffff !important;
+
+    border-radius:
+        50% !important;
+
+    box-shadow:
+        0 0 0 2px
+        #4777e8 !important;
+
+    background:
+        #4777e8 !important;
+}
+
+
+.timeline article:nth-child(1)::before {
+    background:
+        #69bfd0 !important;
+
+    box-shadow:
+        0 0 0 2px #69bfd0 !important;
+}
+
+.timeline article:nth-child(2)::before {
+    background:
+        #4777e8 !important;
+
+    box-shadow:
+        0 0 0 2px #4777e8 !important;
+}
+
+.timeline article:nth-child(3)::before {
+    background:
+        #8582d7 !important;
+
+    box-shadow:
+        0 0 0 2px #8582d7 !important;
+}
+
+.timeline article:nth-child(4)::before {
+    background:
+        #72ba94 !important;
+
+    box-shadow:
+        0 0 0 2px #72ba94 !important;
+}
+
+.timeline article:nth-child(5)::before {
+    background:
+        #ca789d !important;
+
+    box-shadow:
+        0 0 0 2px #ca789d !important;
+}
+
+.timeline article:nth-child(6)::before {
+    background:
+        #ddbd6c !important;
+
+    box-shadow:
+        0 0 0 2px #ddbd6c !important;
+}
+
+
+.timeline article > span {
+    display:
+        block !important;
+
+    margin:
+        0
+        0
+        11px !important;
+
+    padding:
+        0 !important;
+
+    border:
+        0 !important;
+
+    background:
+        transparent !important;
+
+    color:
+        #4777e8 !important;
+
+    font-size:
+        1.02rem !important;
+
+    font-weight:
+        850;
+}
+
+
+.timeline h3 {
+    margin-bottom:
+        7px !important;
+
+    font-size:
+        .85rem !important;
+
+    line-height:
+        1.3;
+}
+
+
+.timeline p {
+    max-width:
+        180px;
+
+    margin-inline:
+        auto !important;
+
+    font-size:
+        .7rem !important;
+
+    line-height:
+        1.5 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .university-panel {
+        grid-template-columns:
+            160px
+            minmax(0, 1fr) !important;
+    }
+
+    .university-panel .panel-chips {
+        grid-column:
+            1 / -1;
+
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0,1fr)
+            ) !important;
+    }
+
+
+    .module-grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0,1fr)
+            ) !important;
+    }
+
+
+    .timeline {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0,1fr)
+            ) !important;
+
+        gap:
+            18px !important;
+    }
+
+
+    .timeline::before {
+        display:
+            none !important;
+    }
+
+
+    .timeline article {
+        padding:
+            18px !important;
+
+        border:
+            1px solid
+            rgba(28,51,82,.08) !important;
+
+        border-radius:
+            17px !important;
+
+        background:
+            #f8faff !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOVIL
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .university-panel {
+        grid-template-columns:
+            1fr !important;
+
+        padding:
+            20px !important;
+    }
+
+
+    .university-logo-box {
+        height:
+            165px !important;
+
+        min-height:
+            165px !important;
+    }
+
+
+    .university-panel .panel-chips {
+        grid-template-columns:
+            1fr !important;
+    }
+
+
+    .specialty-panel {
+        padding:
+            20px !important;
+    }
+
+
+    .module-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+
+    .module-grid > div {
+        min-height:
+            0 !important;
+    }
+
+
+    .timeline {
+        grid-template-columns:
+            1fr !important;
+
+        padding:
+            16px !important;
+    }
+
+
+    .timeline article {
+        min-height:
+            0 !important;
+
+        text-align:
+            left;
+    }
+
+
+    .timeline article::before {
+        margin:
+            0
+            0
+            13px !important;
+    }
+
+
+    .timeline p {
+        max-width:
+            none;
+
+        margin-inline:
+            0 !important;
+    }
+
+}
+
