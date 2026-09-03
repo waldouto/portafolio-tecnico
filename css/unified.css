@@ -4541,3 +4541,200 @@ cat >> css/unified.css <<'CSS'
 
 }
 
+
+/* =========================================================
+   EVIDENCE SECTION CONTRAST FIX
+========================================================= */
+
+.evidence-section {
+    color: #ffffff !important;
+}
+
+
+/* encabezado de sección */
+
+.evidence-section .eyebrow {
+    color: #78a3ff !important;
+}
+
+.evidence-section .section-heading h2 {
+    color: #ffffff !important;
+}
+
+.evidence-section .section-heading > p {
+    color: #c5d0e2 !important;
+
+    opacity: 1 !important;
+}
+
+
+/* tarjetas */
+
+.evidence-section .evidence-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.12),
+            rgba(255,255,255,.055)
+        ) !important;
+
+    border-color:
+        rgba(255,255,255,.13) !important;
+}
+
+
+/* número superior */
+
+.evidence-section .evidence-number {
+    color:
+        rgba(219,229,246,.68) !important;
+}
+
+
+/* categoría */
+
+.evidence-section .evidence-card .eyebrow {
+    color: #6f9cff !important;
+}
+
+
+/* títulos principales */
+
+.evidence-section .evidence-card h3 {
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+
+    text-shadow:
+        0 1px 1px rgba(0,0,0,.08);
+}
+
+
+/* texto descriptivo */
+
+.evidence-section .evidence-card p:not(.eyebrow) {
+    color: #c4cfdf !important;
+
+    opacity: 1 !important;
+
+    line-height: 1.65;
+}
+
+
+/* icono */
+
+.evidence-section .evidence-icon {
+    color: #628be8 !important;
+
+    background: #f1f5ff !important;
+
+    border-color:
+        rgba(255,255,255,.18) !important;
+}
+
+
+/* tags */
+
+.evidence-section .evidence-tags span {
+    color: #355177 !important;
+
+    background: #f2f6fc !important;
+
+    border-color:
+        rgba(255,255,255,.20) !important;
+}
+
+
+/* links */
+
+.evidence-section .evidence-card > a,
+.evidence-section .evidence-card > strong {
+    color: #6d9aff !important;
+
+    font-weight: 800;
+}
+
+
+.evidence-section .evidence-card > a:hover {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CONTACTO - AJUSTE FINO
+========================================================= */
+
+.contact-section .eyebrow {
+    color: #8baaff !important;
+}
+
+.contact-section h2 {
+    color: #ffffff !important;
+}
+
+.contact-section .contact-copy > p {
+    color: #d1dbea !important;
+}
+
+.contact-section .contact-points p {
+    color: #d8e1ef !important;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer,
+.footer a,
+.footer p,
+.footer span {
+    opacity: 1;
+}
+
+.footer-brand strong {
+    color: #ffffff !important;
+}
+
+.footer-brand p {
+    color: #9eacc0 !important;
+}
+
+.footer-nav a {
+    color: #bdc9da !important;
+}
+
+.footer-end,
+.footer-end span {
+    color: #9fadc0 !important;
+}
+
+.footer-visit-counter strong {
+    color: #ffffff !important;
+}
+
+.footer-visit-label {
+    color: #aebbd0 !important;
+}
+
+
+/* =========================================================
+   MOVIL
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .evidence-section .section-heading > p {
+        color: #c8d3e4 !important;
+    }
+
+    .evidence-section .evidence-card h3 {
+        font-size: 1.05rem !important;
+    }
+
+    .evidence-section .evidence-card p:not(.eyebrow) {
+        color: #cbd5e3 !important;
+    }
+
+}
+
