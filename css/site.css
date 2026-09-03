@@ -3822,6 +3822,356 @@ section {
 
 }
 
+.hero .container {
+  text-align: left;
+}
+
+.hero-content,
+.hero-copy {
+  max-width: 1450px;
+  margin-inline: auto;
+}
+
+.hero-title {
+  max-width: 1450px;
+  margin-inline: auto;
+  text-align: left;
+
+  font-size:
+    clamp(
+      4.4rem,
+      7.4vw,
+      8rem
+    );
+
+  line-height: .94;
+}
+
+.hero-description {
+  max-width: 1050px;
+  margin:
+    28px 0 0;
+
+  text-align: left;
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-actions {
+  justify-content: flex-start;
+}
+
+.hero-panel {
+  max-width: none !important;
+
+  margin:
+    56px 0 0 !important;
+
+  text-align: left;
+}
+
+.hero-panel h2 {
+  max-width: 1200px;
+
+  margin-inline: 0;
+
+  text-align: left;
+}
+
+.hero-stats {
+  text-align: left;
+
+  gap: 50px;
+}
+
+.profile-heading {
+  max-width: none;
+}
+
+.profile-heading > div {
+  margin-inline: 0;
+  text-align: left;
+}
+
+.profile-heading h2,
+.profile-role {
+  text-align: left;
+}
+
+.profile-status {
+  margin-inline: 0;
+}
+
+.profile-layout {
+  max-width: none;
+
+  gap: 34px;
+}
+
+.profile-main {
+  text-align: left;
+}
+
+.profile-summary h3 {
+  text-align: left;
+}
+
+.profile-summary p {
+  max-width: none;
+
+  margin-left: 0;
+  margin-right: 0;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.profile-actions {
+  justify-content: flex-start;
+}
+
+.profile-details {
+  gap: 24px;
+}
+
+.profile-detail-card {
+  padding: 30px;
+
+  min-height: 280px;
+}
+
+.project-grid {
+  gap:
+    34px
+    34px;
+}
+
+.project-card {
+  margin-bottom: 0;
+}
+
+.skills-grid,
+.technical-grid {
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 28px;
+}
+
+.about .container,
+.about-grid {
+  max-width: none;
+}
+
+.about-grid {
+  gap: 80px;
+}
+
+.about h2,
+.about-title {
+  text-align: left;
+}
+
+.about-content,
+.about-copy {
+  text-align: left;
+}
+
+.about-content p,
+.about-copy p {
+  max-width: none;
+
+  margin-left: 0;
+  margin-right: 0;
+
+  text-align: justify;
+}
+
+.skills .container,
+.technical-stack .container {
+  max-width: none;
+}
+
+.skills h2,
+.technical-stack h2,
+.skills .eyebrow,
+.technical-stack .eyebrow {
+  text-align: left;
+}
+
+.contact .container,
+.contact-grid {
+  max-width: none;
+}
+
+.contact-grid {
+  gap: 90px;
+}
+
+.contact-copy,
+.contact-info {
+  text-align: left;
+}
+
+.contact-copy p,
+.contact-info p {
+  max-width: none;
+
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.site-footer {
+  padding:
+    40px 0;
+}
+
+.site-footer .container,
+.footer-grid {
+  width:
+    min(
+      calc(100% - 64px),
+      1420px
+    );
+
+  margin-inline: auto;
+}
+
+.footer-grid {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+.footer-grid strong,
+.footer-brand {
+  font-size: 26px;
+}
+
+.footer-grid p,
+.footer-grid span,
+.footer-meta {
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+.nav-list,
+.site-nav ul {
+  gap: 34px;
+}
+
+.nav-list a,
+.site-nav a,
+.nav-contact {
+  font-size: 17px;
+}
+
+@media (min-width: 1400px) {
+
+  .container {
+    width:
+      min(
+        calc(100% - 52px),
+        1680px
+      );
+  }
+
+  .hero-content,
+  .hero-copy {
+    max-width: 1500px;
+  }
+
+  .hero-title {
+    max-width: 1500px;
+  }
+
+}
+
+@media (min-width: 1800px) {
+
+  .container {
+    width:
+      min(
+        calc(100% - 64px),
+        1840px
+      );
+  }
+
+  .hero-content,
+  .hero-copy {
+    max-width: 1650px;
+  }
+
+  .hero-title {
+    max-width: 1650px;
+  }
+
+  .project-grid {
+    gap:
+      42px
+      42px;
+  }
+
+  .profile-details {
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .hero-title,
+  .hero-description,
+  .profile-summary h3,
+  .profile-summary p,
+  .about h2,
+  .about-title,
+  .about-content,
+  .about-copy,
+  .contact-copy,
+  .contact-info {
+    text-align: left;
+  }
+
+  .profile-summary p,
+  .about-content p,
+  .about-copy p {
+    text-align: left;
+  }
+
+  .profile-details,
+  .project-grid,
+  .skills-grid,
+  .technical-grid {
+    gap: 18px;
+  }
+
+  .site-footer .container,
+  .footer-grid {
+    width:
+      min(
+        calc(100% - 28px),
+        100%
+      );
+  }
+
+  .footer-grid {
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 12px;
+  }
+
+}
+
 @media (max-width:1100px){
 .hero-grid,.two-column{grid-template-columns:1fr;gap:42px}
 .section-header{flex-direction:column;align-items:flex-start;gap:24px}
