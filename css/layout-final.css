@@ -3472,3 +3472,1237 @@ body:has(.case-study) .site-header .text-link{
 
 }
 
+
+/* =========================================================
+   UNIFIED PROFESSIONAL DESIGN SYSTEM V16
+   ========================================================= */
+
+:root {
+    --pro-blue: #2f73e8;
+    --pro-blue-soft: #eef4ff;
+    --pro-blue-softer: #f7f9ff;
+
+    --pro-ink: #17243a;
+    --pro-text: #58677c;
+    --pro-muted: #7a8798;
+
+    --pro-border: rgba(25, 48, 78, .105);
+
+    --pro-white: #ffffff;
+
+    --pro-radius-xl: 28px;
+    --pro-radius-lg: 22px;
+    --pro-radius-md: 17px;
+
+    --pro-shadow:
+        0 16px 48px rgba(25, 48, 78, .055);
+}
+
+
+/* =========================================================
+   TITULOS Y JERARQUIA
+   ========================================================= */
+
+.professional-profile .profile-card-label,
+.achievements-section .eyebrow,
+.lab-section .eyebrow,
+.evidence-section .eyebrow,
+.case-study .eyebrow {
+    color: var(--pro-blue) !important;
+
+    font-size: 11px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: .14em !important;
+
+    text-transform: uppercase;
+}
+
+
+.profile-detail-card h3,
+.achievement-card h3,
+.lab-card h3,
+.evidence-card h3,
+.case-study h2,
+.case-study h3 {
+    color: var(--pro-ink);
+}
+
+
+.profile-detail-card p,
+.lab-card p,
+.evidence-card p,
+.case-study p {
+    color: var(--pro-text);
+}
+
+
+/* =========================================================
+   PERFIL - FICHAS PRINCIPALES
+   ========================================================= */
+
+.profile-details {
+    display: grid !important;
+
+    grid-template-columns:
+        1fr !important;
+
+    gap: 26px !important;
+
+    width: 100%;
+}
+
+
+.profile-detail-card {
+    display: grid !important;
+
+    grid-template-columns:
+        minmax(180px, 260px)
+        minmax(0, 1fr);
+
+    gap: 34px !important;
+
+    width: 100% !important;
+
+    min-height: 0 !important;
+
+    padding: 30px !important;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-top:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-xl) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbfcff
+        ) !important;
+
+    box-shadow:
+        var(--pro-shadow) !important;
+}
+
+
+/* quitar colores anteriores demasiado fuertes */
+
+.profile-detail-accent,
+.university-card {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8faff
+        ) !important;
+
+    border-color:
+        var(--pro-border) !important;
+}
+
+
+/* =========================================================
+   LADO VISUAL DE LAS FICHAS
+   ========================================================= */
+
+.profile-card-side,
+.university-logo-wrap {
+    display: flex !important;
+
+    flex-direction: column;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        flex-start;
+
+    min-height: 100%;
+
+    padding: 20px;
+
+    border-radius:
+        var(--pro-radius-lg);
+
+    background:
+        var(--pro-blue-softer) !important;
+}
+
+
+.university-logo-wrap {
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.university-logo {
+    width:
+        min(
+            100%,
+            190px
+        ) !important;
+
+    height: auto !important;
+
+    object-fit: contain !important;
+
+    filter:
+        drop-shadow(
+            0 10px 18px
+            rgba(25, 48, 78, .08)
+        );
+}
+
+
+.profile-number {
+    color:
+        var(--pro-muted) !important;
+
+    font-size:
+        .8rem;
+
+    font-weight:
+        700;
+}
+
+
+/* =========================================================
+   CUERPO DE FICHAS
+   ========================================================= */
+
+.profile-card-body {
+    min-width: 0;
+
+    padding:
+        4px
+        0;
+}
+
+
+.profile-card-body > h3 {
+    margin:
+        8px
+        0
+        13px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            1.8rem,
+            3vw,
+            3rem
+        );
+
+    line-height:
+        1.05;
+}
+
+
+.profile-card-body > p {
+    max-width:
+        950px;
+
+    line-height:
+        1.7;
+}
+
+
+.card-lead {
+    max-width:
+        850px;
+
+    margin-bottom:
+        22px !important;
+
+    color:
+        #43546d !important;
+
+    font-size:
+        1rem !important;
+
+    line-height:
+        1.65 !important;
+}
+
+
+/* =========================================================
+   TARJETAS INTERNAS
+   ========================================================= */
+
+.information-grid,
+.course-groups {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        14px !important;
+
+    margin-top:
+        24px;
+}
+
+
+.information-grid > div,
+.course-group {
+    padding:
+        20px !important;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-left:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-md) !important;
+
+    background:
+        #ffffff !important;
+}
+
+
+.information-grid strong,
+.course-group strong {
+    display: block;
+
+    margin-bottom:
+        7px;
+
+    color:
+        var(--pro-ink) !important;
+}
+
+
+.information-grid span,
+.course-group span {
+    color:
+        var(--pro-text) !important;
+
+    line-height:
+        1.55;
+}
+
+
+/* =========================================================
+   PREESPECIALIDAD
+   ========================================================= */
+
+.specialization-mark {
+    margin-top:
+        auto;
+}
+
+
+.specialization-mark strong {
+    color:
+        var(--pro-blue) !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        3rem !important;
+}
+
+
+.specialization-mark span {
+    color:
+        var(--pro-muted) !important;
+}
+
+
+.module-list {
+    margin-top:
+        24px;
+
+    border-top:
+        1px solid var(--pro-border) !important;
+}
+
+
+.module-row {
+    padding:
+        18px
+        0 !important;
+
+    border-bottom:
+        1px solid var(--pro-border) !important;
+}
+
+
+.module-row small {
+    color:
+        var(--pro-blue) !important;
+
+    font-weight:
+        750;
+}
+
+
+.module-grade {
+    display: grid;
+
+    place-items: center;
+
+    min-width:
+        58px;
+
+    height:
+        44px;
+
+    padding:
+        0
+        12px;
+
+    border-radius:
+        14px;
+
+    background:
+        var(--pro-blue-soft);
+
+    color:
+        var(--pro-blue) !important;
+
+    font-size:
+        1.25rem !important;
+}
+
+
+/* =========================================================
+   PROYECTO DESTACADO
+   ========================================================= */
+
+.project-score-large {
+    margin-top:
+        auto;
+}
+
+
+.project-score-large strong {
+    color:
+        var(--pro-blue) !important;
+
+    font-size:
+        clamp(
+            3rem,
+            6vw,
+            5rem
+        ) !important;
+}
+
+
+.project-score-large span {
+    color:
+        var(--pro-muted) !important;
+}
+
+
+/* =========================================================
+   TAGS
+   ========================================================= */
+
+.profile-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        8px;
+
+    margin-top:
+        22px;
+}
+
+
+.profile-tags span {
+    padding:
+        7px
+        11px !important;
+
+    border:
+        1px solid
+        rgba(
+            47,
+            115,
+            232,
+            .12
+        ) !important;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--pro-blue-soft) !important;
+
+    color:
+        #3969bd !important;
+
+    font-size:
+        .76rem;
+}
+
+
+/* =========================================================
+   LOGROS
+   ========================================================= */
+
+.achievements-section {
+    width: 100%;
+
+    margin-top:
+        30px;
+}
+
+
+.achievements-section .container {
+    width: 100%;
+}
+
+
+.achievement-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        14px !important;
+}
+
+
+.achievement-card {
+    min-height:
+        190px;
+
+    padding:
+        22px !important;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-lg) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbfcff
+        ) !important;
+
+    box-shadow:
+        none !important;
+}
+
+
+.achievement-card strong {
+    color:
+        var(--pro-blue) !important;
+
+    font-size:
+        2rem !important;
+}
+
+
+.achievement-card span {
+    color:
+        var(--pro-ink) !important;
+
+    font-weight:
+        750;
+}
+
+
+.achievement-card p {
+    color:
+        var(--pro-text) !important;
+
+    line-height:
+        1.55;
+}
+
+
+.achievement-accent {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f3f7ff
+        ) !important;
+}
+
+
+/* =========================================================
+   LABORATORIO
+   ========================================================= */
+
+.lab-section {
+    background:
+        #fbfcff;
+}
+
+
+.lab-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        16px !important;
+}
+
+
+.lab-card {
+    min-height:
+        205px !important;
+
+    padding:
+        24px !important;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-lg) !important;
+
+    background:
+        #ffffff !important;
+
+    box-shadow:
+        none !important;
+
+    transition:
+        transform
+        .18s ease,
+        box-shadow
+        .18s ease,
+        border-color
+        .18s ease;
+}
+
+
+.lab-card:hover {
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(
+            47,
+            115,
+            232,
+            .25
+        ) !important;
+
+    box-shadow:
+        0 14px 35px
+        rgba(
+            30,
+            55,
+            90,
+            .07
+        ) !important;
+}
+
+
+.lab-category {
+    display: inline-flex;
+
+    width: fit-content;
+
+    padding:
+        7px
+        10px;
+
+    margin-bottom:
+        18px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--pro-blue-soft);
+
+    color:
+        var(--pro-blue) !important;
+}
+
+
+/* =========================================================
+   EVIDENCIAS
+   ========================================================= */
+
+.evidence-section {
+    background:
+        #ffffff;
+}
+
+
+.evidence-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        18px !important;
+}
+
+
+.evidence-card {
+    min-height:
+        100%;
+
+    padding:
+        26px !important;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-xl) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbfcff
+        ) !important;
+
+    box-shadow:
+        var(--pro-shadow) !important;
+}
+
+
+.evidence-card-top {
+    margin-bottom:
+        20px;
+}
+
+
+.evidence-type {
+    color:
+        var(--pro-blue) !important;
+}
+
+
+.evidence-status {
+    background:
+        var(--pro-blue-soft) !important;
+
+    color:
+        #4a6ca4 !important;
+}
+
+
+.evidence-tags span {
+    border:
+        1px solid
+        rgba(
+            47,
+            115,
+            232,
+            .10
+        );
+
+    background:
+        var(--pro-blue-soft) !important;
+
+    color:
+        #476a9d !important;
+}
+
+
+.evidence-points div {
+    border:
+        1px solid var(--pro-border);
+
+    background:
+        #ffffff !important;
+}
+
+
+.evidence-link {
+    color:
+        var(--pro-blue) !important;
+}
+
+
+/* =========================================================
+   FILTROS
+   ========================================================= */
+
+.evidence-filter-button {
+    border:
+        1px solid var(--pro-border) !important;
+
+    background:
+        #ffffff !important;
+
+    color:
+        var(--pro-text) !important;
+}
+
+
+.evidence-filter-button:hover,
+.evidence-filter-button.is-active {
+    border-color:
+        var(--pro-blue) !important;
+
+    background:
+        var(--pro-blue) !important;
+
+    color:
+        #ffffff !important;
+}
+
+
+/* =========================================================
+   CASOS DE ESTUDIO
+   ========================================================= */
+
+.case-study {
+    background:
+        #fbfcff;
+}
+
+
+.case-study > .section {
+    border-bottom:
+        1px solid
+        rgba(
+            25,
+            48,
+            78,
+            .055
+        );
+}
+
+
+.case-study .case-intro-grid {
+    align-items:
+        start;
+}
+
+
+.case-section-title {
+    padding:
+        8px
+        0;
+}
+
+
+.case-section-title h2,
+.case-wide-header h2 {
+    margin-top:
+        8px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            3.6rem
+        );
+
+    line-height:
+        1.05;
+}
+
+
+.case-prose {
+    padding:
+        26px;
+
+    border:
+        1px solid var(--pro-border);
+
+    border-radius:
+        var(--pro-radius-lg);
+
+    background:
+        #ffffff;
+}
+
+
+.case-prose p {
+    margin:
+        0;
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.75;
+}
+
+
+/* decisiones / riesgos */
+
+.case-decision-grid {
+    display: grid;
+
+    gap:
+        16px !important;
+}
+
+
+.case-mini-card {
+    padding:
+        22px !important;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-lg) !important;
+
+    background:
+        #ffffff !important;
+}
+
+
+.case-mini-card::before {
+    content: "";
+
+    display: block;
+
+    width:
+        36px;
+
+    height:
+        4px;
+
+    margin-bottom:
+        18px;
+
+    border-radius:
+        999px;
+
+    background:
+        var(--pro-blue);
+}
+
+
+.case-mini-card h3 {
+    margin:
+        0
+        0
+        9px;
+
+    color:
+        var(--pro-ink);
+}
+
+
+.case-mini-card p {
+    margin:
+        0;
+
+    color:
+        var(--pro-text);
+
+    line-height:
+        1.6;
+}
+
+
+/* tecnologías */
+
+.case-tech-stack {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:
+        10px;
+}
+
+
+.case-tech-stack span {
+    padding:
+        9px
+        13px;
+
+    border:
+        1px solid
+        rgba(
+            47,
+            115,
+            232,
+            .12
+        );
+
+    border-radius:
+        999px;
+
+    background:
+        var(--pro-blue-soft);
+
+    color:
+        #416cae;
+}
+
+
+/* diagrama */
+
+.case-architecture {
+    padding:
+        22px;
+
+    border:
+        1px solid var(--pro-border);
+
+    border-radius:
+        var(--pro-radius-xl);
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        var(--pro-shadow);
+}
+
+
+.case-architecture img {
+    border-radius:
+        18px;
+}
+
+
+/* =========================================================
+   PAGINAS DE EVIDENCIA
+   ========================================================= */
+
+.evidence-detail-page {
+    background:
+        #fbfcff !important;
+}
+
+
+.evidence-detail-hero {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f7faff
+        );
+}
+
+
+.evidence-detail-grid {
+    gap:
+        16px !important;
+}
+
+
+.evidence-detail-grid article {
+    padding:
+        25px !important;
+
+    border:
+        1px solid var(--pro-border) !important;
+
+    border-radius:
+        var(--pro-radius-lg) !important;
+
+    background:
+        #ffffff !important;
+}
+
+
+.evidence-detail-grid h2 {
+    color:
+        var(--pro-ink) !important;
+}
+
+
+/* =========================================================
+   HOVER GENERAL
+   ========================================================= */
+
+.profile-detail-card,
+.achievement-card,
+.evidence-card,
+.case-mini-card,
+.information-grid > div,
+.course-group {
+    transition:
+        transform
+        .18s ease,
+        box-shadow
+        .18s ease,
+        border-color
+        .18s ease;
+}
+
+
+.information-grid > div:hover,
+.course-group:hover,
+.achievement-card:hover,
+.evidence-card:hover,
+.case-mini-card:hover {
+    transform:
+        translateY(-2px);
+
+    border-color:
+        rgba(
+            47,
+            115,
+            232,
+            .22
+        ) !important;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+    .profile-detail-card {
+        grid-template-columns:
+            minmax(150px, 210px)
+            minmax(0, 1fr);
+    }
+
+
+    .achievement-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            ) !important;
+    }
+
+
+    .lab-grid,
+    .evidence-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            ) !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOVIL
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .profile-detail-card {
+        grid-template-columns:
+            1fr !important;
+
+        gap:
+            20px !important;
+
+        padding:
+            20px !important;
+
+        border-radius:
+            22px !important;
+    }
+
+
+    .profile-card-side,
+    .university-logo-wrap {
+        min-height:
+            auto;
+
+        padding:
+            18px;
+    }
+
+
+    .university-logo {
+        max-width:
+            155px;
+    }
+
+
+    .profile-card-body > h3 {
+        font-size:
+            clamp(
+                1.8rem,
+                8vw,
+                2.6rem
+            );
+    }
+
+
+    .information-grid,
+    .course-groups,
+    .achievement-grid,
+    .lab-grid,
+    .evidence-grid,
+    .evidence-detail-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+
+    .achievement-card,
+    .lab-card,
+    .evidence-card {
+        min-height:
+            auto !important;
+    }
+
+
+    .module-row {
+        grid-template-columns:
+            minmax(0, 1fr)
+            auto;
+    }
+
+
+    .case-prose {
+        padding:
+            20px;
+    }
+
+
+    .case-mini-card {
+        padding:
+            20px !important;
+    }
+
+}
+
