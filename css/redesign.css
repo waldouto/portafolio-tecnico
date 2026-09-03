@@ -4297,3 +4297,383 @@ select {
 
 }
 
+
+/* =========================================================
+   CREATIVE SERVICE CARDS V2
+   Inspiración visual: cyan / amarillo / magenta / verde
+========================================================= */
+
+.services-grid {
+    gap: 18px;
+}
+
+
+.service-card {
+    position: relative;
+
+    min-height: 330px;
+
+    padding: 29px;
+
+    overflow: hidden;
+
+    border: 0 !important;
+
+    color: #fff;
+
+    box-shadow:
+        0 18px 45px rgba(13, 31, 60, .12);
+
+    isolation: isolate;
+}
+
+
+/* textura oscura y profundidad */
+
+.service-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.12),
+            transparent 38%,
+            rgba(0,0,0,.10)
+        );
+}
+
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    width: 220px;
+    height: 220px;
+
+    right: -85px;
+    top: -90px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.15);
+
+    opacity: 1;
+}
+
+
+/* REDES - CYAN */
+
+.service-blue {
+    background:
+        linear-gradient(
+            135deg,
+            #08a9db,
+            #20c8e9
+        ) !important;
+}
+
+
+/* CIBERSEGURIDAD - AMARILLO */
+
+.service-green {
+    background:
+        linear-gradient(
+            135deg,
+            #f3ae18,
+            #ffc63d
+        ) !important;
+}
+
+
+/* DESARROLLO WEB - MAGENTA */
+
+.service-purple {
+    background:
+        linear-gradient(
+            135deg,
+            #d82a80,
+            #f34c9a
+        ) !important;
+}
+
+
+/* DISEÑO GRÁFICO - VERDE */
+
+.service-orange {
+    background:
+        linear-gradient(
+            135deg,
+            #19ad6f,
+            #2ed38b
+        ) !important;
+}
+
+
+/* ICONOS */
+
+.service-card .service-icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 28px;
+
+    border:
+        1px solid rgba(255,255,255,.28);
+
+    background:
+        rgba(255,255,255,.18) !important;
+
+    color:
+        #fff;
+
+    backdrop-filter:
+        blur(8px);
+
+    box-shadow:
+        0 10px 26px rgba(0,0,0,.10);
+}
+
+
+/* texto */
+
+.service-card h3 {
+    color: #fff;
+
+    font-size:
+        1.3rem;
+
+    line-height:
+        1.15;
+}
+
+
+.service-card > p {
+    color:
+        rgba(255,255,255,.88) !important;
+
+    font-size:
+        .9rem;
+
+    line-height:
+        1.65;
+}
+
+
+/* tags */
+
+.service-card .service-tags span {
+    border:
+        1px solid rgba(255,255,255,.20);
+
+    background:
+        rgba(255,255,255,.16);
+
+    color:
+        #fff;
+}
+
+
+/* links */
+
+.service-card > a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color:
+        #fff !important;
+
+    font-weight:
+        800;
+
+    text-decoration:
+        none;
+}
+
+
+.service-card:hover {
+    transform:
+        translateY(-6px)
+        scale(1.008);
+
+    box-shadow:
+        0 24px 56px rgba(13,31,60,.18);
+}
+
+
+
+/* =========================================================
+   TOOL CARDS WITH REAL LOGOS
+========================================================= */
+
+.tech-grid {
+    grid-template-columns:
+        repeat(
+            7,
+            minmax(0, 1fr)
+        );
+
+    gap: 14px;
+}
+
+
+.tech-chip {
+    min-height: 145px;
+
+    padding:
+        18px
+        12px;
+
+    border:
+        1px solid rgba(22,47,83,.08);
+
+    border-radius:
+        19px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f9fbff
+        );
+
+    box-shadow:
+        0 10px 30px rgba(18,42,78,.055);
+}
+
+
+.tech-logo {
+    display: grid;
+
+    place-items: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 13px;
+
+    border-radius:
+        15px;
+
+    background:
+        #f4f7fc;
+}
+
+
+.tech-logo img {
+    display: block;
+
+    width: 31px;
+    height: 31px;
+
+    object-fit: contain;
+}
+
+
+.tech-chip strong {
+    margin-bottom: 5px;
+
+    color:
+        #142139;
+
+    font-size:
+        .82rem;
+}
+
+
+.tech-chip span {
+    color:
+        #8390a4;
+
+    font-size:
+        .66rem;
+}
+
+
+.tech-chip:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(46,108,246,.22);
+
+    box-shadow:
+        0 17px 38px rgba(17,39,74,.10);
+}
+
+
+
+/* colores sutiles aleatorios para las fichas */
+
+.tech-chip:nth-child(4n + 1) .tech-logo {
+    background: #eaf8ff;
+}
+
+.tech-chip:nth-child(4n + 2) .tech-logo {
+    background: #fff8df;
+}
+
+.tech-chip:nth-child(4n + 3) .tech-logo {
+    background: #f7edff;
+}
+
+.tech-chip:nth-child(4n + 4) .tech-logo {
+    background: #eafaf3;
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 1180px) {
+
+    .tech-grid {
+        grid-template-columns:
+            repeat(
+                5,
+                minmax(0, 1fr)
+            );
+    }
+
+}
+
+
+/* MOVIL */
+
+@media (max-width: 650px) {
+
+    .services-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+    .service-card {
+        min-height: 285px;
+    }
+
+    .tech-grid {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+    .tech-chip {
+        min-height: 132px;
+    }
+
+}
+
