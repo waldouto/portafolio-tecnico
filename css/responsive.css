@@ -189,3 +189,391 @@ html{scroll-behavior:auto}
 }
 
 }
+
+/* =========================================================
+   FINAL LAYOUT OVERRIDE V16
+   Este bloque debe quedar al FINAL del CSS
+========================================================= */
+
+/* DESKTOP Y TABLET GRANDE */
+
+@media (min-width: 701px) {
+
+  /* --------------------------------------
+     ANCHO GENERAL
+  -------------------------------------- */
+
+  .container,
+  .professional-profile .container,
+  .projects .container,
+  .about .container,
+  .skills .container,
+  .contact .container {
+    width: calc(100% - 56px) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+
+  /* --------------------------------------
+     HERO REALMENTE A TODO EL ANCHO
+  -------------------------------------- */
+
+  .hero-grid {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .hero-content,
+  .hero-copy {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  .hero-title {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+
+    text-align: left !important;
+
+    font-size: clamp(
+      4.6rem,
+      7.2vw,
+      8.8rem
+    ) !important;
+
+    line-height: .94 !important;
+
+    letter-spacing: -.045em !important;
+
+    text-wrap: pretty !important;
+  }
+
+  .hero-description {
+    width: 100% !important;
+    max-width: 1200px !important;
+
+    margin:
+      28px
+      0
+      0 !important;
+
+    text-align: left !important;
+
+    font-size: 18px !important;
+
+    line-height: 1.7 !important;
+  }
+
+  .hero-actions {
+    justify-content: flex-start !important;
+  }
+
+  .hero-panel {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin:
+      52px
+      0
+      0 !important;
+  }
+
+
+  /* --------------------------------------
+     PERFIL
+  -------------------------------------- */
+
+  .profile-layout {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .profile-main {
+    width: 100% !important;
+
+    grid-template-columns:
+      280px
+      minmax(0, 1fr) !important;
+
+    gap: 46px !important;
+
+    padding: 38px !important;
+  }
+
+  .profile-summary {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .profile-summary h3,
+  .profile-summary p {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .profile-details {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+
+    gap: 30px !important;
+  }
+
+  .profile-detail-card {
+    width: 100% !important;
+
+    grid-template-columns:
+      260px
+      minmax(0, 1fr) !important;
+
+    gap: 42px !important;
+
+    padding:
+      38px
+      42px !important;
+  }
+
+
+  /* --------------------------------------
+     PROYECTOS
+  -------------------------------------- */
+
+  .project-grid {
+    grid-template-columns:
+      repeat(
+        2,
+        minmax(0, 1fr)
+      ) !important;
+
+    gap:
+      42px
+      42px !important;
+  }
+
+
+  /* --------------------------------------
+     TECNOLOGIAS
+  -------------------------------------- */
+
+  .skills-grid,
+  .technical-grid {
+    grid-template-columns:
+      repeat(
+        3,
+        minmax(0, 1fr)
+      ) !important;
+
+    gap:
+      28px !important;
+  }
+
+
+  /* --------------------------------------
+     ABOUT
+  -------------------------------------- */
+
+  .about-grid,
+  .two-column {
+    grid-template-columns:
+      minmax(0, .9fr)
+      minmax(0, 1.1fr) !important;
+
+    gap:
+      72px !important;
+  }
+
+
+  /* --------------------------------------
+     CONTACTO
+  -------------------------------------- */
+
+  .contact-grid {
+    grid-template-columns:
+      minmax(0, .8fr)
+      minmax(0, 1.2fr) !important;
+
+    gap:
+      80px !important;
+  }
+
+
+  /* --------------------------------------
+     HEADER
+  -------------------------------------- */
+
+  .site-header .container {
+    width:
+      calc(100% - 56px) !important;
+
+    max-width:
+      none !important;
+  }
+
+  .nav-list {
+    gap:
+      30px !important;
+  }
+
+  .nav-list a,
+  .nav-contact {
+    font-size:
+      17px !important;
+
+    padding:
+      11px
+      14px !important;
+  }
+
+
+  /* --------------------------------------
+     FOOTER
+     NO MAS ANCHO,
+     SOLO MEJOR TEXTO
+  -------------------------------------- */
+
+  .site-footer .container,
+  .footer-grid {
+    width:
+      min(
+        calc(100% - 64px),
+        1420px
+      ) !important;
+
+    max-width:
+      1420px !important;
+
+    margin-inline:
+      auto !important;
+  }
+
+  .footer-grid {
+    display:
+      flex !important;
+
+    justify-content:
+      space-between !important;
+
+    align-items:
+      center !important;
+
+    gap:
+      60px !important;
+  }
+
+  .footer-grid strong,
+  .footer-brand {
+    font-size:
+      26px !important;
+  }
+
+  .footer-grid p,
+  .footer-grid span,
+  .footer-meta {
+    font-size:
+      16px !important;
+
+    line-height:
+      1.6 !important;
+  }
+
+}
+
+
+/* PANTALLAS MUY GRANDES */
+
+@media (min-width: 1600px) {
+
+  .container,
+  .professional-profile .container,
+  .projects .container,
+  .about .container,
+  .skills .container,
+  .contact .container,
+  .site-header .container {
+    width:
+      calc(100% - 72px) !important;
+  }
+
+  .hero-title {
+    font-size:
+      clamp(
+        5.2rem,
+        7vw,
+        9.4rem
+      ) !important;
+  }
+
+}
+
+
+/* MOVIL - CONSERVAR LO QUE YA FUNCIONA */
+
+@media (max-width: 700px) {
+
+  .container,
+  .professional-profile .container,
+  .projects .container,
+  .about .container,
+  .skills .container,
+  .contact .container,
+  .site-header .container {
+    width:
+      calc(100% - 28px) !important;
+
+    max-width:
+      100% !important;
+  }
+
+  .hero-title {
+    width:
+      100% !important;
+
+    max-width:
+      none !important;
+
+    font-size:
+      clamp(
+        2.65rem,
+        10.8vw,
+        3.65rem
+      ) !important;
+
+    text-align:
+      left !important;
+  }
+
+  .hero-description {
+    max-width:
+      100% !important;
+  }
+
+  .profile-main,
+  .profile-detail-card,
+  .university-card {
+    width:
+      100% !important;
+  }
+
+  .profile-detail-card,
+  .university-card {
+    display:
+      block !important;
+  }
+
+  .project-grid,
+  .skills-grid,
+  .technical-grid {
+    grid-template-columns:
+      1fr !important;
+  }
+
+}
