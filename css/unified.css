@@ -4738,3 +4738,65 @@ cat >> css/unified.css <<'CSS'
 
 }
 
+
+/* =========================================================
+   EVIDENCE SECTION - WHITE TEXT FINAL
+========================================================= */
+
+.evidence-section,
+.evidence-section .section-heading h2,
+.evidence-section .section-heading > p,
+.evidence-section .evidence-card h3,
+.evidence-section .evidence-card p,
+.evidence-section .evidence-number {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+
+/* encabezados pequeños */
+
+.evidence-section .eyebrow,
+.evidence-section .evidence-card .eyebrow {
+    color: #8fb0ff !important;
+}
+
+
+/* tarjetas */
+
+.evidence-section .evidence-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.13),
+            rgba(255,255,255,.06)
+        ) !important;
+
+    border-color:
+        rgba(255,255,255,.15) !important;
+}
+
+
+/* tags siguen claros para contraste */
+
+.evidence-section .evidence-tags span {
+    color: #28466f !important;
+
+    background: #f4f7fc !important;
+
+    border-color:
+        rgba(255,255,255,.22) !important;
+}
+
+
+/* links */
+
+.evidence-section .evidence-card > a,
+.evidence-section .evidence-card > strong {
+    color: #8fb0ff !important;
+}
+
+.evidence-section .evidence-card > a:hover {
+    color: #ffffff !important;
+}
+
