@@ -6152,3 +6152,265 @@ section {
 
 }
 
+
+/* =========================================================
+   ACADEMIC CONTENT FIX V14
+========================================================= */
+
+.academic-highlights {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin:
+    28px 0;
+}
+
+.academic-stat {
+  padding:
+    22px;
+
+  border:
+    1px solid #dbe3ec;
+
+  border-radius:
+    18px;
+
+  background:
+    #f7f9fc;
+}
+
+.academic-stat strong {
+  display: block;
+
+  margin-bottom:
+    5px;
+
+  font-size:
+    30px;
+
+  color:
+    #3268ea;
+}
+
+.academic-stat span {
+  font-size:
+    13px;
+
+  color:
+    #647387;
+}
+
+.academic-focus {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin:
+    8px 0 30px;
+}
+
+.academic-focus span {
+  padding:
+    9px 13px;
+
+  border:
+    1px solid #dbe3ec;
+
+  border-radius:
+    999px;
+
+  background:
+    #f5f8fb;
+
+  font-size:
+    12px;
+
+  color:
+    #435269;
+}
+
+.academic-course-summary {
+  margin-top:
+    28px;
+}
+
+.academic-course-summary h4 {
+  margin-bottom:
+    16px;
+
+  font-size:
+    18px;
+
+  color:
+    #17243a;
+}
+
+.academic-course-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap:
+    16px;
+}
+
+.academic-course-grid > div {
+  padding:
+    20px;
+
+  border:
+    1px solid #dfe6ee;
+
+  border-radius:
+    16px;
+
+  background:
+    #f8fafc;
+}
+
+.academic-course-grid strong {
+  display: block;
+
+  margin-bottom:
+    6px;
+
+  font-size:
+    15px;
+
+  color:
+    #1b293e;
+}
+
+.academic-course-grid p {
+  margin: 0 !important;
+
+  font-size:
+    13px !important;
+
+  line-height:
+    1.6 !important;
+}
+
+
+/* PREESPECIALIDAD */
+
+.module-list {
+  margin-top:
+    26px;
+}
+
+.module-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    70px;
+
+  gap:
+    20px;
+
+  align-items:
+    center;
+
+  padding:
+    18px 0;
+
+  border-bottom:
+    1px solid #dfe6ee;
+}
+
+.module-row small {
+  display: block;
+
+  margin-bottom:
+    5px;
+
+  font-size:
+    10px;
+
+  letter-spacing:
+    .14em;
+
+  color:
+    #71809a;
+}
+
+.module-row strong {
+  font-size:
+    16px;
+
+  color:
+    #1c293d;
+}
+
+.module-grade {
+  text-align:
+    right;
+
+  font-family:
+    Georgia, serif;
+
+  font-size:
+    28px;
+
+  font-weight:
+    700;
+
+  color:
+    #4268ea;
+}
+
+.specialization-mark strong {
+  display: block;
+
+  font-family:
+    Georgia, serif;
+
+  font-size:
+    54px;
+
+  line-height:
+    .9;
+
+  color:
+    #526cec;
+}
+
+.specialization-mark span {
+  display: block;
+
+  margin-top:
+    8px;
+
+  font-size:
+    12px;
+
+  color:
+    #748197;
+}
+
+@media (max-width: 900px) {
+
+  .academic-highlights,
+  .academic-course-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .academic-highlights,
+  .academic-course-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+}
