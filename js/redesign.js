@@ -361,3 +361,179 @@
 
 })();
 
+
+/* =========================================================
+   PORTFOLIO VISIT COUNTER
+========================================================= */
+
+(async () => {
+
+    const element =
+        document.getElementById(
+            "visitCount"
+        );
+
+    if (!element) {
+        return;
+    }
+
+    /*
+       Evita incrementar varias veces por recargas
+       durante la misma sesion del navegador.
+    */
+
+    const sessionKey =
+        "waldoPortfolioVisitCounted";
+
+    const namespace =
+        "waldouto";
+
+    const counterKey =
+        "portafolio-tecnico";
+
+
+    try {
+
+        let endpoint;
+
+
+        if (
+            sessionStorage.getItem(
+                sessionKey
+            )
+        ) {
+
+            endpoint =
+                `https://abacus.jasoncameron.dev/get/${namespace}/${counterKey}`;
+
+        }
+        else {
+
+            endpoint =
+                `https://abacus.jasoncameron.dev/hit/${namespace}/${counterKey}`;
+
+        }
+
+
+        const response =
+            await fetch(
+                endpoint,
+                {
+                    cache: "no-store"
+                }
+            );
+
+
+        if (!response.ok) {
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+        }
+
+
+        const data =
+            await response.json();
+
+
+        const value =
+            Number(data.value);
+
+
+        if (!Number.isFinite(value)) {
+            throw new Error(
+                "Respuesta de contador invalida"
+            );
+        }
+
+
+        if (
+            !sessionStorage.getItem(
+                sessionKey
+            )
+        ) {
+
+            sessionStorage.setItem(
+                sessionKey,
+                "1"
+            );
+
+        }
+
+
+        /*
+           Animacion suave
+        */
+
+        const duration = 900;
+
+        const start =
+            performance.now();
+
+
+        const formatter =
+            new Intl.NumberFormat(
+                "es-SV"
+            );
+
+
+        const animate =
+            (time) => {
+
+                const progress =
+                    Math.min(
+                        (time - start)
+                        / duration,
+                        1
+                    );
+
+
+                const eased =
+                    1 -
+                    Math.pow(
+                        1 - progress,
+                        3
+                    );
+
+
+                const current =
+                    Math.round(
+                        value * eased
+                    );
+
+
+                element.textContent =
+                    formatter.format(
+                        current
+                    );
+
+
+                if (progress < 1) {
+
+                    requestAnimationFrame(
+                        animate
+                    );
+
+                }
+
+            };
+
+
+        requestAnimationFrame(
+            animate
+        );
+
+    }
+    catch (error) {
+
+        console.error(
+            "Visit counter:",
+            error
+        );
+
+        element.textContent =
+            "—";
+
+    }
+
+})();
+

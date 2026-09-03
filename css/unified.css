@@ -3945,3 +3945,171 @@ cat >> css/unified.css <<'CSS'
 
 }
 
+
+/* =========================================================
+   PORTFOLIO FOOTER STATS
+========================================================= */
+
+.portfolio-stats-footer {
+    width:
+        min(
+            calc(100% - 48px),
+            1180px
+        );
+
+    margin:
+        0 auto
+        28px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        12px;
+}
+
+
+.portfolio-stat {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        13px;
+
+    min-height:
+        78px;
+
+    padding:
+        15px
+        20px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.10);
+
+    border-radius:
+        17px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.025)
+        );
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.portfolio-stat-icon {
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    flex:
+        0 0 auto;
+
+    border-radius:
+        13px;
+
+    background:
+        rgba(82,122,235,.15);
+
+    color:
+        #9eb8ff;
+
+    font-size:
+        .9rem;
+
+    font-weight:
+        850;
+}
+
+
+.portfolio-stat strong,
+.portfolio-stat small {
+    display:
+        block;
+}
+
+
+.portfolio-stat strong {
+    margin-bottom:
+        3px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        1.15rem;
+
+    font-weight:
+        850;
+}
+
+
+.portfolio-stat small {
+    color:
+        #b9c6d9;
+
+    font-size:
+        .7rem;
+
+    line-height:
+        1.35;
+}
+
+
+/* tablet */
+
+@media (max-width: 800px) {
+
+    .portfolio-stats-footer {
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+/* movil */
+
+@media (max-width: 650px) {
+
+    .portfolio-stats-footer {
+        width:
+            calc(100% - 24px);
+
+        margin-bottom:
+            22px;
+    }
+
+
+    .portfolio-stat {
+        justify-content:
+            flex-start;
+    }
+
+}
+
