@@ -1,0 +1,283 @@
+/* =========================================================
+   CONTENEDOR
+========================================================= */
+
+.container {
+  width:
+    min(
+      calc(100% - 32px),
+      var(--container-width)
+    );
+
+  margin-inline: auto;
+}
+
+
+/* =========================================================
+   SECCIONES
+========================================================= */
+
+.section {
+  padding:
+    clamp(
+      70px,
+      9vw,
+      125px
+    )
+    0;
+
+  border-bottom:
+    1px solid var(--color-border);
+}
+
+
+/* =========================================================
+   ETIQUETA EDITORIAL
+========================================================= */
+
+.eyebrow {
+  margin-bottom: 14px;
+
+  color: var(--color-muted);
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   BOTONES
+========================================================= */
+
+.button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 46px;
+
+  padding:
+    11px 22px;
+
+  border:
+    1px solid transparent;
+
+  border-radius:
+    var(--radius-pill);
+
+  font-weight: 600;
+
+  line-height: 1;
+
+  transition:
+    transform var(--transition-fast),
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+
+.button:active {
+  transform: translateY(0);
+}
+
+
+.button-primary {
+  background:
+    var(--color-accent);
+
+  color:
+    var(--color-text);
+}
+
+
+.button-secondary {
+  border-color:
+    var(--color-border);
+
+  background:
+    transparent;
+}
+
+
+.button-secondary:hover {
+  background:
+    var(--color-surface);
+}
+
+
+/* =========================================================
+   ESTADOS DE FOCO
+========================================================= */
+
+:focus-visible {
+  outline:
+    2px solid var(--color-accent);
+
+  outline-offset:
+    4px;
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+
+  clip:
+    rect(
+      0,
+      0,
+      0,
+      0
+    );
+
+  white-space: nowrap;
+
+  border: 0;
+}
+
+
+/* =========================================================
+   TEXTO AUXILIAR
+========================================================= */
+
+.text-muted {
+  color:
+    var(--color-muted);
+}
+
+
+/* =========================================================
+   MENSAJES DE FORMULARIO
+========================================================= */
+
+.error-message {
+  min-height: 18px;
+
+  color:
+    var(--color-muted);
+
+  font-size: 12px;
+}
+
+
+.form-status {
+  min-height: 22px;
+
+  color:
+    var(--color-muted);
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   ESTADO INVALIDO
+========================================================= */
+
+[aria-invalid="true"] {
+  border-color:
+    var(--color-accent) !important;
+}
+
+
+/* =========================================================
+   TARJETAS GENERICAS
+========================================================= */
+
+.card {
+  border:
+    1px solid var(--color-border);
+
+  border-radius:
+    var(--radius-large);
+
+  background:
+    var(--color-background);
+}
+
+
+/* =========================================================
+   ENLACES SUBRAYADOS
+========================================================= */
+
+.text-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  min-height: 44px;
+
+  border-bottom:
+    1px solid currentColor;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   HOVER SOLO EN DISPOSITIVOS COMPATIBLES
+========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .button:hover {
+    transform:
+      translateY(-2px);
+  }
+
+}
+
+
+/* =========================================================
+   REDUCIR MOVIMIENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior:
+      auto;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.01ms !important;
+
+    scroll-behavior:
+      auto !important;
+  }
+
+}

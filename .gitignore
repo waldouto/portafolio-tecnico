@@ -1,0 +1,4 @@
+*.log
+backup-before-production-*
+.DS_Store
+Thumbs.db
