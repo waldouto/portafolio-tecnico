@@ -515,3 +515,440 @@
 
 }
 
+
+/* =========================================================
+   FORMATION + INNER COLOR REFINEMENT V3
+========================================================= */
+
+
+/* =========================================================
+   FORMACION: HACERLA MENOS "TABLA"
+========================================================= */
+
+.education-grid {
+    align-items: stretch !important;
+}
+
+
+.university-panel,
+.specialty-panel {
+    min-height: 100% !important;
+}
+
+
+/* universidad más equilibrada */
+
+.university-panel {
+    grid-template-columns:
+        190px
+        minmax(0, 1fr) !important;
+
+    gap:
+        26px !important;
+}
+
+
+.university-logo-box {
+    min-height:
+        220px !important;
+}
+
+
+/* preespecialidad mejor distribuida */
+
+.specialty-panel {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+
+.module-grid {
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        ) !important;
+
+    align-content: start;
+}
+
+
+.module-grid > div {
+    min-height:
+        118px !important;
+}
+
+
+/* =========================================================
+   TIMELINE: DE TABLA A TARJETAS
+========================================================= */
+
+.timeline {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        ) !important;
+
+    gap:
+        15px !important;
+
+    margin-top:
+        28px !important;
+}
+
+
+.timeline::before {
+    display: none !important;
+}
+
+
+.timeline article {
+    min-height:
+        180px !important;
+
+    padding:
+        24px !important;
+
+    border:
+        1px solid rgba(27,51,83,.09) !important;
+
+    border-radius:
+        21px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8faff
+        ) !important;
+
+    box-shadow:
+        0 12px 30px
+        rgba(18,42,76,.06) !important;
+}
+
+
+/* fondos suaves por año */
+
+.timeline article:nth-child(1) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #edf7fa
+        ) !important;
+}
+
+.timeline article:nth-child(2) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef3ff
+        ) !important;
+}
+
+.timeline article:nth-child(3) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2effb
+        ) !important;
+}
+
+.timeline article:nth-child(4) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef8f3
+        ) !important;
+}
+
+.timeline article:nth-child(5) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #faf1f5
+        ) !important;
+}
+
+.timeline article:nth-child(6) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbf5e7
+        ) !important;
+}
+
+
+.timeline article > span {
+    margin-bottom:
+        20px !important;
+
+    font-size:
+        1rem !important;
+}
+
+
+/* =========================================================
+   EVIDENCIAS DEL HOME MÁS PRESENTES
+========================================================= */
+
+.evidence-section {
+    background:
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(79,119,229,.30),
+            transparent 31%
+        ),
+        linear-gradient(
+            135deg,
+            #071222,
+            #0b1d38 62%,
+            #14305a
+        ) !important;
+}
+
+
+.evidence-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.13),
+            rgba(255,255,255,.055)
+        ) !important;
+
+    border-color:
+        rgba(255,255,255,.14) !important;
+}
+
+
+/* =========================================================
+   INTERNAS: SUBIR COLOR SIN SATURAR
+========================================================= */
+
+.case-study > .section:nth-of-type(2) {
+    background:
+        linear-gradient(
+            180deg,
+            #e8f0fb,
+            #dfe9f7
+        ) !important;
+}
+
+
+.case-study > .section:nth-of-type(3) {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f4f7fb
+        ) !important;
+}
+
+
+.case-study > .section:nth-of-type(4) {
+    background:
+        linear-gradient(
+            180deg,
+            #e8eff9,
+            #edf3fa
+        ) !important;
+}
+
+
+.case-study > .section:nth-of-type(5) {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f7f9fc
+        ) !important;
+}
+
+
+.case-study > .section:nth-of-type(6) {
+    background:
+        linear-gradient(
+            180deg,
+            #eee9f8,
+            #e7ecf7
+        ) !important;
+}
+
+
+.case-study > .section:nth-of-type(7) {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f4f8fb
+        ) !important;
+}
+
+
+.case-study > .section:nth-of-type(8) {
+    background:
+        linear-gradient(
+            180deg,
+            #e5f2ee,
+            #edf6f2
+        ) !important;
+}
+
+
+/* =========================================================
+   TARJETAS INTERNAS CON MÁS COLOR
+========================================================= */
+
+.case-mini-card:nth-child(4n+1) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e7f0ff
+        ) !important;
+}
+
+.case-mini-card:nth-child(4n+2) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eee8f8
+        ) !important;
+}
+
+.case-mini-card:nth-child(4n+3) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e6f3ed
+        ) !important;
+}
+
+.case-mini-card:nth-child(4n+4) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7efd9
+        ) !important;
+}
+
+
+/* cuerpo principal de problema / objetivo / arquitectura */
+
+.case-prose {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #edf4fb
+        ) !important;
+}
+
+
+/* arquitectura visual */
+
+.case-architecture {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e9f1fa
+        ) !important;
+}
+
+
+/* =========================================================
+   EVIDENCIAS INTERNAS
+========================================================= */
+
+.evidence-detail-content {
+    background:
+        linear-gradient(
+            180deg,
+            #e7eef8,
+            #f3f6fb
+        ) !important;
+}
+
+
+.evidence-detail-grid article:nth-child(4n+1) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e7f0ff
+        ) !important;
+}
+
+.evidence-detail-grid article:nth-child(4n+2) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eee8f8
+        ) !important;
+}
+
+.evidence-detail-grid article:nth-child(4n+3) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #e5f3ed
+        ) !important;
+}
+
+.evidence-detail-grid article:nth-child(4n+4) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8efd9
+        ) !important;
+}
+
+
+/* =========================================================
+   MOVIL
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .timeline {
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            ) !important;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .timeline {
+        grid-template-columns:
+            1fr !important;
+    }
+
+
+    .module-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+}
+
