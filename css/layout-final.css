@@ -1597,3 +1597,124 @@ body:has(
   }
 
 }
+
+
+/* PROFILE TECH PANEL FINAL */
+
+.hero-panel {
+  padding: clamp(32px, 3vw, 48px) !important;
+}
+
+.hero-panel .eyebrow {
+  margin-bottom: 18px !important;
+
+  font-size: clamp(12px, .7vw, 14px) !important;
+  line-height: 1.25 !important;
+
+  letter-spacing: .14em !important;
+}
+
+.hero-panel h2 {
+  width: 100% !important;
+  max-width: 1450px !important;
+
+  margin: 0 !important;
+
+  font-size: clamp(2.4rem, 3.2vw, 4.2rem) !important;
+
+  line-height: 1.12 !important;
+  letter-spacing: -.032em !important;
+
+  text-wrap: pretty !important;
+}
+
+.hero-stats {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: clamp(20px, 3vw, 44px) !important;
+
+  margin-top: 38px !important;
+}
+
+.hero-stats > div {
+  min-width: 0 !important;
+}
+
+.hero-stats strong {
+  display: block !important;
+
+  font-size: clamp(30px, 2.2vw, 42px) !important;
+
+  line-height: 1 !important;
+}
+
+.hero-stats span {
+  display: block !important;
+
+  margin-top: 9px !important;
+
+  font-size: clamp(14px, .82vw, 17px) !important;
+
+  line-height: 1.45 !important;
+
+  color: #4b596d !important;
+}
+
+
+/* Zoom reducido / viewport ancho */
+
+@media (min-width: 2100px) {
+
+  .hero-panel h2 {
+    font-size: 4.5rem !important;
+    line-height: 1.14 !important;
+  }
+
+  .hero-stats span {
+    font-size: 18px !important;
+  }
+
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .hero-panel h2 {
+    font-size: clamp(2.3rem, 5vw, 3.5rem) !important;
+  }
+
+}
+
+
+/* Móvil */
+
+@media (max-width: 700px) {
+
+  .hero-panel {
+    padding: 24px !important;
+  }
+
+  .hero-panel h2 {
+    font-size: clamp(2rem, 8vw, 2.75rem) !important;
+
+    line-height: 1.1 !important;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+
+    gap: 20px !important;
+
+    margin-top: 28px !important;
+  }
+
+  .hero-stats span {
+    font-size: 15px !important;
+  }
+
+}
