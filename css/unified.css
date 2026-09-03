@@ -4339,3 +4339,205 @@ cat >> css/unified.css <<'CSS'
 
 }
 
+
+/* =========================================================
+   CLEAN FOOTER COUNTER FINAL
+========================================================= */
+
+/* matar definitivamente versiones anteriores */
+
+.portfolio-stats-footer,
+.footer-stats,
+.footer-stat,
+.portfolio-stat {
+    display: none !important;
+}
+
+
+/* footer vuelve a tamaño normal */
+
+.footer {
+    padding:
+        26px 0 !important;
+}
+
+
+.footer-layout {
+    padding-top:
+        0 !important;
+
+    border-top:
+        0 !important;
+}
+
+
+/* contador integrado */
+
+.footer-visit-counter {
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        6px;
+
+    min-height:
+        30px;
+
+    padding:
+        5px 10px;
+
+    margin-left:
+        8px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.09);
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(255,255,255,.045);
+
+    color:
+        #aebbd0;
+
+    white-space:
+        nowrap;
+}
+
+
+.footer-visit-dot {
+    width:
+        6px;
+
+    height:
+        6px;
+
+    border-radius:
+        50%;
+
+    background:
+        #5f8df4;
+
+    box-shadow:
+        0 0 10px
+        rgba(95,141,244,.55);
+}
+
+
+.footer-visit-counter strong {
+    color:
+        #ffffff !important;
+
+    font-size:
+        .72rem;
+
+    font-weight:
+        800;
+}
+
+
+.footer-visit-label {
+    color:
+        #9fadc1;
+
+    font-size:
+        .66rem;
+}
+
+
+/* footer completo más limpio */
+
+.footer-brand strong {
+    color:
+        #ffffff !important;
+}
+
+
+.footer-brand p {
+    color:
+        #8797ad !important;
+}
+
+
+.footer-nav a {
+    color:
+        #b2bfd2 !important;
+}
+
+
+.footer-nav a:hover {
+    color:
+        #ffffff !important;
+}
+
+
+.footer-end {
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        flex-end;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        7px;
+
+    color:
+        #93a2b7 !important;
+}
+
+
+/* tablet */
+
+@media (max-width: 850px) {
+
+    .footer-layout {
+        gap:
+            20px !important;
+    }
+
+}
+
+
+/* móvil */
+
+@media (max-width: 650px) {
+
+    .footer-layout {
+        display:
+            grid !important;
+
+        grid-template-columns:
+            1fr !important;
+
+        gap:
+            20px !important;
+
+        text-align:
+            left !important;
+    }
+
+
+    .footer-end {
+        justify-content:
+            flex-start;
+    }
+
+
+    .footer-visit-counter {
+        margin-left:
+            0;
+    }
+
+}
+
