@@ -1,0 +1,517 @@
+
+/* =========================================================
+   INNER PAGES COLOR SYSTEM V2
+   Proyectos y evidencias con continuidad visual
+========================================================= */
+
+
+/* =========================================================
+   BASE DE PAGINAS INTERNAS
+========================================================= */
+
+.inner-page,
+.case-study,
+.evidence-detail-page {
+    background:
+        #eef3f9 !important;
+}
+
+
+/* =========================================================
+   ALTERNANCIA REAL DE SECCIONES
+========================================================= */
+
+.case-study > .section:not(.case-hero) {
+    position: relative;
+
+    overflow: hidden;
+
+    border: 0 !important;
+}
+
+
+/* 1 */
+
+.case-study > .section:nth-of-type(2) {
+    background:
+        linear-gradient(
+            180deg,
+            #f1f5fb,
+            #eaf0f8
+        ) !important;
+}
+
+
+/* 2 */
+
+.case-study > .section:nth-of-type(3) {
+    background:
+        #ffffff !important;
+}
+
+
+/* 3 */
+
+.case-study > .section:nth-of-type(4) {
+    background:
+        linear-gradient(
+            180deg,
+            #edf3fa,
+            #f4f7fb
+        ) !important;
+}
+
+
+/* 4 */
+
+.case-study > .section:nth-of-type(5) {
+    background:
+        #ffffff !important;
+}
+
+
+/* 5 */
+
+.case-study > .section:nth-of-type(6) {
+    background:
+        linear-gradient(
+            180deg,
+            #f2f0fa,
+            #eef2f9
+        ) !important;
+}
+
+
+/* 6 */
+
+.case-study > .section:nth-of-type(7) {
+    background:
+        #ffffff !important;
+}
+
+
+/* 7 */
+
+.case-study > .section:nth-of-type(8) {
+    background:
+        linear-gradient(
+            180deg,
+            #edf5f4,
+            #f4f8f7
+        ) !important;
+}
+
+
+/* =========================================================
+   DECORACION DE CONTINUIDAD
+========================================================= */
+
+.case-study > .section:nth-of-type(2)::before,
+.case-study > .section:nth-of-type(4)::before,
+.case-study > .section:nth-of-type(6)::before,
+.case-study > .section:nth-of-type(8)::before {
+    content: "";
+
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -190px;
+    top: -160px;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(72,119,232,.08),
+            transparent 68%
+        );
+}
+
+
+.case-study > .section:nth-of-type(6)::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(133,130,215,.09),
+            transparent 68%
+        );
+}
+
+
+.case-study > .section:nth-of-type(8)::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(114,186,148,.09),
+            transparent 68%
+        );
+}
+
+
+/* =========================================================
+   TITULOS INTERNOS CON ACENTO
+========================================================= */
+
+.case-section-title,
+.case-wide-header {
+    position: relative;
+}
+
+
+.case-section-title::before,
+.case-wide-header::before {
+    content: "";
+
+    display: block;
+
+    width: 42px;
+    height: 4px;
+
+    margin-bottom: 15px;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #4777e8,
+            #8582d7
+        );
+}
+
+
+/* =========================================================
+   PROBLEMA / OBJETIVO / ARQUITECTURA
+========================================================= */
+
+.case-prose {
+    position: relative;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(24,48,80,.09) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8fbff
+        ) !important;
+
+    box-shadow:
+        0 16px 38px
+        rgba(17,39,70,.07) !important;
+}
+
+
+.case-prose::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -50px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(71,119,232,.055);
+}
+
+
+/* =========================================================
+   RIESGOS / DECISIONES
+========================================================= */
+
+.case-decision-grid {
+    gap:
+        16px !important;
+}
+
+
+.case-mini-card {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius:
+        22px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f8faff
+        ) !important;
+
+    box-shadow:
+        0 14px 34px
+        rgba(17,39,70,.065) !important;
+}
+
+
+.case-mini-card:nth-child(4n+1) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef5ff
+        ) !important;
+}
+
+
+.case-mini-card:nth-child(4n+2) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f5f0fb
+        ) !important;
+}
+
+
+.case-mini-card:nth-child(4n+3) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #edf7f3
+        ) !important;
+}
+
+
+.case-mini-card:nth-child(4n+4) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #faf5e9
+        ) !important;
+}
+
+
+/* barra individual */
+
+.case-mini-card:nth-child(4n+1)::before {
+    background:
+        #5a7de2 !important;
+}
+
+.case-mini-card:nth-child(4n+2)::before {
+    background:
+        #8a78cf !important;
+}
+
+.case-mini-card:nth-child(4n+3)::before {
+    background:
+        #6eaf91 !important;
+}
+
+.case-mini-card:nth-child(4n+4)::before {
+    background:
+        #d0ad60 !important;
+}
+
+
+/* =========================================================
+   DIAGRAMA DE ARQUITECTURA
+========================================================= */
+
+.case-architecture {
+    padding:
+        22px !important;
+
+    border:
+        1px solid
+        rgba(30,54,88,.09) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2f6fb
+        ) !important;
+
+    box-shadow:
+        0 22px 55px
+        rgba(17,39,70,.09) !important;
+}
+
+
+/* =========================================================
+   TECNOLOGIAS
+========================================================= */
+
+.case-tech-stack span {
+    border:
+        1px solid
+        rgba(71,119,232,.10) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #edf3ff,
+            #f7f9ff
+        ) !important;
+
+    color:
+        #4167ad !important;
+}
+
+
+/* =========================================================
+   BLOQUES DESTACADOS OSCUROS
+   Para romper la monotonia blanca
+========================================================= */
+
+.case-study > .section:nth-of-type(6) .case-wide-header,
+.case-study > .section:nth-of-type(8) .case-wide-header {
+    max-width:
+        900px;
+}
+
+
+/* =========================================================
+   EVIDENCIAS INTERNAS
+========================================================= */
+
+.evidence-detail-content {
+    background:
+        linear-gradient(
+            180deg,
+            #eef3f9,
+            #f7f9fc
+        ) !important;
+}
+
+
+.evidence-detail-grid article {
+    position: relative;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(24,48,80,.09) !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7faff
+        ) !important;
+
+    box-shadow:
+        0 14px 34px
+        rgba(17,39,70,.065) !important;
+}
+
+
+.evidence-detail-grid article:nth-child(4n+1) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #eef5ff
+        ) !important;
+}
+
+
+.evidence-detail-grid article:nth-child(4n+2) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f4effa
+        ) !important;
+}
+
+
+.evidence-detail-grid article:nth-child(4n+3) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #edf7f3
+        ) !important;
+}
+
+
+.evidence-detail-grid article:nth-child(4n+4) {
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #faf5e9
+        ) !important;
+}
+
+
+.evidence-detail-grid article::before {
+    content: "";
+
+    display: block;
+
+    width: 38px;
+    height: 4px;
+
+    margin-bottom: 18px;
+
+    border-radius: 999px;
+
+    background:
+        #5b7ee1;
+}
+
+
+/* =========================================================
+   BOTON REGRESAR
+========================================================= */
+
+.inner-back,
+.evidence-detail-header a {
+    border:
+        1px solid
+        rgba(255,255,255,.15) !important;
+
+    background:
+        rgba(255,255,255,.035);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+/* =========================================================
+   MOVIL
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .case-study > .section:not(.case-hero) {
+        padding:
+            68px
+            0 !important;
+    }
+
+
+    .case-prose,
+    .case-mini-card,
+    .case-architecture,
+    .evidence-detail-grid article {
+        border-radius:
+            20px !important;
+    }
+
+}
+
