@@ -281,3 +281,533 @@
   }
 
 }
+
+
+/* =========================================================
+   ACCESSIBLE RESPONSIVE TYPE V2
+   Legibilidad entre 67% y 100% de zoom
+========================================================= */
+
+:root {
+  --readable-text: #3f4b5c;
+  --readable-muted: #536174;
+  --readable-soft: #647184;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTO GENERAL
+--------------------------------------------------------- */
+
+body {
+  font-size:
+    clamp(
+      16px,
+      calc(.25vw + 13px),
+      18px
+    );
+
+  line-height:
+    1.68;
+}
+
+
+/* Grises más definidos */
+
+.hero-description,
+.profile-summary p,
+.profile-detail-card p,
+.about-copy,
+.contact-description,
+.case-prose,
+.case-lead,
+.case-mini-card p,
+.card-lead {
+  color:
+    var(--readable-text) !important;
+}
+
+
+.eyebrow,
+.profile-label,
+.profile-card-label,
+.profile-role,
+.form-status,
+.case-meta span,
+figcaption {
+  color:
+    var(--readable-muted) !important;
+}
+
+
+/* ---------------------------------------------------------
+   MENU SUPERIOR
+--------------------------------------------------------- */
+
+.brand {
+  font-size:
+    clamp(
+      18px,
+      1.05vw,
+      21px
+    ) !important;
+
+  font-weight:
+    800 !important;
+}
+
+
+.nav-list a,
+.nav-contact {
+  font-size:
+    clamp(
+      16px,
+      .92vw,
+      18px
+    ) !important;
+
+  font-weight:
+    600;
+
+  letter-spacing:
+    -.01em;
+}
+
+
+/* ---------------------------------------------------------
+   TITULO PRINCIPAL
+--------------------------------------------------------- */
+
+.hero-title {
+  width:
+    100% !important;
+
+  max-width:
+    none !important;
+
+  font-size:
+    clamp(
+      4.4rem,
+      6vw,
+      7.4rem
+    ) !important;
+
+  line-height:
+    .93 !important;
+
+  text-wrap:
+    pretty;
+}
+
+
+/* No dejar la descripción demasiado pequeña */
+
+.hero-description {
+  font-size:
+    clamp(
+      17px,
+      1.05vw,
+      20px
+    ) !important;
+
+  line-height:
+    1.72 !important;
+
+  max-width:
+    1200px !important;
+}
+
+
+/* ---------------------------------------------------------
+   TITULOS DE SECCIONES
+--------------------------------------------------------- */
+
+.section-header h2,
+.profile-heading h2,
+.two-column h2,
+.skills h2,
+.contact h2,
+.case-section-title h2,
+.case-wide-header h2 {
+  font-size:
+    clamp(
+      2.7rem,
+      4vw,
+      4.8rem
+    ) !important;
+
+  line-height:
+    .98 !important;
+}
+
+
+/* ---------------------------------------------------------
+   TEXTO DEL PERFIL
+--------------------------------------------------------- */
+
+.profile-summary h3 {
+  font-size:
+    clamp(
+      2.15rem,
+      3vw,
+      3.5rem
+    ) !important;
+
+  line-height:
+    1.03 !important;
+}
+
+
+.profile-summary p {
+  font-size:
+    clamp(
+      16px,
+      .95vw,
+      18px
+    ) !important;
+
+  line-height:
+    1.78 !important;
+}
+
+
+.profile-detail-card h3 {
+  font-size:
+    clamp(
+      1.7rem,
+      2vw,
+      2.5rem
+    ) !important;
+}
+
+
+.profile-detail-card p,
+.card-lead {
+  font-size:
+    clamp(
+      16px,
+      .9vw,
+      18px
+    ) !important;
+
+  line-height:
+    1.72 !important;
+}
+
+
+/* ---------------------------------------------------------
+   FOTO PROFESIONAL
+--------------------------------------------------------- */
+
+.profile-main {
+  grid-template-columns:
+    minmax(290px, 340px)
+    minmax(0, 1fr) !important;
+
+  gap:
+    clamp(
+      38px,
+      3vw,
+      58px
+    ) !important;
+}
+
+
+.profile-photo-wrap {
+  width:
+    100% !important;
+
+  max-width:
+    340px !important;
+}
+
+
+.profile-photo {
+  width:
+    100% !important;
+
+  height:
+    auto !important;
+}
+
+
+/* ---------------------------------------------------------
+   ETIQUETAS PEQUEÑAS
+--------------------------------------------------------- */
+
+.eyebrow {
+  font-size:
+    clamp(
+      11px,
+      .65vw,
+      13px
+    ) !important;
+
+  font-weight:
+    700 !important;
+}
+
+
+.academic-focus span,
+.profile-tags span,
+.case-tech-stack span,
+.case-meta span {
+  font-size:
+    clamp(
+      12px,
+      .7vw,
+      14px
+    ) !important;
+}
+
+
+/* ---------------------------------------------------------
+   TARJETAS Y TEXTOS
+--------------------------------------------------------- */
+
+.project-content p,
+.skill-card p,
+.about-copy,
+.contact-description {
+  font-size:
+    clamp(
+      16px,
+      .9vw,
+      18px
+    ) !important;
+
+  line-height:
+    1.72 !important;
+}
+
+
+.project-content h3,
+.skill-card h3 {
+  font-size:
+    clamp(
+      20px,
+      1.3vw,
+      25px
+    ) !important;
+}
+
+
+/* =========================================================
+   VIEWPORT GRANDE / NAVEGADOR CON ZOOM REDUCIDO
+
+   Al reducir zoom, el navegador reporta un viewport CSS
+   mayor. Aprovechamos eso para aumentar solo el texto
+   necesario, sin agrandar exageradamente los títulos.
+========================================================= */
+
+@media (min-width: 2100px) {
+
+  body {
+    font-size:
+      19px;
+  }
+
+
+  .brand {
+    font-size:
+      22px !important;
+  }
+
+
+  .nav-list a,
+  .nav-contact {
+    font-size:
+      19px !important;
+
+    padding:
+      12px 16px !important;
+  }
+
+
+  .eyebrow {
+    font-size:
+      13px !important;
+  }
+
+
+  .hero-description,
+  .profile-summary p,
+  .profile-detail-card p,
+  .project-content p,
+  .skill-card p,
+  .about-copy,
+  .contact-description,
+  .case-prose {
+    font-size:
+      19px !important;
+  }
+
+
+  .card-lead,
+  .case-lead {
+    font-size:
+      20px !important;
+  }
+
+
+  .profile-main {
+    grid-template-columns:
+      360px
+      minmax(0, 1fr) !important;
+  }
+
+
+  .profile-photo-wrap {
+    max-width:
+      360px !important;
+  }
+
+
+  .profile-tags span,
+  .academic-focus span,
+  .case-tech-stack span,
+  .case-meta span {
+    font-size:
+      14px !important;
+  }
+
+}
+
+
+/* Muy ancho / zoom aproximado 67-70% */
+
+@media (min-width: 2600px) {
+
+  body {
+    font-size:
+      20px;
+  }
+
+
+  .brand {
+    font-size:
+      23px !important;
+  }
+
+
+  .nav-list a,
+  .nav-contact {
+    font-size:
+      20px !important;
+  }
+
+
+  .hero-description,
+  .profile-summary p,
+  .profile-detail-card p,
+  .project-content p,
+  .skill-card p,
+  .about-copy,
+  .contact-description,
+  .case-prose {
+    font-size:
+      20px !important;
+  }
+
+
+  .eyebrow {
+    font-size:
+      14px !important;
+  }
+
+
+  .profile-main {
+    grid-template-columns:
+      380px
+      minmax(0, 1fr) !important;
+  }
+
+
+  .profile-photo-wrap {
+    max-width:
+      380px !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .profile-main {
+    grid-template-columns:
+      230px
+      minmax(0, 1fr) !important;
+  }
+
+
+  .profile-photo-wrap {
+    max-width:
+      230px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOVIL
+========================================================= */
+
+@media (max-width: 700px) {
+
+  body {
+    font-size:
+      16px;
+  }
+
+
+  .brand {
+    font-size:
+      18px !important;
+  }
+
+
+  .hero-title {
+    font-size:
+      clamp(
+        2.65rem,
+        10.5vw,
+        3.6rem
+      ) !important;
+  }
+
+
+  .hero-description,
+  .profile-summary p,
+  .profile-detail-card p,
+  .project-content p,
+  .skill-card p,
+  .about-copy,
+  .contact-description {
+    font-size:
+      16px !important;
+  }
+
+
+  .profile-main {
+    display:
+      block !important;
+  }
+
+
+  .profile-photo-wrap {
+    width:
+      100% !important;
+
+    max-width:
+      420px !important;
+
+    margin:
+      0 auto 26px !important;
+  }
+
+}
+
