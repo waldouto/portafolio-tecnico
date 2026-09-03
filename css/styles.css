@@ -3427,3 +3427,53 @@ body{
   }
 
 }
+
+
+/* =========================================================
+   DESKTOP WIDTH FIX V9
+========================================================= */
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+
+  :root {
+    --container-width: 1420px;
+  }
+
+  .container {
+    width:
+      min(
+        calc(100% - 64px),
+        var(--container-width)
+      );
+  }
+
+}
+
+
+/* Pantallas muy grandes */
+@media (min-width: 1600px) {
+
+  :root {
+    --container-width: 1560px;
+  }
+
+  .container {
+    width:
+      min(
+        calc(100% - 80px),
+        var(--container-width)
+      );
+  }
+
+}
+
+
+/* Pantallas ultra wide */
+@media (min-width: 1900px) {
+
+  :root {
+    --container-width: 1720px;
+  }
+
+}
