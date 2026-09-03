@@ -5722,3 +5722,433 @@ section {
   }
 
 }
+
+/* =========================================================
+   ACADEMIC PROFILE CONTENT V13
+========================================================= */
+
+.profile-intro {
+  font-size: 17px !important;
+  line-height: 1.75 !important;
+}
+
+.academic-highlights {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
+  gap: 14px;
+
+  margin:
+    28px 0 22px;
+}
+
+.academic-stat {
+  padding:
+    20px;
+
+  border:
+    1px solid #dbe3ed;
+
+  border-radius:
+    18px;
+
+  background:
+    #f8fafc;
+}
+
+.academic-stat strong {
+  display: block;
+
+  margin-bottom:
+    6px;
+
+  font-size:
+    28px;
+
+  color:
+    #315ee8;
+}
+
+.academic-stat span {
+  color:
+    #657386;
+
+  font-size:
+    13px;
+}
+
+.academic-focus,
+.profile-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top:
+    18px;
+}
+
+.academic-focus span,
+.profile-tags span {
+  padding:
+    8px 12px;
+
+  border:
+    1px solid #d9e1eb;
+
+  border-radius:
+    999px;
+
+  background:
+    #f5f8fb;
+
+  color:
+    #43536a;
+
+  font-size:
+    12px;
+}
+
+
+/* -----------------------------------------
+   CUERPO DE FICHA
+----------------------------------------- */
+
+.profile-card-body {
+  min-width: 0;
+}
+
+.profile-card-side {
+  align-self: stretch;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.card-lead {
+  margin:
+    10px 0 18px;
+
+  font-size:
+    17px !important;
+
+  line-height:
+    1.6 !important;
+
+  color:
+    #34445b !important;
+}
+
+
+/* -----------------------------------------
+   INFORMACION EN COLUMNAS
+----------------------------------------- */
+
+.information-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top:
+    24px;
+}
+
+.information-grid > div {
+  padding:
+    20px;
+
+  border:
+    1px solid #dce4ed;
+
+  border-radius:
+    18px;
+
+  background:
+    #f8fafc;
+}
+
+.information-grid strong {
+  display: block;
+
+  margin-bottom:
+    7px;
+
+  font-size:
+    15px;
+
+  color:
+    #18263a;
+}
+
+.information-grid span {
+  display: block;
+
+  font-size:
+    13px;
+
+  line-height:
+    1.6;
+
+  color:
+    #657386;
+}
+
+
+/* -----------------------------------------
+   PREESPECIALIDAD
+----------------------------------------- */
+
+.specialization-mark {
+  margin-top:
+    auto;
+
+  padding-top:
+    40px;
+}
+
+.specialization-mark strong {
+  display: block;
+
+  font-family:
+    Georgia, serif;
+
+  font-size:
+    52px;
+
+  line-height:
+    .9;
+
+  color:
+    #526ced;
+}
+
+.specialization-mark span {
+  display: block;
+
+  margin-top:
+    8px;
+
+  font-size:
+    12px;
+
+  color:
+    #778397;
+}
+
+.module-list {
+  margin-top:
+    24px;
+
+  border-top:
+    1px solid #d9e2ec;
+}
+
+.module-row {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
+  gap:
+    20px;
+
+  align-items:
+    center;
+
+  padding:
+    17px 0;
+
+  border-bottom:
+    1px solid #e2e8ef;
+}
+
+.module-row small {
+  display: block;
+
+  margin-bottom:
+    5px;
+
+  font-size:
+    10px;
+
+  letter-spacing:
+    .14em;
+
+  color:
+    #71819a;
+}
+
+.module-row strong {
+  font-size:
+    15px;
+
+  color:
+    #1b283b;
+}
+
+.module-grade {
+  min-width:
+    54px;
+
+  text-align:
+    right;
+
+  font-family:
+    Georgia, serif;
+
+  font-size:
+    25px;
+
+  font-weight:
+    700;
+
+  color:
+    #4664ec;
+}
+
+
+/* -----------------------------------------
+   PROYECTO
+----------------------------------------- */
+
+.project-score-large {
+  margin-top:
+    auto;
+}
+
+.project-score-large strong {
+  font-family:
+    Georgia, serif;
+
+  font-size:
+    68px;
+
+  line-height:
+    .85;
+
+  color:
+    #2f78df;
+}
+
+.project-score-large span {
+  color:
+    #758399;
+}
+
+
+/* -----------------------------------------
+   AREAS ACADEMICAS
+----------------------------------------- */
+
+.course-groups {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 16px;
+
+  margin-top:
+    24px;
+}
+
+.course-group {
+  padding:
+    20px;
+
+  border-left:
+    3px solid #5270ed;
+
+  border-radius:
+    0 14px 14px 0;
+
+  background:
+    #f6f8fc;
+}
+
+.course-group strong {
+  display: block;
+
+  margin-bottom:
+    6px;
+
+  font-size:
+    15px;
+
+  color:
+    #18263a;
+}
+
+.course-group span {
+  font-size:
+    13px;
+
+  line-height:
+    1.6;
+
+  color:
+    #657386;
+}
+
+.technical-symbol {
+  margin-top:
+    auto;
+
+  font-family:
+    monospace;
+
+  font-size:
+    42px;
+
+  color:
+    #4770e9;
+}
+
+
+/* -----------------------------------------
+   RESPONSIVE
+----------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .academic-highlights {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .information-grid,
+  .course-groups {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .academic-highlights {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .profile-card-side {
+    display: block;
+  }
+
+  .specialization-mark,
+  .project-score-large,
+  .technical-symbol {
+    margin:
+      18px 0;
+  }
+
+}
+
