@@ -5958,3 +5958,66 @@ body:has(.case-study) .site-header .text-link{
 
 }
 
+
+/* =========================================================
+   FIX LOGO UTEC V20
+========================================================= */
+
+#perfil .university-card .university-logo-wrap {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 100% !important;
+    min-height: 150px !important;
+
+    margin: 0 0 22px !important;
+    padding: 18px !important;
+
+    overflow: visible !important;
+
+    border: 1px solid rgba(47,115,232,.10) !important;
+    border-radius: 18px !important;
+
+    background: #f5f8ff !important;
+}
+
+#perfil .university-card .university-logo {
+    display: block !important;
+
+    width: auto !important;
+    max-width: 170px !important;
+
+    height: auto !important;
+    max-height: 130px !important;
+
+    margin: 0 auto !important;
+
+    object-fit: contain !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    filter:
+        drop-shadow(
+            0 8px 14px
+            rgba(25,48,78,.08)
+        ) !important;
+}
+
+/* móvil */
+
+@media (max-width: 700px) {
+
+    #perfil .university-card .university-logo-wrap {
+        min-height: 135px !important;
+        padding: 14px !important;
+    }
+
+    #perfil .university-card .university-logo {
+        max-width: 145px !important;
+        max-height: 115px !important;
+    }
+
+}
+
