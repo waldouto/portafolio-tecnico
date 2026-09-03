@@ -1732,3 +1732,234 @@
 
 }
 
+
+/* =========================================================
+   WIDE DESKTOP LAYOUT V5
+   Reduce margenes laterales en pantallas grandes
+========================================================= */
+
+/* contenedor general más ancho */
+
+:root {
+    --u-shell: 1680px;
+}
+
+
+/* escritorio normal */
+
+.shell,
+.container {
+    width:
+        min(
+            calc(100% - 64px),
+            var(--u-shell)
+        ) !important;
+}
+
+
+/* pantallas grandes */
+
+@media (min-width: 1500px) {
+
+    .shell,
+    .container {
+        width:
+            min(
+                calc(100% - 90px),
+                1740px
+            ) !important;
+    }
+
+
+    /* hero aprovecha mejor el ancho */
+
+    .hero-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            minmax(520px, .85fr) !important;
+
+        gap:
+            80px !important;
+    }
+
+
+    .hero-copy {
+        max-width:
+            820px !important;
+    }
+
+
+    .hero-description,
+    .hero-profession {
+        max-width:
+            780px !important;
+    }
+
+
+    /* perfil */
+
+    .profile-showcase {
+        grid-template-columns:
+            240px
+            minmax(0, 1.2fr)
+            minmax(430px, .85fr) !important;
+
+        gap:
+            42px !important;
+    }
+
+
+    /* especialidades */
+
+    .services-grid {
+        grid-template-columns:
+            repeat(
+                4,
+                minmax(0, 1fr)
+            ) !important;
+
+        gap:
+            22px !important;
+    }
+
+
+    /* herramientas */
+
+    .tech-grid {
+        grid-template-columns:
+            repeat(
+                7,
+                minmax(0, 1fr)
+            ) !important;
+
+        gap:
+            16px !important;
+    }
+
+
+    /* proyectos */
+
+    .projects-grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0, 1fr)
+            ) !important;
+
+        gap:
+            22px !important;
+    }
+
+
+    /* formación */
+
+    .education-grid {
+        grid-template-columns:
+            1fr !important;
+    }
+
+
+    .university-panel {
+        grid-template-columns:
+            220px
+            minmax(0, 1.3fr)
+            minmax(320px, .8fr) !important;
+
+        gap:
+            34px !important;
+    }
+
+
+    .module-grid {
+        grid-template-columns:
+            repeat(
+                5,
+                minmax(0, 1fr)
+            ) !important;
+    }
+
+
+    /* trayectoria */
+
+    .timeline {
+        grid-template-columns:
+            repeat(
+                6,
+                minmax(0, 1fr)
+            ) !important;
+    }
+
+
+    /* evidencias */
+
+    .evidence-grid {
+        grid-template-columns:
+            repeat(
+                3,
+                minmax(0, 1fr)
+            ) !important;
+
+        gap:
+            20px !important;
+    }
+
+
+    /* contacto */
+
+    .contact-grid {
+        grid-template-columns:
+            minmax(420px, .8fr)
+            minmax(0, 1.2fr) !important;
+
+        gap:
+            90px !important;
+    }
+
+}
+
+
+/* monitores muy anchos */
+
+@media (min-width: 1900px) {
+
+    .shell,
+    .container {
+        width:
+            min(
+                calc(100% - 120px),
+                1820px
+            ) !important;
+    }
+
+}
+
+
+/* tablet y móvil conservan sus márgenes */
+
+@media (max-width: 900px) {
+
+    .shell,
+    .container {
+        width:
+            min(
+                calc(100% - 32px),
+                var(--u-shell)
+            ) !important;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .shell,
+    .container {
+        width:
+            min(
+                calc(100% - 24px),
+                var(--u-shell)
+            ) !important;
+    }
+
+}
+
