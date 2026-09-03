@@ -5614,3 +5614,347 @@ body:has(.case-study) .site-header .text-link{
 
 }
 
+
+/* =========================================================
+   PROFILE DETAIL TRUE STACK FIX V19
+   Elimina definitivamente las columnas laterales antiguas
+========================================================= */
+
+#perfil .profile-details {
+    display: block !important;
+    width: 100% !important;
+}
+
+#perfil .profile-details > .profile-detail-card {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 0 26px !important;
+    padding: 28px !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    border: 1px solid rgba(25,48,78,.10) !important;
+    border-radius: 26px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f9fbff
+        ) !important;
+
+    box-shadow:
+        0 14px 38px
+        rgba(25,48,78,.05) !important;
+}
+
+
+/* ========================================
+   CUERPO SIEMPRE FULL WIDTH
+======================================== */
+
+#perfil .profile-details
+> .profile-detail-card
+> .profile-card-body {
+
+    display: block !important;
+
+    grid-column: 1 / -1 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* ========================================
+   QUITAR PANEL LATERAL
+======================================== */
+
+#perfil .profile-details
+> .profile-detail-card
+> .profile-card-side {
+
+    display: flex !important;
+
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    grid-column: 1 / -1 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    margin: 0 0 18px !important;
+
+    padding: 12px 16px !important;
+
+    border: 1px solid rgba(47,115,232,.10) !important;
+    border-radius: 16px !important;
+
+    background: #f5f8ff !important;
+}
+
+
+/* Ya no queremos PRE / 92 / </> pegados abajo */
+
+#perfil .profile-details .specialization-mark,
+#perfil .profile-details .project-score-large {
+    margin: 0 !important;
+}
+
+
+/* ========================================
+   UNIVERSIDAD
+======================================== */
+
+#perfil .profile-details
+> .university-card
+> .university-logo-wrap {
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    grid-column: 1 / -1 !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    margin: 0 0 20px !important;
+
+    padding: 14px 18px !important;
+
+    border: 1px solid rgba(47,115,232,.10) !important;
+    border-radius: 16px !important;
+
+    background: #f5f8ff !important;
+}
+
+#perfil .profile-details
+.university-logo-wrap .university-logo {
+
+    width: 100px !important;
+    max-width: 100px !important;
+
+    height: 92px !important;
+
+    margin: 0 !important;
+
+    object-fit: contain !important;
+}
+
+
+/* ========================================
+   TITULOS
+======================================== */
+
+#perfil .profile-details .profile-card-label {
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
+
+    color: #2f73e8 !important;
+
+    font-size: .72rem !important;
+    font-weight: 800 !important;
+
+    letter-spacing: .13em !important;
+}
+
+#perfil .profile-details .profile-card-body > h3 {
+    width: 100% !important;
+    max-width: 1000px !important;
+
+    margin: 0 0 14px !important;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif !important;
+
+    font-size:
+        clamp(1.8rem, 3vw, 3rem) !important;
+
+    line-height: 1.05 !important;
+
+    color: #17243a !important;
+}
+
+
+/* ========================================
+   TARJETAS INTERNAS
+======================================== */
+
+#perfil .profile-details .information-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    width: 100% !important;
+
+    gap: 14px !important;
+
+    margin-top: 24px !important;
+}
+
+#perfil .profile-details .information-grid > div {
+    min-height: 130px !important;
+
+    padding: 18px !important;
+
+    border: 1px solid rgba(25,48,78,.09) !important;
+    border-radius: 17px !important;
+
+    background: #ffffff !important;
+}
+
+
+/* ========================================
+   PREESPECIALIDAD - MODULOS COMO TARJETAS
+======================================== */
+
+#perfil .profile-details .module-list {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 13px !important;
+
+    width: 100% !important;
+
+    margin-top: 24px !important;
+
+    border: 0 !important;
+}
+
+#perfil .profile-details .module-row {
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    min-height: 105px !important;
+
+    padding: 17px !important;
+
+    border: 1px solid rgba(25,48,78,.09) !important;
+    border-radius: 17px !important;
+
+    background: #ffffff !important;
+}
+
+
+/* ========================================
+   MOVIL
+======================================== */
+
+@media (max-width: 700px) {
+
+    #perfil .profile-details
+    > .profile-detail-card {
+
+        display: block !important;
+
+        width: 100% !important;
+
+        padding: 18px !important;
+
+        min-height: 0 !important;
+
+        border-radius: 21px !important;
+    }
+
+
+    #perfil .profile-details
+    > .profile-detail-card
+    > .profile-card-side {
+
+        display: flex !important;
+
+        width: 100% !important;
+
+        min-height: 0 !important;
+
+        padding: 10px 13px !important;
+
+        margin-bottom: 16px !important;
+    }
+
+
+    #perfil .profile-details
+    > .university-card
+    > .university-logo-wrap {
+
+        display: flex !important;
+
+        width: 100% !important;
+
+        min-height: 0 !important;
+
+        padding: 10px 13px !important;
+    }
+
+
+    #perfil .profile-details
+    .university-logo-wrap
+    .university-logo {
+
+        width: 78px !important;
+        max-width: 78px !important;
+
+        height: 72px !important;
+    }
+
+
+    #perfil .profile-details
+    .information-grid,
+
+    #perfil .profile-details
+    .module-list {
+
+        grid-template-columns:
+            1fr !important;
+    }
+
+
+    #perfil .profile-details
+    .information-grid > div,
+
+    #perfil .profile-details
+    .module-row {
+
+        min-height: 0 !important;
+    }
+
+
+    #perfil .profile-details
+    .profile-card-body > h3 {
+
+        font-size:
+            clamp(
+                1.65rem,
+                7.5vw,
+                2.3rem
+            ) !important;
+    }
+
+}
+
