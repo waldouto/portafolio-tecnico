@@ -6024,6 +6024,155 @@ section {
 
 }
 
+.site-header {
+  min-height: 82px;
+}
+
+.site-header .container,
+.header-inner,
+.nav-container {
+  min-height: 82px;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.brand,
+.site-logo {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.nav-list,
+.site-nav ul {
+  gap: 30px;
+}
+
+.nav-list a,
+.site-nav a,
+.nav-contact {
+  font-size: 17px;
+  font-weight: 500;
+
+  padding:
+    12px
+    14px;
+
+  line-height: 1.2;
+}
+
+.nav-contact {
+  padding:
+    12px
+    18px;
+}
+
+.project-visual {
+  position: relative;
+
+  width: 100%;
+  height: 265px;
+
+  overflow: hidden;
+}
+
+.project-visual img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+}
+
+.project-zero .project-visual img,
+.project-card[data-category*="zero"] .project-visual img,
+.project-card:first-child .project-visual img {
+  object-fit: cover;
+
+  object-position: center center;
+
+  transform: scale(.92);
+
+  width: 109%;
+  height: 109%;
+
+  margin:
+    -4.5%
+    0
+    0
+    -4.5%;
+}
+
+.project-zero .project-visual,
+.project-card:first-child .project-visual {
+  background-size: 92% auto !important;
+
+  background-position: center !important;
+
+  background-repeat: no-repeat !important;
+}
+
+.project-card {
+  overflow: hidden;
+}
+
+.project-card .project-visual {
+  min-height: 265px;
+  max-height: 265px;
+}
+
+@media (min-width: 1400px) {
+
+  .nav-list a,
+  .site-nav a,
+  .nav-contact {
+    font-size: 18px;
+  }
+
+  .brand,
+  .site-logo {
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .site-header {
+    min-height: auto;
+  }
+
+  .site-header .container,
+  .header-inner,
+  .nav-container {
+    min-height: auto;
+  }
+
+  .project-visual,
+  .project-card .project-visual {
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+
+  .project-zero .project-visual img,
+  .project-card[data-category*="zero"] .project-visual img,
+  .project-card:first-child .project-visual img {
+    transform: none;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    object-fit: cover;
+  }
+
+}
+
 @media (max-width:1100px){
 .hero-grid,.two-column{grid-template-columns:1fr;gap:42px}
 .section-header{flex-direction:column;align-items:flex-start;gap:24px}
