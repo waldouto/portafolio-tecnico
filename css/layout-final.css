@@ -2190,3 +2190,108 @@ body:has(.case-study) .site-header .text-link{
   }
 
 }
+
+/* =========================================================
+   PERFIL ACADEMICO COMPACTO
+   ========================================================= */
+
+.profile-compact-card {
+    width: 100%;
+    margin-top: 28px;
+    padding: 28px;
+    border: 1px solid rgba(20, 42, 70, 0.12);
+    border-radius: 24px;
+    background: #f8faff;
+}
+
+.profile-compact-card h4 {
+    margin: 0 0 22px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #17253a;
+}
+
+.profile-compact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.profile-compact-item {
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid rgba(20, 42, 70, 0.10);
+    border-radius: 18px;
+    background: #fff;
+}
+
+.profile-compact-item strong,
+.profile-compact-item span {
+    display: block;
+}
+
+.profile-compact-item strong {
+    margin-bottom: 7px;
+    color: #2f73e8;
+    font-size: 1.35rem;
+    line-height: 1.15;
+}
+
+.profile-compact-item span {
+    color: #667386;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.subjects-compact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.subject-item strong {
+    color: #17253a;
+    font-size: 1rem;
+}
+
+.subject-item span {
+    font-size: 0.86rem;
+}
+
+@media (max-width: 900px) {
+
+    .profile-compact-card {
+        margin-top: 22px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .profile-compact-grid,
+    .subjects-compact-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .profile-compact-item {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .profile-compact-card {
+        padding: 18px;
+    }
+
+    .profile-compact-grid,
+    .subjects-compact-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .profile-compact-item {
+        padding: 15px 16px;
+    }
+
+    .profile-compact-item strong {
+        font-size: 1.15rem;
+    }
+}
+
