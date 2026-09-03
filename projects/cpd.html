@@ -12,250 +12,329 @@
 
   <meta
     name="description"
-    content="Caso de estudio técnico: CPD Three-Layer Architecture"
+    content="CPD Three-Layer Architecture - Caso de estudio técnico del portafolio profesional de Waldo José J."
   >
 
-  <title>
-    CPD Three-Layer Architecture | Waldo José J.
-  </title>
+  <title>CPD Three-Layer Architecture | Waldo José J.</title>
 
+  <link
+    rel="stylesheet"
+    href="../css/site.css"
+  >
 
-    <link
-        rel="stylesheet"
-        href="../css/site.css"
-    >
+  <link
+    rel="stylesheet"
+    href="../css/layout-final.css"
+  >
 
 </head>
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container navbar">
 
-    <div class="container navbar">
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      Waldo José J.
+    </a>
 
-      <a
-        href="../index.html"
-        class="brand"
-      >
-        Waldo José J.
-      </a>
+    <a
+      href="../index.html#proyectos"
+      class="text-link"
+    >
+      ← Volver a proyectos
+    </a>
 
-      <a
-        href="../index.html#proyectos"
-        class="text-link"
-      >
-        ← Volver a proyectos
-      </a>
+  </div>
+</header>
+
+
+<main class="case-study">
+
+<section class="section case-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      03 / Data Center
+    </p>
+
+    <h1 class="case-title">
+      CPD Three-Layer Architecture
+    </h1>
+
+    <p class="case-lead">
+      Diseño de un Centro de Procesamiento de Datos organizado en tres capas funcionales.
+    </p>
+
+    <div class="case-meta">
+
+      <span>Waldo José J.</span>
+      <span>UTEC · El Salvador</span>
+      <span>Caso de estudio técnico</span>
 
     </div>
 
-  </header>
+  </div>
+
+</section>
 
 
-  <main>
+<section class="section">
 
-    <section class="section">
+  <div class="container case-intro-grid">
 
-      <div class="container">
+    <div class="case-section-title">
+      <p class="eyebrow">01 / Context</p>
+      <h2>Problema</h2>
+    </div>
 
-        <p class="eyebrow">
-          03 / Data Center
-        </p>
+    <div class="case-prose">
+      <p>Una infraestructura de servidores sin separación funcional incrementa la superficie de ataque y dificulta aplicar controles específicos a servicios públicos, aplicaciones internas y bases de datos.</p>
+    </div>
 
-        <h1 class="hero-title">
-          CPD Three-Layer Architecture
-        </h1>
+  </div>
 
-        <p class="hero-description">
-          Caso de estudio técnico de arquitectura,
-          infraestructura y seguridad.
-        </p>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">02 / Objective</p>
+      <h2>Objetivo</h2>
+    </div>
 
-          <p class="eyebrow">
-            Problem
-          </p>
+    <div class="case-prose">
+      <p>Diseñar un CPD organizado por capas para separar servicios expuestos, procesamiento de aplicaciones y almacenamiento de información, facilitando la segmentación, administración y aplicación de controles de seguridad.</p>
+    </div>
 
-          <h2>
-            Problema
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Los servicios públicos, aplicaciones internas y bases de datos presentan niveles diferentes de exposición y no deben compartir el mismo nivel de confianza dentro del centro de datos.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">03 / Architecture</p>
+      <h2>Arquitectura propuesta</h2>
+    </div>
 
-          <p class="eyebrow">
-            Architecture
-          </p>
+    <div class="case-prose">
+      <p>El diseño distribuye la infraestructura en tres zonas. La primera capa corresponde a la DMZ y aloja 15 servidores web más 2 servidores DNS. La segunda capa contiene 10 servidores de aplicaciones. La capa final mantiene 6 servidores de bases de datos, aislados de accesos directos desde Internet.</p>
+    </div>
 
-          <h2>
-            Arquitectura propuesta
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            El diseño divide el CPD en una capa DMZ para servicios públicos, una capa intermedia de aplicaciones y una capa final protegida para bases de datos.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section case-diagram-section">
 
-      <div class="container">
+  <div class="container">
 
-        <p class="eyebrow">
-          Diagram
-        </p>
+    <div class="case-wide-header">
+      <p class="eyebrow">04 / Diagram</p>
+      <h2>Diagrama de arquitectura</h2>
+    </div>
 
-        <h2>
-          Diagrama de arquitectura
-        </h2>
+    <figure class="architecture-figure case-architecture">
 
+      <a
+        href="../assets/images/cpd/architecture.svg"
+        target="_blank"
+        rel="noopener"
+        class="architecture-open"
+      >
+
+        <img
+          class="architecture-image"
+          src="../assets/images/cpd/architecture.svg"
+          alt="Diagrama técnico de CPD Three-Layer Architecture"
+          loading="lazy"
+        >
+
+      </a>
+
+      <figcaption>
+        Selecciona el diagrama para abrirlo a tamaño completo.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="case-wide-header">
+      <p class="eyebrow">05 / Decisions</p>
+      <h2>Decisiones técnicas</h2>
+    </div>
+
+    <div class="case-decision-grid">
+      
+          <article class="case-mini-card">
+            <h3>Capa DMZ</h3>
+            <p>Los servicios que deben interactuar con Internet permanecen separados de las aplicaciones y datos internos.</p>
+          </article>
         
 
-<figure class="architecture-figure">
-  <a
-    href="../assets/images/cpd/architecture.svg"
-    target="_blank"
-    rel="noopener"
-    class="architecture-open"
-  >
-    <img
-      class="architecture-image"
-      src="../assets/images/cpd/architecture.svg"
-      alt="Diagrama técnico de cpd"
-      loading="lazy"
-    >
-  </a>
+          <article class="case-mini-card">
+            <h3>Capa de aplicaciones</h3>
+            <p>La lógica de negocio se concentra en una zona intermedia con comunicaciones estrictamente controladas.</p>
+          </article>
+        
 
-  <figcaption>
-    Toca el diagrama para verlo a tamaño completo.
-  </figcaption>
-</figure>
+          <article class="case-mini-card">
+            <h3>Capa de datos</h3>
+            <p>Las bases de datos únicamente reciben conexiones autorizadas desde servicios que realmente las necesitan.</p>
+          </article>
+        
 
+          <article class="case-mini-card">
+            <h3>Seguridad entre capas</h3>
+            <p>El tráfico entre niveles debe atravesar controles de firewall y políticas explícitas.</p>
+          </article>
+        
+    </div>
 
+  </div>
 
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">06 / Stack</p>
+      <h2>Tecnologías</h2>
+    </div>
 
-          <p class="eyebrow">
-            Technologies
-          </p>
+    <div class="case-tech-stack">
+      <span>DMZ</span>
+<span>Web Servers</span>
+<span>DNS</span>
+<span>Application Servers</span>
+<span>Database Tier</span>
+<span>NGFW</span>
+<span>Segmentation</span>
+    </div>
 
-          <h2>
-            Tecnologías
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            DMZ · Reverse Proxy · Application Servers · Database Layer · Network Segmentation
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container">
+  <div class="container case-intro-grid">
 
-        <p class="eyebrow">
-          Result
-        </p>
+    <div class="case-section-title">
+      <p class="eyebrow">07 / Result</p>
+      <h2>Resultado arquitectónico</h2>
+    </div>
 
-        <h2>
-          Resultado
-        </h2>
+    <div class="case-prose">
+      <p>La separación en capas permite aplicar políticas específicas según el nivel de exposición de cada servicio y reduce el riesgo de que una vulnerabilidad en un servidor público proporcione acceso directo a los sistemas de bases de datos.</p>
+    </div>
 
-        <p class="hero-description">
-          La arquitectura permite presentar de forma estructurada
-          las decisiones de diseño, segmentación, seguridad,
-          disponibilidad y escalabilidad aplicadas al escenario.
-        </p>
+  </div>
 
-      </div>
-
-    </section>
-
-  </main>
+</section>
 
 
-  <footer class="site-footer">
+<section class="section case-lessons">
 
-    <div class="container footer-grid">
+  <div class="container case-intro-grid">
 
-      <div>
+    <div class="case-section-title">
+      <p class="eyebrow">08 / Lessons</p>
+      <h2>Aprendizajes</h2>
+    </div>
 
-        <strong>
-          Waldo José J.
-        </strong>
+    <div class="case-prose case-prose-large">
+      <p>La arquitectura de un data center debe diseñarse considerando flujos de comunicación antes que dispositivos individuales. Cada conexión entre capas debe existir por una necesidad funcional concreta y estar sujeta a controles verificables.</p>
+    </div>
 
-        <p>
-          Networks · Security · Infrastructure
-        </p>
+  </div>
 
-      </div>
+</section>
+
+
+<section class="section case-next">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      Portfolio
+    </p>
+
+    <h2>
+      Explorar otras arquitecturas
+    </h2>
+
+    <div class="case-actions">
 
       <a
-        href="../index.html"
-        class="text-link"
+        class="button button-primary"
+        href="../index.html#proyectos"
       >
-        Portfolio
+        Ver todos los proyectos
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="../index.html#contacto"
+      >
+        Contacto
       </a>
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Waldo José J.</strong>
+
+      <p>
+        Networks · Security · Infrastructure
+      </p>
+    </div>
+
+    <a
+      href="../index.html"
+      class="text-link"
+    >
+      Portafolio
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
-
 </html>

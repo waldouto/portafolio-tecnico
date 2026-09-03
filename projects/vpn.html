@@ -12,250 +12,328 @@
 
   <meta
     name="description"
-    content="Caso de estudio técnico: Site-to-Site VPN Architecture"
+    content="Site-to-Site VPN Architecture - Caso de estudio técnico del portafolio profesional de Waldo José J."
   >
 
-  <title>
-    Site-to-Site VPN Architecture | Waldo José J.
-  </title>
+  <title>Site-to-Site VPN Architecture | Waldo José J.</title>
 
+  <link
+    rel="stylesheet"
+    href="../css/site.css"
+  >
 
-    <link
-        rel="stylesheet"
-        href="../css/site.css"
-    >
+  <link
+    rel="stylesheet"
+    href="../css/layout-final.css"
+  >
 
 </head>
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container navbar">
 
-    <div class="container navbar">
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      Waldo José J.
+    </a>
 
-      <a
-        href="../index.html"
-        class="brand"
-      >
-        Waldo José J.
-      </a>
+    <a
+      href="../index.html#proyectos"
+      class="text-link"
+    >
+      ← Volver a proyectos
+    </a>
 
-      <a
-        href="../index.html#proyectos"
-        class="text-link"
-      >
-        ← Volver a proyectos
-      </a>
+  </div>
+</header>
+
+
+<main class="case-study">
+
+<section class="section case-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      04 / Secure Connectivity
+    </p>
+
+    <h1 class="case-title">
+      Site-to-Site VPN Architecture
+    </h1>
+
+    <p class="case-lead">
+      Interconexión segura entre sede central y sucursal mediante túnel VPN sobre proveedores de Internet distintos.
+    </p>
+
+    <div class="case-meta">
+
+      <span>Waldo José J.</span>
+      <span>UTEC · El Salvador</span>
+      <span>Caso de estudio técnico</span>
 
     </div>
 
-  </header>
+  </div>
+
+</section>
 
 
-  <main>
+<section class="section">
 
-    <section class="section">
+  <div class="container case-intro-grid">
 
-      <div class="container">
+    <div class="case-section-title">
+      <p class="eyebrow">01 / Context</p>
+      <h2>Problema</h2>
+    </div>
 
-        <p class="eyebrow">
-          04 / Secure Networking
-        </p>
+    <div class="case-prose">
+      <p>Una organización con distintas ubicaciones necesita compartir recursos internos sin exponer directamente sus servicios a Internet. La comunicación debe mantenerse confidencial y disponible aun cuando cada sede utilice un proveedor diferente.</p>
+    </div>
 
-        <h1 class="hero-title">
-          Site-to-Site VPN Architecture
-        </h1>
+  </div>
 
-        <p class="hero-description">
-          Caso de estudio técnico de arquitectura,
-          infraestructura y seguridad.
-        </p>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">02 / Objective</p>
+      <h2>Objetivo</h2>
+    </div>
 
-          <p class="eyebrow">
-            Problem
-          </p>
+    <div class="case-prose">
+      <p>Interconectar de forma segura la sede principal y una sucursal utilizando una VPN sitio a sitio, manteniendo direccionamiento y servicios internos protegidos del tráfico público.</p>
+    </div>
 
-          <h2>
-            Problema
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            La organización requiere comunicación segura entre una sede central y una sucursal conectadas a proveedores de Internet diferentes, sin exponer directamente sus redes internas.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">03 / Architecture</p>
+      <h2>Arquitectura propuesta</h2>
+    </div>
 
-          <p class="eyebrow">
-            Architecture
-          </p>
+    <div class="case-prose">
+      <p>La sede central contempla 8 servidores y 40 usuarios: 33 de ventas, 2 de gerencia y 5 de informática. La sucursal de Santa Ana incorpora 20 usuarios de ventas. Cada ubicación utiliza un ISP diferente y el tráfico privado entre ambas sedes atraviesa un túnel cifrado.</p>
+    </div>
 
-          <h2>
-            Arquitectura propuesta
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Se plantea una VPN sitio a sitio para cifrar el tráfico entre ambas ubicaciones, manteniendo segmentación lógica para usuarios, servidores y departamentos.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section case-diagram-section">
 
-      <div class="container">
+  <div class="container">
 
-        <p class="eyebrow">
-          Diagram
-        </p>
+    <div class="case-wide-header">
+      <p class="eyebrow">04 / Diagram</p>
+      <h2>Diagrama de arquitectura</h2>
+    </div>
 
-        <h2>
-          Diagrama de arquitectura
-        </h2>
+    <figure class="architecture-figure case-architecture">
 
+      <a
+        href="../assets/images/vpn/architecture.svg"
+        target="_blank"
+        rel="noopener"
+        class="architecture-open"
+      >
+
+        <img
+          class="architecture-image"
+          src="../assets/images/vpn/architecture.svg"
+          alt="Diagrama técnico de Site-to-Site VPN Architecture"
+          loading="lazy"
+        >
+
+      </a>
+
+      <figcaption>
+        Selecciona el diagrama para abrirlo a tamaño completo.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="case-wide-header">
+      <p class="eyebrow">05 / Decisions</p>
+      <h2>Decisiones técnicas</h2>
+    </div>
+
+    <div class="case-decision-grid">
+      
+          <article class="case-mini-card">
+            <h3>VPN Site-to-Site</h3>
+            <p>Las redes completas pueden comunicarse sin exigir una conexión VPN individual para cada usuario.</p>
+          </article>
         
 
-<figure class="architecture-figure">
-  <a
-    href="../assets/images/vpn/architecture.svg"
-    target="_blank"
-    rel="noopener"
-    class="architecture-open"
-  >
-    <img
-      class="architecture-image"
-      src="../assets/images/vpn/architecture.svg"
-      alt="Diagrama técnico de vpn"
-      loading="lazy"
-    >
-  </a>
+          <article class="case-mini-card">
+            <h3>Cifrado</h3>
+            <p>Los datos corporativos atraviesan Internet encapsulados dentro de un túnel protegido.</p>
+          </article>
+        
 
-  <figcaption>
-    Toca el diagrama para verlo a tamaño completo.
-  </figcaption>
-</figure>
+          <article class="case-mini-card">
+            <h3>Políticas por red</h3>
+            <p>Solo las subredes y servicios requeridos forman parte del tráfico interesante del túnel.</p>
+          </article>
+        
 
+          <article class="case-mini-card">
+            <h3>ISP independientes</h3>
+            <p>El diseño no presupone que las dos sedes dependan del mismo proveedor.</p>
+          </article>
+        
+    </div>
 
+  </div>
 
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">06 / Stack</p>
+      <h2>Tecnologías</h2>
+    </div>
 
-          <p class="eyebrow">
-            Technologies
-          </p>
+    <div class="case-tech-stack">
+      <span>IPsec</span>
+<span>Site-to-Site VPN</span>
+<span>Routing</span>
+<span>Firewall Policies</span>
+<span>Encryption</span>
+<span>Branch Connectivity</span>
+    </div>
 
-          <h2>
-            Tecnologías
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Site-to-Site VPN · IPsec · Network Segmentation · Multi-ISP · Secure Routing
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container">
+  <div class="container case-intro-grid">
 
-        <p class="eyebrow">
-          Result
-        </p>
+    <div class="case-section-title">
+      <p class="eyebrow">07 / Result</p>
+      <h2>Resultado de conectividad</h2>
+    </div>
 
-        <h2>
-          Resultado
-        </h2>
+    <div class="case-prose">
+      <p>La arquitectura permite que usuarios y servicios de ambas ubicaciones se comuniquen como parte de una infraestructura corporativa, mientras el tránsito sobre Internet permanece protegido mediante cifrado y políticas de acceso.</p>
+    </div>
 
-        <p class="hero-description">
-          La arquitectura permite presentar de forma estructurada
-          las decisiones de diseño, segmentación, seguridad,
-          disponibilidad y escalabilidad aplicadas al escenario.
-        </p>
+  </div>
 
-      </div>
-
-    </section>
-
-  </main>
+</section>
 
 
-  <footer class="site-footer">
+<section class="section case-lessons">
 
-    <div class="container footer-grid">
+  <div class="container case-intro-grid">
 
-      <div>
+    <div class="case-section-title">
+      <p class="eyebrow">08 / Lessons</p>
+      <h2>Aprendizajes</h2>
+    </div>
 
-        <strong>
-          Waldo José J.
-        </strong>
+    <div class="case-prose case-prose-large">
+      <p>Una VPN no sustituye la segmentación. Después de establecer el túnel siguen siendo necesarias reglas que determinen qué sede, usuario o segmento puede comunicarse con cada servicio corporativo.</p>
+    </div>
 
-        <p>
-          Networks · Security · Infrastructure
-        </p>
+  </div>
 
-      </div>
+</section>
+
+
+<section class="section case-next">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      Portfolio
+    </p>
+
+    <h2>
+      Explorar otras arquitecturas
+    </h2>
+
+    <div class="case-actions">
 
       <a
-        href="../index.html"
-        class="text-link"
+        class="button button-primary"
+        href="../index.html#proyectos"
       >
-        Portfolio
+        Ver todos los proyectos
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="../index.html#contacto"
+      >
+        Contacto
       </a>
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Waldo José J.</strong>
+
+      <p>
+        Networks · Security · Infrastructure
+      </p>
+    </div>
+
+    <a
+      href="../index.html"
+      class="text-link"
+    >
+      Portafolio
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
-
 </html>

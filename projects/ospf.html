@@ -12,250 +12,329 @@
 
   <meta
     name="description"
-    content="Caso de estudio técnico: VLAN + OSPF + PPP Architecture"
+    content="VLAN + OSPF + PPP Architecture - Caso de estudio técnico del portafolio profesional de Waldo José J."
   >
 
-  <title>
-    VLAN + OSPF + PPP Architecture | Waldo José J.
-  </title>
+  <title>VLAN + OSPF + PPP Architecture | Waldo José J.</title>
 
+  <link
+    rel="stylesheet"
+    href="../css/site.css"
+  >
 
-    <link
-        rel="stylesheet"
-        href="../css/site.css"
-    >
+  <link
+    rel="stylesheet"
+    href="../css/layout-final.css"
+  >
 
 </head>
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container navbar">
 
-    <div class="container navbar">
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      Waldo José J.
+    </a>
 
-      <a
-        href="../index.html"
-        class="brand"
-      >
-        Waldo José J.
-      </a>
+    <a
+      href="../index.html#proyectos"
+      class="text-link"
+    >
+      ← Volver a proyectos
+    </a>
 
-      <a
-        href="../index.html#proyectos"
-        class="text-link"
-      >
-        ← Volver a proyectos
-      </a>
+  </div>
+</header>
+
+
+<main class="case-study">
+
+<section class="section case-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      06 / Routing & Switching
+    </p>
+
+    <h1 class="case-title">
+      VLAN + OSPF + PPP Architecture
+    </h1>
+
+    <p class="case-lead">
+      Arquitectura de routing y switching con VLAN, enrutamiento dinámico y autenticación de enlaces WAN.
+    </p>
+
+    <div class="case-meta">
+
+      <span>Waldo José J.</span>
+      <span>UTEC · El Salvador</span>
+      <span>Caso de estudio técnico</span>
 
     </div>
 
-  </header>
+  </div>
+
+</section>
 
 
-  <main>
+<section class="section">
 
-    <section class="section">
+  <div class="container case-intro-grid">
 
-      <div class="container">
+    <div class="case-section-title">
+      <p class="eyebrow">01 / Context</p>
+      <h2>Problema</h2>
+    </div>
 
-        <p class="eyebrow">
-          06 / Enterprise Networking
-        </p>
+    <div class="case-prose">
+      <p>Una red con varias áreas funcionales necesita separar dominios de broadcast, permitir comunicación controlada entre VLAN y mantener conectividad entre routers sin depender exclusivamente de rutas estáticas.</p>
+    </div>
 
-        <h1 class="hero-title">
-          VLAN + OSPF + PPP Architecture
-        </h1>
+  </div>
 
-        <p class="hero-description">
-          Caso de estudio técnico de arquitectura,
-          infraestructura y seguridad.
-        </p>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">02 / Objective</p>
+      <h2>Objetivo</h2>
+    </div>
 
-          <p class="eyebrow">
-            Problem
-          </p>
+    <div class="case-prose">
+      <p>Diseñar una topología capaz de integrar segmentación mediante VLAN, routing inter-VLAN, OSPF y enlaces PPP autenticados para representar un escenario empresarial distribuido.</p>
+    </div>
 
-          <h2>
-            Problema
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            La infraestructura necesita separar departamentos mediante VLAN y mantener conectividad dinámica entre múltiples routers y segmentos de red.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">03 / Architecture</p>
+      <h2>Arquitectura propuesta</h2>
+    </div>
 
-          <p class="eyebrow">
-            Architecture
-          </p>
+    <div class="case-prose">
+      <p>La topología integra cuatro routers y múltiples VLAN. El segmento ÁGUILA utiliza VLAN 30 y 40, mientras FAS utiliza VLAN 50 y 60. OSPF distribuye las rutas entre las redes. Los enlaces WAN incorporan autenticación PPP, utilizando PAP en uno de los enlaces y CHAP en otro.</p>
+    </div>
 
-          <h2>
-            Arquitectura propuesta
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            El diseño combina VLAN, routing inter-VLAN, OSPF y enlaces PPP autenticados para proporcionar segmentación y conectividad dinámica.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section case-diagram-section">
 
-      <div class="container">
+  <div class="container">
 
-        <p class="eyebrow">
-          Diagram
-        </p>
+    <div class="case-wide-header">
+      <p class="eyebrow">04 / Diagram</p>
+      <h2>Diagrama de arquitectura</h2>
+    </div>
 
-        <h2>
-          Diagrama de arquitectura
-        </h2>
+    <figure class="architecture-figure case-architecture">
 
+      <a
+        href="../assets/images/ospf/architecture.svg"
+        target="_blank"
+        rel="noopener"
+        class="architecture-open"
+      >
+
+        <img
+          class="architecture-image"
+          src="../assets/images/ospf/architecture.svg"
+          alt="Diagrama técnico de VLAN + OSPF + PPP Architecture"
+          loading="lazy"
+        >
+
+      </a>
+
+      <figcaption>
+        Selecciona el diagrama para abrirlo a tamaño completo.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="case-wide-header">
+      <p class="eyebrow">05 / Decisions</p>
+      <h2>Decisiones técnicas</h2>
+    </div>
+
+    <div class="case-decision-grid">
+      
+          <article class="case-mini-card">
+            <h3>VLAN</h3>
+            <p>Cada grupo lógico opera en un dominio de broadcast independiente.</p>
+          </article>
         
 
-<figure class="architecture-figure">
-  <a
-    href="../assets/images/ospf/architecture.svg"
-    target="_blank"
-    rel="noopener"
-    class="architecture-open"
-  >
-    <img
-      class="architecture-image"
-      src="../assets/images/ospf/architecture.svg"
-      alt="Diagrama técnico de ospf"
-      loading="lazy"
-    >
-  </a>
+          <article class="case-mini-card">
+            <h3>Inter-VLAN Routing</h3>
+            <p>Los segmentos pueden comunicarse mediante interfaces de capa 3 y políticas de routing.</p>
+          </article>
+        
 
-  <figcaption>
-    Toca el diagrama para verlo a tamaño completo.
-  </figcaption>
-</figure>
+          <article class="case-mini-card">
+            <h3>OSPF</h3>
+            <p>Las rutas se anuncian dinámicamente, reduciendo administración manual cuando cambia la topología.</p>
+          </article>
+        
 
+          <article class="case-mini-card">
+            <h3>PPP Authentication</h3>
+            <p>PAP y CHAP permiten demostrar distintos mecanismos de autenticación sobre enlaces punto a punto.</p>
+          </article>
+        
+    </div>
 
+  </div>
 
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">06 / Stack</p>
+      <h2>Tecnologías</h2>
+    </div>
 
-          <p class="eyebrow">
-            Technologies
-          </p>
+    <div class="case-tech-stack">
+      <span>VLAN 30/40/50/60</span>
+<span>OSPF</span>
+<span>PPP</span>
+<span>PAP</span>
+<span>CHAP</span>
+<span>Inter-VLAN Routing</span>
+<span>Cisco Packet Tracer</span>
+    </div>
 
-          <h2>
-            Tecnologías
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Cisco · VLAN · OSPF · PPP · PAP · CHAP · Inter-VLAN Routing
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container">
+  <div class="container case-intro-grid">
 
-        <p class="eyebrow">
-          Result
-        </p>
+    <div class="case-section-title">
+      <p class="eyebrow">07 / Result</p>
+      <h2>Resultado de la topología</h2>
+    </div>
 
-        <h2>
-          Resultado
-        </h2>
+    <div class="case-prose">
+      <p>La solución integra segmentación LAN y conectividad WAN dentro de un único diseño. OSPF proporciona conocimiento dinámico de las redes y los enlaces PPP incorporan mecanismos de autenticación para la comunicación entre routers.</p>
+    </div>
 
-        <p class="hero-description">
-          La arquitectura permite presentar de forma estructurada
-          las decisiones de diseño, segmentación, seguridad,
-          disponibilidad y escalabilidad aplicadas al escenario.
-        </p>
+  </div>
 
-      </div>
-
-    </section>
-
-  </main>
+</section>
 
 
-  <footer class="site-footer">
+<section class="section case-lessons">
 
-    <div class="container footer-grid">
+  <div class="container case-intro-grid">
 
-      <div>
+    <div class="case-section-title">
+      <p class="eyebrow">08 / Lessons</p>
+      <h2>Aprendizajes</h2>
+    </div>
 
-        <strong>
-          Waldo José J.
-        </strong>
+    <div class="case-prose case-prose-large">
+      <p>Separar switching, routing y seguridad como conceptos facilita diagnosticar la red. Las VLAN resuelven segmentación de capa 2, OSPF distribuye alcance de capa 3 y PPP controla características específicas del enlace WAN.</p>
+    </div>
 
-        <p>
-          Networks · Security · Infrastructure
-        </p>
+  </div>
 
-      </div>
+</section>
+
+
+<section class="section case-next">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      Portfolio
+    </p>
+
+    <h2>
+      Explorar otras arquitecturas
+    </h2>
+
+    <div class="case-actions">
 
       <a
-        href="../index.html"
-        class="text-link"
+        class="button button-primary"
+        href="../index.html#proyectos"
       >
-        Portfolio
+        Ver todos los proyectos
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="../index.html#contacto"
+      >
+        Contacto
       </a>
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Waldo José J.</strong>
+
+      <p>
+        Networks · Security · Infrastructure
+      </p>
+    </div>
+
+    <a
+      href="../index.html"
+      class="text-link"
+    >
+      Portafolio
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
-
 </html>

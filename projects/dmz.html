@@ -12,250 +12,329 @@
 
   <meta
     name="description"
-    content="Caso de estudio técnico: DMZ / SRV / LAN Architecture"
+    content="DMZ / SRV / LAN Architecture - Caso de estudio técnico del portafolio profesional de Waldo José J."
   >
 
-  <title>
-    DMZ / SRV / LAN Architecture | Waldo José J.
-  </title>
+  <title>DMZ / SRV / LAN Architecture | Waldo José J.</title>
 
+  <link
+    rel="stylesheet"
+    href="../css/site.css"
+  >
 
-    <link
-        rel="stylesheet"
-        href="../css/site.css"
-    >
+  <link
+    rel="stylesheet"
+    href="../css/layout-final.css"
+  >
 
 </head>
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container navbar">
 
-    <div class="container navbar">
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      Waldo José J.
+    </a>
 
-      <a
-        href="../index.html"
-        class="brand"
-      >
-        Waldo José J.
-      </a>
+    <a
+      href="../index.html#proyectos"
+      class="text-link"
+    >
+      ← Volver a proyectos
+    </a>
 
-      <a
-        href="../index.html#proyectos"
-        class="text-link"
-      >
-        ← Volver a proyectos
-      </a>
+  </div>
+</header>
+
+
+<main class="case-study">
+
+<section class="section case-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      05 / Perimeter Security
+    </p>
+
+    <h1 class="case-title">
+      DMZ / SRV / LAN Architecture
+    </h1>
+
+    <p class="case-lead">
+      Arquitectura segmentada para aislar servicios públicos, servidores internos y usuarios corporativos.
+    </p>
+
+    <div class="case-meta">
+
+      <span>Waldo José J.</span>
+      <span>UTEC · El Salvador</span>
+      <span>Caso de estudio técnico</span>
 
     </div>
 
-  </header>
+  </div>
+
+</section>
 
 
-  <main>
+<section class="section">
 
-    <section class="section">
+  <div class="container case-intro-grid">
 
-      <div class="container">
+    <div class="case-section-title">
+      <p class="eyebrow">01 / Context</p>
+      <h2>Problema</h2>
+    </div>
 
-        <p class="eyebrow">
-          05 / Network Security
-        </p>
+    <div class="case-prose">
+      <p>Publicar servidores directamente desde la LAN aumenta el riesgo de que una vulnerabilidad en un servicio accesible desde Internet permita alcanzar activos internos. Los servicios públicos requieren una zona intermedia con controles propios.</p>
+    </div>
 
-        <h1 class="hero-title">
-          DMZ / SRV / LAN Architecture
-        </h1>
+  </div>
 
-        <p class="hero-description">
-          Caso de estudio técnico de arquitectura,
-          infraestructura y seguridad.
-        </p>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">02 / Objective</p>
+      <h2>Objetivo</h2>
+    </div>
 
-          <p class="eyebrow">
-            Problem
-          </p>
+    <div class="case-prose">
+      <p>Separar servicios expuestos, infraestructura interna y usuarios en zonas de confianza diferentes, controlando explícitamente los flujos permitidos entre Internet, DMZ, servidores y LAN.</p>
+    </div>
 
-          <h2>
-            Problema
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Los servidores públicos, servidores internos y equipos de usuario tienen diferentes niveles de exposición y riesgo, por lo que no deberían operar dentro de una misma zona de confianza.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">03 / Architecture</p>
+      <h2>Arquitectura propuesta</h2>
+    </div>
 
-          <p class="eyebrow">
-            Architecture
-          </p>
+    <div class="case-prose">
+      <p>La DMZ concentra los servicios que deben recibir conexiones externas. Un reverse proxy y controles de aplicación pueden actuar delante de los servidores web, mientras los sistemas internos permanecen en segmentos independientes y sin acceso entrante directo desde Internet.</p>
+    </div>
 
-          <h2>
-            Arquitectura propuesta
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            La arquitectura separa la infraestructura en zonas DMZ, SRV y LAN, aplicando políticas específicas entre segmentos mediante un firewall de seguridad.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section case-diagram-section">
 
-      <div class="container">
+  <div class="container">
 
-        <p class="eyebrow">
-          Diagram
-        </p>
+    <div class="case-wide-header">
+      <p class="eyebrow">04 / Diagram</p>
+      <h2>Diagrama de arquitectura</h2>
+    </div>
 
-        <h2>
-          Diagrama de arquitectura
-        </h2>
+    <figure class="architecture-figure case-architecture">
 
+      <a
+        href="../assets/images/dmz/architecture.svg"
+        target="_blank"
+        rel="noopener"
+        class="architecture-open"
+      >
+
+        <img
+          class="architecture-image"
+          src="../assets/images/dmz/architecture.svg"
+          alt="Diagrama técnico de DMZ / SRV / LAN Architecture"
+          loading="lazy"
+        >
+
+      </a>
+
+      <figcaption>
+        Selecciona el diagrama para abrirlo a tamaño completo.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="case-wide-header">
+      <p class="eyebrow">05 / Decisions</p>
+      <h2>Decisiones técnicas</h2>
+    </div>
+
+    <div class="case-decision-grid">
+      
+          <article class="case-mini-card">
+            <h3>DMZ independiente</h3>
+            <p>Los servicios públicos no comparten directamente la misma zona de confianza que los usuarios internos.</p>
+          </article>
         
 
-<figure class="architecture-figure">
-  <a
-    href="../assets/images/dmz/architecture.svg"
-    target="_blank"
-    rel="noopener"
-    class="architecture-open"
-  >
-    <img
-      class="architecture-image"
-      src="../assets/images/dmz/architecture.svg"
-      alt="Diagrama técnico de dmz"
-      loading="lazy"
-    >
-  </a>
+          <article class="case-mini-card">
+            <h3>Reverse Proxy</h3>
+            <p>Las solicitudes externas pueden terminar en un punto controlado antes de alcanzar los servidores de aplicación.</p>
+          </article>
+        
 
-  <figcaption>
-    Toca el diagrama para verlo a tamaño completo.
-  </figcaption>
-</figure>
+          <article class="case-mini-card">
+            <h3>WAF</h3>
+            <p>Las aplicaciones web pueden incorporar inspección específica frente a ataques dirigidos a la capa HTTP.</p>
+          </article>
+        
 
+          <article class="case-mini-card">
+            <h3>Flujos mínimos</h3>
+            <p>Solo se habilitan conexiones necesarias entre DMZ, servicios internos y bases de datos.</p>
+          </article>
+        
+    </div>
 
+  </div>
 
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">06 / Stack</p>
+      <h2>Tecnologías</h2>
+    </div>
 
-          <p class="eyebrow">
-            Technologies
-          </p>
+    <div class="case-tech-stack">
+      <span>DMZ</span>
+<span>Reverse Proxy</span>
+<span>WAF</span>
+<span>NGFW</span>
+<span>Network Segmentation</span>
+<span>ACL</span>
+<span>Defense in Depth</span>
+    </div>
 
-          <h2>
-            Tecnologías
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Sophos UTM · DMZ · Server Network · LAN · Firewall Policies · Network Segmentation
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container">
+  <div class="container case-intro-grid">
 
-        <p class="eyebrow">
-          Result
-        </p>
+    <div class="case-section-title">
+      <p class="eyebrow">07 / Result</p>
+      <h2>Resultado de seguridad</h2>
+    </div>
 
-        <h2>
-          Resultado
-        </h2>
+    <div class="case-prose">
+      <p>La segmentación disminuye la exposición de la LAN y establece límites claros entre servicios públicos e infraestructura privada. Una eventual vulnerabilidad en la DMZ no implica automáticamente acceso a toda la red corporativa.</p>
+    </div>
 
-        <p class="hero-description">
-          La arquitectura permite presentar de forma estructurada
-          las decisiones de diseño, segmentación, seguridad,
-          disponibilidad y escalabilidad aplicadas al escenario.
-        </p>
+  </div>
 
-      </div>
-
-    </section>
-
-  </main>
+</section>
 
 
-  <footer class="site-footer">
+<section class="section case-lessons">
 
-    <div class="container footer-grid">
+  <div class="container case-intro-grid">
 
-      <div>
+    <div class="case-section-title">
+      <p class="eyebrow">08 / Lessons</p>
+      <h2>Aprendizajes</h2>
+    </div>
 
-        <strong>
-          Waldo José J.
-        </strong>
+    <div class="case-prose case-prose-large">
+      <p>La DMZ es efectiva cuando existen políticas restrictivas en ambos sentidos. Colocar un servidor en una subred llamada DMZ sin controlar sus flujos hacia la LAN no constituye por sí solo una arquitectura segura.</p>
+    </div>
 
-        <p>
-          Networks · Security · Infrastructure
-        </p>
+  </div>
 
-      </div>
+</section>
+
+
+<section class="section case-next">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      Portfolio
+    </p>
+
+    <h2>
+      Explorar otras arquitecturas
+    </h2>
+
+    <div class="case-actions">
 
       <a
-        href="../index.html"
-        class="text-link"
+        class="button button-primary"
+        href="../index.html#proyectos"
       >
-        Portfolio
+        Ver todos los proyectos
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="../index.html#contacto"
+      >
+        Contacto
       </a>
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Waldo José J.</strong>
+
+      <p>
+        Networks · Security · Infrastructure
+      </p>
+    </div>
+
+    <a
+      href="../index.html"
+      class="text-link"
+    >
+      Portafolio
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
-
 </html>

@@ -12,250 +12,329 @@
 
   <meta
     name="description"
-    content="Caso de estudio técnico: NGFW Enterprise Architecture"
+    content="NGFW Enterprise Architecture - Caso de estudio técnico del portafolio profesional de Waldo José J."
   >
 
-  <title>
-    NGFW Enterprise Architecture | Waldo José J.
-  </title>
+  <title>NGFW Enterprise Architecture | Waldo José J.</title>
 
+  <link
+    rel="stylesheet"
+    href="../css/site.css"
+  >
 
-    <link
-        rel="stylesheet"
-        href="../css/site.css"
-    >
+  <link
+    rel="stylesheet"
+    href="../css/layout-final.css"
+  >
 
 </head>
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container navbar">
 
-    <div class="container navbar">
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      Waldo José J.
+    </a>
 
-      <a
-        href="../index.html"
-        class="brand"
-      >
-        Waldo José J.
-      </a>
+    <a
+      href="../index.html#proyectos"
+      class="text-link"
+    >
+      ← Volver a proyectos
+    </a>
 
-      <a
-        href="../index.html#proyectos"
-        class="text-link"
-      >
-        ← Volver a proyectos
-      </a>
+  </div>
+</header>
+
+
+<main class="case-study">
+
+<section class="section case-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      02 / Network Security
+    </p>
+
+    <h1 class="case-title">
+      NGFW Enterprise Architecture
+    </h1>
+
+    <p class="case-lead">
+      Arquitectura de seguridad perimetral empresarial con alta disponibilidad, inspección avanzada y segmentación.
+    </p>
+
+    <div class="case-meta">
+
+      <span>Waldo José J.</span>
+      <span>UTEC · El Salvador</span>
+      <span>Caso de estudio técnico</span>
 
     </div>
 
-  </header>
+  </div>
+
+</section>
 
 
-  <main>
+<section class="section">
 
-    <section class="section">
+  <div class="container case-intro-grid">
 
-      <div class="container">
+    <div class="case-section-title">
+      <p class="eyebrow">01 / Context</p>
+      <h2>Problema</h2>
+    </div>
 
-        <p class="eyebrow">
-          02 / Security Infrastructure
-        </p>
+    <div class="case-prose">
+      <p>Un firewall tradicional basado principalmente en puertos y direcciones IP no ofrece suficiente contexto para controlar aplicaciones modernas, usuarios, amenazas y tráfico cifrado. Además, un único dispositivo perimetral puede convertirse en un punto crítico de falla.</p>
+    </div>
 
-        <h1 class="hero-title">
-          NGFW Enterprise Architecture
-        </h1>
+  </div>
 
-        <p class="hero-description">
-          Caso de estudio técnico de arquitectura,
-          infraestructura y seguridad.
-        </p>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">02 / Objective</p>
+      <h2>Objetivo</h2>
+    </div>
 
-          <p class="eyebrow">
-            Problem
-          </p>
+    <div class="case-prose">
+      <p>Diseñar una arquitectura NGFW capaz de proporcionar inspección avanzada, control de aplicaciones, prevención de amenazas, segmentación y continuidad operativa mediante alta disponibilidad.</p>
+    </div>
 
-          <h2>
-            Problema
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            La infraestructura requiere protección perimetral capaz de identificar aplicaciones, inspeccionar amenazas y controlar el tráfico con mayor precisión que un firewall tradicional.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">03 / Architecture</p>
+      <h2>Arquitectura propuesta</h2>
+    </div>
 
-          <p class="eyebrow">
-            Architecture
-          </p>
+    <div class="case-prose">
+      <p>La propuesta utiliza un par de firewalls Palo Alto PA-3430 en modalidad High Availability Active/Passive. El diseño separa Internet, DMZ, redes internas y servicios críticos, permitiendo políticas específicas entre zonas y reduciendo la exposición directa de la infraestructura.</p>
+    </div>
 
-          <h2>
-            Arquitectura propuesta
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Se propone una arquitectura con firewall de nueva generación en alta disponibilidad, segmentación por zonas de seguridad e inspección basada en aplicaciones y amenazas.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section case-diagram-section">
 
-      <div class="container">
+  <div class="container">
 
-        <p class="eyebrow">
-          Diagram
-        </p>
+    <div class="case-wide-header">
+      <p class="eyebrow">04 / Diagram</p>
+      <h2>Diagrama de arquitectura</h2>
+    </div>
 
-        <h2>
-          Diagrama de arquitectura
-        </h2>
+    <figure class="architecture-figure case-architecture">
 
+      <a
+        href="../assets/images/ngfw/architecture.svg"
+        target="_blank"
+        rel="noopener"
+        class="architecture-open"
+      >
+
+        <img
+          class="architecture-image"
+          src="../assets/images/ngfw/architecture.svg"
+          alt="Diagrama técnico de NGFW Enterprise Architecture"
+          loading="lazy"
+        >
+
+      </a>
+
+      <figcaption>
+        Selecciona el diagrama para abrirlo a tamaño completo.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="case-wide-header">
+      <p class="eyebrow">05 / Decisions</p>
+      <h2>Decisiones técnicas</h2>
+    </div>
+
+    <div class="case-decision-grid">
+      
+          <article class="case-mini-card">
+            <h3>Alta disponibilidad</h3>
+            <p>Dos NGFW en Active/Passive reducen el impacto de una falla del firewall principal.</p>
+          </article>
         
 
-<figure class="architecture-figure">
-  <a
-    href="../assets/images/ngfw/architecture.svg"
-    target="_blank"
-    rel="noopener"
-    class="architecture-open"
-  >
-    <img
-      class="architecture-image"
-      src="../assets/images/ngfw/architecture.svg"
-      alt="Diagrama técnico de ngfw"
-      loading="lazy"
-    >
-  </a>
+          <article class="case-mini-card">
+            <h3>App-ID</h3>
+            <p>El control no depende únicamente del puerto utilizado; se identifica la aplicación real que genera el tráfico.</p>
+          </article>
+        
 
-  <figcaption>
-    Toca el diagrama para verlo a tamaño completo.
-  </figcaption>
-</figure>
+          <article class="case-mini-card">
+            <h3>Threat Prevention</h3>
+            <p>El tráfico permitido continúa siendo inspeccionado para identificar actividad maliciosa.</p>
+          </article>
+        
 
+          <article class="case-mini-card">
+            <h3>Segmentación por zonas</h3>
+            <p>Internet, DMZ, usuarios y servicios internos mantienen políticas independientes.</p>
+          </article>
+        
+    </div>
 
+  </div>
 
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">06 / Stack</p>
+      <h2>Tecnologías</h2>
+    </div>
 
-          <p class="eyebrow">
-            Technologies
-          </p>
+    <div class="case-tech-stack">
+      <span>Palo Alto PA-3430</span>
+<span>App-ID</span>
+<span>Threat Prevention</span>
+<span>HA Active/Passive</span>
+<span>NGFW</span>
+<span>DMZ</span>
+<span>Security Policies</span>
+    </div>
 
-          <h2>
-            Tecnologías
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Palo Alto PA-3430 · High Availability · App-ID · Threat Prevention · Security Zones
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container">
+  <div class="container case-intro-grid">
 
-        <p class="eyebrow">
-          Result
-        </p>
+    <div class="case-section-title">
+      <p class="eyebrow">07 / Result</p>
+      <h2>Capacidad de la solución</h2>
+    </div>
 
-        <h2>
-          Resultado
-        </h2>
+    <div class="case-prose">
+      <p>El PA-3430 proporciona una plataforma adecuada para escenarios empresariales donde se requiere combinar rendimiento, identificación de aplicaciones, prevención de amenazas y alta disponibilidad. La arquitectura también consideró alternativas como FortiGate 600F y Cisco Firepower 2130/2140.</p>
+    </div>
 
-        <p class="hero-description">
-          La arquitectura permite presentar de forma estructurada
-          las decisiones de diseño, segmentación, seguridad,
-          disponibilidad y escalabilidad aplicadas al escenario.
-        </p>
+  </div>
 
-      </div>
-
-    </section>
-
-  </main>
+</section>
 
 
-  <footer class="site-footer">
+<section class="section case-lessons">
 
-    <div class="container footer-grid">
+  <div class="container case-intro-grid">
 
-      <div>
+    <div class="case-section-title">
+      <p class="eyebrow">08 / Lessons</p>
+      <h2>Aprendizajes</h2>
+    </div>
 
-        <strong>
-          Waldo José J.
-        </strong>
+    <div class="case-prose case-prose-large">
+      <p>La selección de un firewall no debe basarse únicamente en throughput nominal. También deben analizarse inspección con seguridad habilitada, crecimiento esperado, alta disponibilidad, gestión, visibilidad y compatibilidad con la arquitectura completa.</p>
+    </div>
 
-        <p>
-          Networks · Security · Infrastructure
-        </p>
+  </div>
 
-      </div>
+</section>
+
+
+<section class="section case-next">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      Portfolio
+    </p>
+
+    <h2>
+      Explorar otras arquitecturas
+    </h2>
+
+    <div class="case-actions">
 
       <a
-        href="../index.html"
-        class="text-link"
+        class="button button-primary"
+        href="../index.html#proyectos"
       >
-        Portfolio
+        Ver todos los proyectos
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="../index.html#contacto"
+      >
+        Contacto
       </a>
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Waldo José J.</strong>
+
+      <p>
+        Networks · Security · Infrastructure
+      </p>
+    </div>
+
+    <a
+      href="../index.html"
+      class="text-link"
+    >
+      Portafolio
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
-
 </html>

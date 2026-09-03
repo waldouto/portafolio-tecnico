@@ -12,250 +12,329 @@
 
   <meta
     name="description"
-    content="Caso de estudio técnico: Zero Trust Architecture"
+    content="Zero Trust Architecture - Caso de estudio técnico del portafolio profesional de Waldo José J."
   >
 
-  <title>
-    Zero Trust Architecture | Waldo José J.
-  </title>
+  <title>Zero Trust Architecture | Waldo José J.</title>
 
+  <link
+    rel="stylesheet"
+    href="../css/site.css"
+  >
 
-    <link
-        rel="stylesheet"
-        href="../css/site.css"
-    >
+  <link
+    rel="stylesheet"
+    href="../css/layout-final.css"
+  >
 
 </head>
 
 <body>
 
-  <header class="site-header">
+<header class="site-header">
+  <div class="container navbar">
 
-    <div class="container navbar">
+    <a
+      href="../index.html"
+      class="brand"
+    >
+      Waldo José J.
+    </a>
 
-      <a
-        href="../index.html"
-        class="brand"
-      >
-        Waldo José J.
-      </a>
+    <a
+      href="../index.html#proyectos"
+      class="text-link"
+    >
+      ← Volver a proyectos
+    </a>
 
-      <a
-        href="../index.html#proyectos"
-        class="text-link"
-      >
-        ← Volver a proyectos
-      </a>
+  </div>
+</header>
+
+
+<main class="case-study">
+
+<section class="section case-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      01 / Security Architecture
+    </p>
+
+    <h1 class="case-title">
+      Zero Trust Architecture
+    </h1>
+
+    <p class="case-lead">
+      Evaluación comparativa entre una arquitectura perimetral tradicional y un modelo Zero Trust aplicado.
+    </p>
+
+    <div class="case-meta">
+
+      <span>Waldo José J.</span>
+      <span>UTEC · El Salvador</span>
+      <span>Caso de estudio técnico</span>
 
     </div>
 
-  </header>
+  </div>
+
+</section>
 
 
-  <main>
+<section class="section">
 
-    <section class="section">
+  <div class="container case-intro-grid">
 
-      <div class="container">
+    <div class="case-section-title">
+      <p class="eyebrow">01 / Context</p>
+      <h2>Problema</h2>
+    </div>
 
-        <p class="eyebrow">
-          01 / Security Architecture
-        </p>
+    <div class="case-prose">
+      <p>Las arquitecturas de seguridad tradicionales depositan gran parte de su confianza en el perímetro. Una vez autenticado un usuario o dispositivo, puede existir demasiada libertad de movimiento dentro de la red. Esto incrementa el impacto potencial de credenciales comprometidas, accesos remotos inseguros y movimiento lateral entre segmentos.</p>
+    </div>
 
-        <h1 class="hero-title">
-          Zero Trust Architecture
-        </h1>
+  </div>
 
-        <p class="hero-description">
-          Caso de estudio técnico de arquitectura,
-          infraestructura y seguridad.
-        </p>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">02 / Objective</p>
+      <h2>Objetivo</h2>
+    </div>
 
-          <p class="eyebrow">
-            Problem
-          </p>
+    <div class="case-prose">
+      <p>Diseñar y evaluar un modelo Zero Trust capaz de reducir la confianza implícita, verificar continuamente identidades y dispositivos y limitar el acceso únicamente a los recursos necesarios para cada usuario, aplicación o servicio.</p>
+    </div>
 
-          <h2>
-            Problema
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            El modelo perimetral tradicional depende excesivamente de la confianza implícita una vez que un usuario o dispositivo ingresa a la red. Esto aumenta el riesgo ante credenciales comprometidas, movimiento lateral y accesos remotos no controlados.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">03 / Architecture</p>
+      <h2>Arquitectura propuesta</h2>
+    </div>
 
-          <p class="eyebrow">
-            Architecture
-          </p>
+    <div class="case-prose">
+      <p>La propuesta combina controles de identidad, ZTNA, mínimo privilegio, microsegmentación, monitoreo continuo y políticas basadas en contexto. El diseño sigue los principios Verify Explicitly, Use Least Privilege Access y Assume Breach, complementados con Defense in Depth.</p>
+    </div>
 
-          <h2>
-            Arquitectura propuesta
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            Se propone una arquitectura Zero Trust basada en verificación continua, mínimo privilegio, segmentación, control de identidad y monitoreo. El modelo busca reducir el movimiento lateral y limitar el impacto de una identidad comprometida.
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section case-diagram-section">
 
-      <div class="container">
+  <div class="container">
 
-        <p class="eyebrow">
-          Diagram
-        </p>
+    <div class="case-wide-header">
+      <p class="eyebrow">04 / Diagram</p>
+      <h2>Diagrama de arquitectura</h2>
+    </div>
 
-        <h2>
-          Diagrama de arquitectura
-        </h2>
+    <figure class="architecture-figure case-architecture">
 
+      <a
+        href="../assets/images/zero-trust/architecture.svg"
+        target="_blank"
+        rel="noopener"
+        class="architecture-open"
+      >
+
+        <img
+          class="architecture-image"
+          src="../assets/images/zero-trust/architecture.svg"
+          alt="Diagrama técnico de Zero Trust Architecture"
+          loading="lazy"
+        >
+
+      </a>
+
+      <figcaption>
+        Selecciona el diagrama para abrirlo a tamaño completo.
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="case-wide-header">
+      <p class="eyebrow">05 / Decisions</p>
+      <h2>Decisiones técnicas</h2>
+    </div>
+
+    <div class="case-decision-grid">
+      
+          <article class="case-mini-card">
+            <h3>Identidad primero</h3>
+            <p>El acceso se determina a partir de identidad, dispositivo, contexto y política, no simplemente por ubicación en la red.</p>
+          </article>
         
 
-<figure class="architecture-figure">
-  <a
-    href="../assets/images/zero-trust/architecture.svg"
-    target="_blank"
-    rel="noopener"
-    class="architecture-open"
-  >
-    <img
-      class="architecture-image"
-      src="../assets/images/zero-trust/architecture.svg"
-      alt="Diagrama técnico de zero-trust"
-      loading="lazy"
-    >
-  </a>
+          <article class="case-mini-card">
+            <h3>Microsegmentación</h3>
+            <p>Los recursos se separan para reducir rutas de movimiento lateral ante una cuenta o endpoint comprometido.</p>
+          </article>
+        
 
-  <figcaption>
-    Toca el diagrama para verlo a tamaño completo.
-  </figcaption>
-</figure>
+          <article class="case-mini-card">
+            <h3>Acceso remoto</h3>
+            <p>ZTNA sustituye el concepto de acceso amplio a la red por acceso específico a aplicaciones y servicios.</p>
+          </article>
+        
 
+          <article class="case-mini-card">
+            <h3>Visibilidad</h3>
+            <p>Los eventos de autenticación, tráfico y seguridad se concentran para análisis y correlación continua.</p>
+          </article>
+        
+    </div>
 
+  </div>
 
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container two-column">
+  <div class="container case-intro-grid">
 
-        <div>
+    <div class="case-section-title">
+      <p class="eyebrow">06 / Stack</p>
+      <h2>Tecnologías</h2>
+    </div>
 
-          <p class="eyebrow">
-            Technologies
-          </p>
+    <div class="case-tech-stack">
+      <span>Zero Trust</span>
+<span>ZTNA</span>
+<span>NIST CSF 2.0</span>
+<span>SIEM</span>
+<span>Microsegmentación</span>
+<span>Defense in Depth</span>
+<span>Identity-Based Access</span>
+    </div>
 
-          <h2>
-            Tecnologías
-          </h2>
+  </div>
 
-        </div>
-
-        <div class="about-copy">
-
-          <p>
-            ZTNA · NIST CSF 2.0 · Microsegmentación · Defense in Depth · Identity-Based Access · SIEM
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
 
-    <section class="section">
+<section class="section">
 
-      <div class="container">
+  <div class="container case-intro-grid">
 
-        <p class="eyebrow">
-          Result
-        </p>
+    <div class="case-section-title">
+      <p class="eyebrow">07 / Result</p>
+      <h2>Resultado y evaluación</h2>
+    </div>
 
-        <h2>
-          Resultado
-        </h2>
+    <div class="case-prose">
+      <p>El modelo permitió comparar de forma estructurada cómo una arquitectura tradicional y una arquitectura Zero Trust responden ante credenciales comprometidas, movimiento lateral, acceso remoto y necesidades de visibilidad. El proyecto obtuvo una evaluación de 92/100.</p>
+    </div>
 
-        <p class="hero-description">
-          La arquitectura permite presentar de forma estructurada
-          las decisiones de diseño, segmentación, seguridad,
-          disponibilidad y escalabilidad aplicadas al escenario.
-        </p>
+  </div>
 
-      </div>
-
-    </section>
-
-  </main>
+</section>
 
 
-  <footer class="site-footer">
+<section class="section case-lessons">
 
-    <div class="container footer-grid">
+  <div class="container case-intro-grid">
 
-      <div>
+    <div class="case-section-title">
+      <p class="eyebrow">08 / Lessons</p>
+      <h2>Aprendizajes</h2>
+    </div>
 
-        <strong>
-          Waldo José J.
-        </strong>
+    <div class="case-prose case-prose-large">
+      <p>El principal aprendizaje fue que Zero Trust no depende de un único producto. Su efectividad surge de combinar identidad, segmentación, observabilidad, políticas de acceso y respuesta ante incidentes dentro de una arquitectura coherente.</p>
+    </div>
 
-        <p>
-          Networks · Security · Infrastructure
-        </p>
+  </div>
 
-      </div>
+</section>
+
+
+<section class="section case-next">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      Portfolio
+    </p>
+
+    <h2>
+      Explorar otras arquitecturas
+    </h2>
+
+    <div class="case-actions">
 
       <a
-        href="../index.html"
-        class="text-link"
+        class="button button-primary"
+        href="../index.html#proyectos"
       >
-        Portfolio
+        Ver todos los proyectos
+      </a>
+
+      <a
+        class="button button-secondary"
+        href="../index.html#contacto"
+      >
+        Contacto
       </a>
 
     </div>
 
-  </footer>
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+  <div class="container footer-grid">
+
+    <div>
+      <strong>Waldo José J.</strong>
+
+      <p>
+        Networks · Security · Infrastructure
+      </p>
+    </div>
+
+    <a
+      href="../index.html"
+      class="text-link"
+    >
+      Portafolio
+    </a>
+
+  </div>
+
+</footer>
 
 </body>
-
 </html>

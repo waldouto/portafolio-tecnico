@@ -1,0 +1,283 @@
+/* =========================================================
+   CASE STUDIES
+========================================================= */
+
+.case-study {
+  overflow-x: hidden;
+}
+
+.case-hero {
+  padding-top: clamp(80px, 9vw, 150px);
+}
+
+.case-title {
+  width: 100%;
+  max-width: none;
+
+  font-family: var(--font-display);
+
+  font-size: clamp(4rem, 7vw, 8rem);
+  line-height: .94;
+  letter-spacing: -.05em;
+}
+
+.case-lead {
+  max-width: 1100px;
+
+  margin-top: 28px;
+
+  color: var(--color-muted);
+
+  font-size: clamp(18px, 1.5vw, 23px);
+  line-height: 1.6;
+}
+
+.case-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 34px;
+}
+
+.case-meta span,
+.case-tech-stack span {
+  padding: 9px 14px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  background: var(--color-surface);
+
+  font-size: 13px;
+}
+
+
+/* BLOQUES DE INFORMACION */
+
+.case-intro-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(230px, .65fr)
+    minmax(0, 1.35fr);
+
+  gap: clamp(44px, 6vw, 110px);
+
+  align-items: start;
+}
+
+.case-section-title h2,
+.case-wide-header h2,
+.case-next h2 {
+  font-family: var(--font-display);
+
+  font-size: clamp(2.7rem, 4vw, 5rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.case-prose {
+  width: 100%;
+
+  color: var(--color-muted);
+
+  font-size: clamp(17px, 1.35vw, 20px);
+  line-height: 1.8;
+}
+
+.case-prose p {
+  max-width: none;
+}
+
+.case-prose-large {
+  font-size: clamp(18px, 1.5vw, 22px);
+}
+
+.case-wide-header {
+  margin-bottom: 36px;
+}
+
+
+/* DIAGRAMA */
+
+.case-architecture {
+  width: 100%;
+
+  padding: clamp(16px, 2vw, 30px);
+
+  border: 1px solid var(--color-border);
+  border-radius: 28px;
+
+  background: #ffffff;
+}
+
+.case-architecture .architecture-open {
+  display: block;
+
+  width: 100%;
+}
+
+.case-architecture img {
+  display: block;
+
+  width: 100%;
+
+  max-height: 760px;
+
+  margin-inline: auto;
+
+  object-fit: contain;
+}
+
+.case-architecture figcaption {
+  margin-top: 18px;
+
+  color: var(--color-muted);
+
+  font-size: 13px;
+
+  text-align: center;
+}
+
+
+/* DECISIONES TECNICAS */
+
+.case-decision-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+.case-mini-card {
+  padding: clamp(24px, 2.5vw, 36px);
+
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+
+  background: var(--color-background);
+}
+
+.case-mini-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 21px;
+}
+
+.case-mini-card p {
+  color: var(--color-muted);
+
+  line-height: 1.7;
+}
+
+
+/* TECNOLOGIAS */
+
+.case-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-content: start;
+
+  gap: 10px;
+}
+
+.case-tech-stack span {
+  font-size: 14px;
+}
+
+
+/* APRENDIZAJES */
+
+.case-lessons {
+  background: var(--color-surface);
+}
+
+
+/* CIERRE */
+
+.case-next {
+  text-align: center;
+}
+
+.case-next .eyebrow {
+  text-align: center;
+}
+
+.case-next h2 {
+  max-width: 1000px;
+
+  margin-inline: auto;
+}
+
+.case-actions {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .case-intro-grid {
+    grid-template-columns: 1fr;
+
+    gap: 26px;
+  }
+
+  .case-decision-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* MOVIL */
+
+@media (max-width: 700px) {
+
+  .case-title {
+    font-size: clamp(3rem, 12vw, 4.7rem);
+  }
+
+  .case-lead {
+    font-size: 17px;
+  }
+
+  .case-prose {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .case-meta {
+    gap: 8px;
+  }
+
+  .case-architecture {
+    padding: 12px;
+  }
+
+  .case-actions {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    width: 100%;
+  }
+
+  .case-actions .button {
+    width: 100%;
+  }
+
+}

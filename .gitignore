@@ -2,3 +2,6 @@
 backup-before-production-*
 .DS_Store
 Thumbs.db
+
+index.html.backup-*
+projects-backup-*
