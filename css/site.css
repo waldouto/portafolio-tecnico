@@ -5862,6 +5862,168 @@ section {
 
 }
 
+.container,
+.professional-profile .container,
+.projects .container,
+.about .container,
+.skills .container,
+.contact .container {
+  width:
+    calc(100% - 64px);
+
+  max-width:
+    1880px;
+
+  margin-inline:
+    auto;
+}
+
+.hero-grid {
+  display: block;
+
+  width: 100%;
+}
+
+.hero-content {
+  width: 100%;
+
+  max-width: none;
+
+  margin: 0;
+}
+
+.hero-title {
+  width: 100%;
+
+  max-width: none;
+
+  margin:
+    0;
+
+  text-align:
+    left;
+
+  font-size:
+    clamp(
+      4.8rem,
+      7.6vw,
+      8.4rem
+    );
+
+  line-height:
+    .93;
+
+  letter-spacing:
+    -.045em;
+}
+
+.hero-description {
+  max-width:
+    1200px;
+
+  margin:
+    30px 0 0;
+
+  text-align:
+    left;
+}
+
+.hero-actions {
+  justify-content:
+    flex-start;
+}
+
+.hero-panel {
+  width:
+    100% !important;
+
+  max-width:
+    none !important;
+
+  margin:
+    56px 0 0 !important;
+}
+
+.profile-main,
+.profile-detail-card,
+.project-card,
+.skill-card,
+.contact-form {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 1500px) {
+
+  .container,
+  .professional-profile .container,
+  .projects .container,
+  .about .container,
+  .skills .container,
+  .contact .container {
+    width:
+      calc(100% - 80px);
+
+    max-width:
+      1960px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+
+  .container,
+  .professional-profile .container,
+  .projects .container,
+  .about .container,
+  .skills .container,
+  .contact .container {
+    width:
+      calc(100% - 44px);
+  }
+
+  .hero-title {
+    font-size:
+      clamp(
+        4rem,
+        8vw,
+        6.5rem
+      );
+  }
+
+}
+
+@media (max-width: 700px) {
+
+  .container,
+  .professional-profile .container,
+  .projects .container,
+  .about .container,
+  .skills .container,
+  .contact .container {
+    width:
+      calc(100% - 28px);
+  }
+
+  .hero-title {
+    font-size:
+      clamp(
+        2.9rem,
+        12vw,
+        4.3rem
+      );
+
+    line-height:
+      .97;
+  }
+
+  .hero-description {
+    max-width:
+      100%;
+  }
+
+}
+
 @media (max-width:1100px){
 .hero-grid,.two-column{grid-template-columns:1fr;gap:42px}
 .section-header{flex-direction:column;align-items:flex-start;gap:24px}
