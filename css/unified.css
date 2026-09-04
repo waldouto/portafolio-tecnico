@@ -4903,3 +4903,91 @@ cat >> css/unified.css <<'CSS'
 
 }
 
+
+/* =========================================================
+   TECHNOLOGY LOGOS - FINAL HD
+========================================================= */
+
+.tech-logo {
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 64px !important;
+    height: 64px !important;
+
+    margin:
+        0 auto 14px !important;
+
+    padding: 11px !important;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(27,50,82,.07);
+
+    border-radius:
+        18px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2f6fb
+        ) !important;
+
+    box-shadow:
+        0 8px 22px
+        rgba(18,42,74,.055);
+}
+
+
+.tech-logo img {
+    display: block !important;
+
+    width: 40px !important;
+    height: 40px !important;
+
+    max-width: 40px !important;
+    max-height: 40px !important;
+
+    object-fit: contain !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transform: none !important;
+
+    filter: none !important;
+}
+
+
+.tech-chip {
+    text-align: center;
+}
+
+
+.tech-chip strong,
+.tech-chip span {
+    display: block;
+}
+
+
+@media (max-width: 650px) {
+
+    .tech-logo {
+        width: 58px !important;
+        height: 58px !important;
+    }
+
+    .tech-logo img {
+        width: 36px !important;
+        height: 36px !important;
+
+        max-width: 36px !important;
+        max-height: 36px !important;
+    }
+
+}
+
