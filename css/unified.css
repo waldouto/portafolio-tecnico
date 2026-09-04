@@ -4800,3 +4800,106 @@ cat >> css/unified.css <<'CSS'
     color: #ffffff !important;
 }
 
+
+/* =========================================================
+   TOOL LOGOS LOCAL SVG / HD
+========================================================= */
+
+.tech-logo {
+    display: grid !important;
+
+    place-items: center !important;
+
+    width: 62px !important;
+    height: 62px !important;
+
+    margin:
+        0 auto 14px !important;
+
+    padding:
+        11px !important;
+
+    border:
+        1px solid rgba(30,52,84,.07);
+
+    border-radius:
+        18px !important;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f2f6fb
+        ) !important;
+
+    box-shadow:
+        0 7px 18px rgba(19,43,75,.05);
+}
+
+
+.tech-logo img {
+    display: block !important;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: contain !important;
+
+    image-rendering: auto;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+.tech-chip {
+    overflow: visible !important;
+}
+
+
+/* logos especialmente anchos */
+
+.tech-chip:has(img[alt="Cisco"]) .tech-logo img,
+.tech-chip:has(img[alt="Wazuh"]) .tech-logo img,
+.tech-chip:has(img[alt="Wireshark"]) .tech-logo img {
+    width: 42px !important;
+    height: 42px !important;
+}
+
+
+/* JavaScript: logo amarillo necesita fondo blanco */
+
+.tech-chip:has(img[alt="JavaScript"]) .tech-logo {
+    background: #fff !important;
+}
+
+
+/* Linux también respira mejor */
+
+.tech-chip:has(img[alt="Linux"]) .tech-logo {
+    background:
+        linear-gradient(
+            145deg,
+            #fffdf5,
+            #fff8df
+        ) !important;
+}
+
+
+@media (max-width: 650px) {
+
+    .tech-logo {
+        width: 56px !important;
+        height: 56px !important;
+    }
+
+    .tech-logo img {
+        width: 34px !important;
+        height: 34px !important;
+    }
+
+}
+
