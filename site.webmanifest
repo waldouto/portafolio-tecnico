@@ -1,0 +1,21 @@
+{
+  "name": "Waldo José J. | Portafolio",
+  "short_name": "Waldo José J.",
+  "description": "Portafolio profesional de Ingeniería en Sistemas, redes, ciberseguridad, diseño gráfico y desarrollo web.",
+  "start_url": "/portafolio-tecnico/",
+  "display": "standalone",
+  "background_color": "#07152d",
+  "theme_color": "#07152d",
+  "icons": [
+    {
+      "src": "assets/icons/social/profile-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/social/profile-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
